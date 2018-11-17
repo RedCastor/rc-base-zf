@@ -1,0 +1,11 @@
+{
+  "entry": {
+    "rc-base-zf": [
+      "./scripts/rc-base-zf.js",
+      "./styles/rc-base-zf.scss"
+    ]
+  },
+  "publicPath": "/demo",
+  "devUrl": "http://example.test",
+  "proxyUrl": "http://localhost:3000"
+}

@@ -1,0 +1,28 @@
+//  rcBase variables
+//  -----------------------------
+
+//== Color Palette
+$base-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+$black-base:             #000 !default;
+$white-base:             #fefefe !default;
+$gray-base:              lighten($black-base, 30%) !default;
+$medium-gray-base:       lighten($black-base, 46.7%) !default;
+$light-gray-base:        lighten($black-base, 93.5%) !default;
+$dark-gray-base:         lighten($black-base, 20%) !default;
+
+//== Body
+$body-background-base: $white-base;
+$body-font-color-base: $black-base;
+
+//== FONT
+$body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+//== Global
+$global-flexbox-base: true;

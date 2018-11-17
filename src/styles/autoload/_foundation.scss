@@ -1,0 +1,10 @@
+@import "foundation/settings";
+@import "~foundation-sites/scss/foundation";
+
+@include foundation-everything($global-flexbox);
+
+// Force Enable Grid XY with grid flexbox false
+// !!! To use grid with float grid not include grid xy in grid float row  !!!
+@if not $global-flexbox and $xy-grid {
+  @include foundation-xy-grid-classes;
+}
