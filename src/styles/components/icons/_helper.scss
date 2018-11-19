@@ -1,0 +1,157 @@
+
+/* HELPER CLASS
+ * -------------------------- */
+
+/* FI based classes */
+
+/*! Modified from font-awesome helper CSS classes - PIXEDEN
+ * ! Modified from PIXEDEN helper CSS classes - RC-BASE-ICON
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (CSS: MIT License)
+ */
+
+/* makes the font 33% larger relative to the icon container */
+.fi-lg {
+  font-size: $fi-font-size-base * 1.33;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.fi-2x {
+  font-size: 2 * $fi-font-size-base;
+}
+
+.fi-3x {
+  font-size: 3 * $fi-font-size-base;
+}
+
+.fi-4x {
+  font-size: 4 * $fi-font-size-base;
+}
+
+.fi-5x {
+  font-size: 5 * $fi-font-size-base;
+}
+
+.fi-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.fi-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+
+  & > li {
+    position: relative;
+  }
+}
+
+.fi-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center;
+
+  &.fi-lg {
+    left: -1.8571428571428572em;
+  }
+}
+
+.fi-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eaeaea;
+  border-radius: 0.1em;
+}
+
+.pull-right {
+  float: right;
+}
+
+.fi {
+  &.pull-left {
+    float: left;
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+  }
+}
+
+.fi-spin {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.fi-rotate-90 {
+  /* stylelint-disable-next-line */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  transform: rotate(90deg);
+}
+
+.fi-rotate-180 {
+  /* stylelint-disable-next-line */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  transform: rotate(180deg);
+}
+
+.fi-rotate-270 {
+  /* stylelint-disable-next-line */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform: rotate(270deg);
+}
+
+.fi-flip-horizontal {
+  /* stylelint-disable-next-line */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  transform: scale(-1, 1);
+}
+
+.fi-flip-vertical {
+  /* stylelint-disable-next-line */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  transform: scale(1, -1);
+}
+
+.fi-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.fi-stack-1x,
+.fi-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fi-stack-1x {
+  line-height: inherit;
+}
+
+.fi-stack-2x {
+  font-size: 2em;
+}
+
+.fi-inverse {
+  color: #fff;
+}
+
+/* Custom classes / mods - PIXEDEN */
+.fi-va {
+  vertical-align: middle;
+}
