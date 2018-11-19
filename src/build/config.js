@@ -6,7 +6,7 @@ const desire = require('./util/desire');
 
 const userConfig = merge(desire(`${__dirname}/../config`), desire(`${__dirname}/../config-local`));
 
-const isProduction = !!((argv.env && argv.env.production) || argv.p);
+//const isProduction = !!((argv.env && argv.env.production) || argv.p);
 const rootPath = (userConfig.paths && userConfig.paths.root)
   ? userConfig.paths.root
   : process.cwd();
