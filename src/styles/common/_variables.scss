@@ -26,3 +26,11 @@ $body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 
 //== Global
 $global-flexbox-base: true;
+
+//== Main Grid (Only XY = full, fluid and none)
+$base-container-main: "none";
+$base-container-main-header: "full";
+$base-size-sidebar: (
+  small: 4,
+  medium: 3
+);

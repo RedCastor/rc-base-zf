@@ -24,13 +24,7 @@ module.exports = {
         ],
       },
     ],
-    "at-rule-empty-line-before": [ "always", {
-        'except': [
-          'blockless-after-same-name-blockless',
-          'first-nested',
-        ],
-        'ignore': ['after-comment'],
-      }
-    ],
+    'declaration-empty-line-before': null,
+    "at-rule-empty-line-before": null
   },
 };

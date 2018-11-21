@@ -1,0 +1,68 @@
+//
+// Grid
+// --------------------------------------------------
+
+// Foundation Grid system
+@if $xy-grid {
+
+  //Grid
+  .main-header {
+    //Container
+    @if $base-container-main-header == full {
+      @include xy-grid-container(100%, 0);
+    }
+
+    @else if $base-container-main-header == fluid {
+      @include xy-grid-container(100%);
+    }
+
+    @else if $base-container-main-header == gutter {
+      @include xy-grid-container($grid-container, $grid-container-padding);
+    }
+
+    @else {
+      @include xy-grid-container($grid-container, 0);
+    }
+  }
+
+  .main-container {
+    //Container
+    @if $base-container-main == full {
+      @include xy-grid-container(100%, 0);
+    }
+
+    @else if $base-container-main == fluid {
+      @include xy-grid-container(100%);
+    }
+
+    @else if $base-container-main == gutter {
+      @include xy-grid-container($grid-container, $grid-container-padding);
+    }
+
+    @else {
+      @include xy-grid-container($grid-container, 0);
+    }
+  }
+
+  .main-grid {
+    @include xy-grid;
+  }
+
+  main {
+    @include xy-cell($grid-columns);
+
+    .sidebar-primary & {
+      @include -zf-breakpoint-value(auto, $base-size-sidebar) {
+        @include xy-cell($grid-columns - $-zf-bp-value);
+      }
+    }
+  }
+
+  .sidebar {
+    .sidebar-primary & {
+      @include -zf-breakpoint-value(auto, $base-size-sidebar) {
+        @include xy-cell($-zf-bp-value);
+      }
+    }
+  }
+}
