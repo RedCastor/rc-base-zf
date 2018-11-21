@@ -1,5 +1,6 @@
 // import external dependencies
 import 'jquery';
+import 'foundation-sites';
 
-// Import everything from autoload
-import './autoload/**/*';
+jQuery(document).ready($ => ($(document).foundation()));
+
