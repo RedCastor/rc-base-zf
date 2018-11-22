@@ -522,6 +522,10 @@
   content: $fi-var-map-marker;
 }
 
+.#{$fi-font-prefix}-envelope::before {
+  content: $fi-var-mail;
+}
+
 .#{$fi-font-prefix}-mail::before {
   content: $fi-var-mail;
 }
