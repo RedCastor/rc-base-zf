@@ -1,24 +1,12 @@
-@import "common/variables";
-
-/** Import everything from autoload */
-@import "./autoload/**/*";
-
-/**
- * Import npm dependencies
- *
- * Prefix your imports with `~` to grab from node_modules/
- * @see https://github.com/webpack-contrib/sass-loader#imports
- */
-// @import "~some-node-module";
-
 /** Import Functions styles */
 @import "functions/**/*";
 
 /** Import Mixins styles */
 @import "mixins/**/*";
 
-/** Import components styles */
+/** Import components */
 @import "components/icons";
 @import "components/buttons";
 @import "components/forms";
 @import "components/dropdown-menu";
+@import "components/grid";

@@ -1,0 +1,10 @@
+//  Rc Base settings
+//  -----------------------------
+
+//== Main Grid (Only XY = full, fluid and none)
+$base-container-main: "none";
+$base-container-main-header: "none";
+$base-size-sidebar: (
+  small: 4,
+  medium: 3
+);

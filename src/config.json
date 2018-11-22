@@ -2,7 +2,7 @@
   "entry": {
     "rc-base-zf": [
       "./scripts/rc-base-zf.js",
-      "./styles/rc-base-zf.scss"
+      "./styles/main.scss"
     ]
   },
   "publicPath": "/projects/Staglabel/lib/rc-base-zf/",
