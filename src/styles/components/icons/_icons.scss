@@ -809,3 +809,36 @@
 .#{$fi-font-prefix}-airplay::before {
   content: $fi-var-airplay;
 }
+
+//Social
+.#{$fi-font-prefix}-facebook::before {
+  content: $fi-var-facebook;
+}
+
+.#{$fi-font-prefix}-facebook-2::before {
+  content: $fi-var-facebook-2;
+}
+
+.#{$fi-font-prefix}-instagram::before {
+  content: $fi-var-instagram;
+}
+
+.#{$fi-font-prefix}-linkedin::before {
+  content: $fi-var-linkedin;
+}
+
+.#{$fi-font-prefix}-linkedin-2::before {
+  content: $fi-var-linkedin-2;
+}
+
+.#{$fi-font-prefix}-pinterest::before {
+  content: $fi-var-pinterest;
+}
+
+.#{$fi-font-prefix}-twitter::before {
+  content: $fi-var-twitter;
+}
+
+.#{$fi-font-prefix}-youtube::before {
+  content: $fi-var-youtube;
+}
