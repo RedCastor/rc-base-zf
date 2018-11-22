@@ -1,0 +1,31 @@
+language: node_js
+sudo: false
+dist: trusty
+node_js:
+  - lts/*
+
+env:
+- TRAVIS_NODE_VERSION="6"
+- TRAVIS_NODE_VERSION="7"
+
+matrix:
+  fast_finish: true
+
+cache:
+  apt: true
+  directories:
+  - $HOME/.yarn-cache
+
+before_install:
+- source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
+- export PATH=$HOME/.yarn/bin:$PATH && travis_retry curl -o- -L https://yarnpkg.com/install.sh | bash
+
+install:
+- node -v && yarn -V
+- travis_retry yarn
+
+script:
+- yarn run test
+- yarn run build
+- yarn run rmdist
+- yarn run "build:production"

@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === undefined) {
  * If your publicPath differs between environments, but you know it at compile time,
  * then set RC_BASE_ZF_DIST_PATH as an environment variable before compiling.
  * Example:
- *   RC_BASE_ZF_DIST_PATH=/wp-content/themes/sage/dist/ yarn build:production
+ *   RC_BASE_ZF_DIST_PATH=/wp-content/themes/rc-base-zf/dist/ yarn build:production
  */
 if (process.env.RC_BASE_ZF_DIST_PATH) {
   module.exports.publicPath = process.env.RC_BASE_ZF_DIST_PATH;
@@ -55,5 +55,5 @@ if (process.env.RC_BASE_ZF_DIST_PATH) {
  * Example:
  *   wp_localize_script('sage/main.js', 'RC_BASE_ZF_DIST_PATH', get_theme_file_uri('dist/'))
  */
-// Object.keys(module.exports.entry).forEach(id =>
-//   module.exports.entry[id].unshift(path.join(__dirname, 'helpers/public-path.js')));
+//Object.keys(module.exports.entry).forEach(id =>
+//  module.exports.entry[id].unshift(path.join(__dirname, 'helpers/public-path.js')));
