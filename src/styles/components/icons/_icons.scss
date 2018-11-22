@@ -810,7 +810,7 @@
   content: $fi-var-airplay;
 }
 
-//Social
+//== Social
 .#{$fi-font-prefix}-facebook::before {
   content: $fi-var-facebook;
 }
@@ -835,10 +835,64 @@
   content: $fi-var-pinterest;
 }
 
+.#{$fi-font-prefix}-pinterest-2::before {
+  content: $fi-var-pinterest-2;
+}
+
 .#{$fi-font-prefix}-twitter::before {
   content: $fi-var-twitter;
 }
 
 .#{$fi-font-prefix}-youtube::before {
   content: $fi-var-youtube;
+}
+
+//== Arrow
+.#{$fi-font-prefix}-down-arrow-2::before {
+  content: $fi-var-down-arrow-2;
+}
+
+.#{$fi-font-prefix}-down-arrow-3::before {
+  content: $fi-var-down-arrow-3;
+}
+
+.#{$fi-font-prefix}-left-arrow-2::before {
+  content: $fi-var-left-arrow-2;
+}
+
+.#{$fi-font-prefix}-left-arrow-3::before {
+  content: $fi-var-left-arrow-3;
+}
+
+.#{$fi-font-prefix}-right-arrow-2::before {
+  content: $fi-var-right-arrow-2;
+}
+
+.#{$fi-font-prefix}-right-arrow-3::before {
+  content: $fi-var-right-arrow-3;
+}
+
+.#{$fi-font-prefix}-up-arrow-2::before {
+  content: $fi-var-up-arrow-2;
+}
+
+.#{$fi-font-prefix}-up-arrow-3::before {
+  content: $fi-var-up-arrow-3;
+}
+
+//== Various
+.#{$fi-font-prefix}-less-2::before {
+  content: $fi-var-less-2;
+}
+
+.#{$fi-font-prefix}-map-marker-2::before {
+  content: $fi-var-map-marker-2;
+}
+
+.#{$fi-font-prefix}-play-2::before {
+  content: $fi-var-play-2;
+}
+
+.#{$fi-font-prefix}-plus-2::before {
+  content: $fi-var-plus-2;
 }

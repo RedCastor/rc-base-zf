@@ -5,7 +5,7 @@
       "./styles/main.scss"
     ]
   },
-  "publicPath": "/projects/Staglabel/lib/rc-base-zf/",
+  "publicPath": "/projects/RedCastor/lib-github/rc-base-zf/",
   "devUrl": "http://localhost/projects/Staglabel/lib/rc-base-zf/demo",
   "proxyUrl": "http://localhost:3000"
 }
