@@ -1,0 +1,7 @@
+@function get-color-lighten($key, $value) {
+  @return lighten(get-color($key), $value);
+}
+
+@function get-color-darken($key, $value) {
+  @return darken(get-color($key), $value);
+}

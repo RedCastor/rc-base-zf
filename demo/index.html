@@ -22,21 +22,42 @@
 </div>
 <![endif]-->
 
-    <header class="header-main">
-        <div class="row">
-            <div class="small-12">
-                <div class="text-center">
-                    <h1 class="page-header">RC-BASE-ZF</h1>
-                    <h3>RedCastor Base Foundation6</h3>
-                    <a class="button large hollow default" href="https://github.com/RedCastor/rc-base-ze"><i class="fa fa-github"></i>&nbsp;&nbsp;View on GitHub</a>
-                    <a class="button large hollow default" href="https://github.com/RedCastor/rc-base-zf/releases"><i class="fa fa-download"></i>&nbsp;&nbsp;Download</a>
-                </div>
-            </div>
+    <header class="header-main grid-container">
+        <div class="cell text-center">
+            <h1 class="page-header">RC-BASE-ZF</h1>
+            <h3>RedCastor Base Foundation6</h3>
+            <a class="button large hollow default" href="https://github.com/RedCastor/rc-base-ze"><i class="fa fa-github"></i>&nbsp;&nbsp;View on GitHub</a>
+            <a class="button large hollow default" href="https://github.com/RedCastor/rc-base-zf/releases"><i class="fa fa-download"></i>&nbsp;&nbsp;Download</a>
         </div>
+        <hr>
     </header>
-    <hr>
-    <main>
-      <span>test <i class="fi fi-ball"></i></span>
+    <main class="grid-container">
+
+        <div class="cell">
+            <!-- Dropdown Menu -->
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <a href="#">Item 1</a>
+                    <ul class="menu">
+                        <li><a href="#"><i class="fi fi-diamond"></i> Item 1A</a></li>
+                        <li><a href="#">Item 1B</a></li>
+                        <li><a href="#">Item 1C</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 1A-1</a></li>
+                                <li><a href="#">Item 1B-2</a></li>
+                                <li><a href="#">Item 1C-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item 1D</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Item 2</a></li>
+                <li class="is-active"><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+            <!-- End menu -->
+        </div>
+
     </main>
 </body>
 </html>

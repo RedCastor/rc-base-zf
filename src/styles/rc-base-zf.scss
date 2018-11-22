@@ -11,7 +11,14 @@
  */
 // @import "~some-node-module";
 
+/** Import Functions styles */
+@import "functions/**/*";
+
+/** Import Mixins styles */
+@import "mixins/**/*";
+
 /** Import components styles */
 @import "components/icons";
 @import "components/buttons";
 @import "components/forms";
+@import "components/dropdown-menu";

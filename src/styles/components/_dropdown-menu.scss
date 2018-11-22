@@ -1,0 +1,37 @@
+.dropdown {
+  &.menu {
+    > li {
+      &.is-dropdown-submenu-parent {
+        > a {
+          &::after {
+            content: $fi-var-angle-down;
+            font-family: $fi-font-family;
+            font-size: 1.5rem;
+            border: none;
+            right: 24px;
+            top: 50%;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    li {
+      &.is-active,
+      &:hover {
+        background-color: get-color(primary);
+
+        @include animation-all;
+
+        > a {
+          color: $white-base;
+        }
+      }
+    }
+
+    .is-dropdown-submenu {
+      border: none;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
