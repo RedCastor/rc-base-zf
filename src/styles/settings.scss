@@ -2,8 +2,8 @@
 //  -----------------------------
 
 //== Main Grid (Only XY = full, fluid, gutter and none)
-$base-container-main: "full";
-$base-container-main-header: "none";
+$base-container-main: none;
+$base-container-main-header: fluid;
 $base-size-sidebar: (
   small: 4,
   medium: 3
