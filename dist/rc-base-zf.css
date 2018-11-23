@@ -25963,21 +25963,46 @@ main {
 /* line 4, src/styles/components/_social.scss */
 
 .social-group {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* line 210, node_modules/foundation-sites/scss/components/_menu.scss */
-
-.social-group li + li {
-  margin-left: 1rem;
-}
-
-/* line 214, node_modules/foundation-sites/scss/components/_menu.scss */
-
-.social-group a {
   padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 202, node_modules/foundation-sites/scss/util/_mixins.scss */
+
+[data-whatinput='mouse'] .social-group li {
+  outline: 0;
+}
+
+/* line 68, node_modules/foundation-sites/scss/components/_menu.scss */
+
+.social-group a,
+.social-group .button {
+  line-height: 1;
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 1rem;
+}
+
+/* line 77, node_modules/foundation-sites/scss/components/_menu.scss */
+
+.social-group input,
+.social-group select,
+.social-group a,
+.social-group button {
+  margin-bottom: 0;
+}
+
+/* line 84, node_modules/foundation-sites/scss/components/_menu.scss */
+
+.social-group input {
+  display: inline-block;
 }
 
 
