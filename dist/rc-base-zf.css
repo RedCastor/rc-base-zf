@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/** Import Functions styles */
+
+/** Import Mixins styles */
+
 /** Import everything from autoload */
 
 /**
@@ -24221,9 +24225,12 @@ html.is-reveal-open body {
 
 /** Import base */
 
-/** Import Functions styles */
-
-/** Import Mixins styles */
+/**
+ * Rc Base Foundation by RedCastor
+ * Version 1.0.0
+ *
+ * Licensed under MIT Open Source
+ */
 
 /** Import components */
 
@@ -25882,19 +25889,10 @@ html.is-reveal-open body {
 /* line 9, src/styles/components/_grid.scss */
 
 .main-header {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 75rem;
   margin: 0 auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 9, src/styles/components/_grid.scss */
-
-  .main-header {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
 }
 
 /* line 28, src/styles/components/_grid.scss */

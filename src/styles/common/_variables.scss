@@ -1,6 +1,5 @@
 //  rcBase variables
 //  -----------------------------
-
 //== Color Palette
 $base-palette: (
   primary: #1779ba,
@@ -34,3 +33,6 @@ $base-size-sidebar: (
   small: 4,
   medium: 3
 );
+
+//== Font Icons
+$fi-font-path: "fonts" !default;
