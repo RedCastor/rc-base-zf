@@ -13,3 +13,16 @@ $base-size-sidebar: (
 
 //== Font Icons
 $fi-font-path: "fonts" !default;
+
+//== Font Stack
+$base-font-stack: (
+  /**
+  courier_new: (
+    path: "../fonts/courier_new",
+    ext: woff2 woff ttf,
+    font-family: ("Courier New", Courier, "Nimbus Sans L", monospace),
+    font-weight: normal,
+    font-style: normal,
+  ),
+  */
+);

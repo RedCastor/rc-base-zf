@@ -28,3 +28,25 @@
     src: $src;
   }
 }
+
+
+@mixin font-face-stack($font-stack) {
+
+  //Generate font face stack
+  @each $name, $font in $font-stack {
+
+    @each $font-family in $font {
+
+      $path: map-get($font, path);
+      $ext: map-get($font, ext);
+      $font-style: map-get($font, font-style);
+      $font-weight: map-get($font, font-weight);
+
+      @if not $path {
+        $path: "../fonts/#{$name}";
+      }
+
+      @include font-face("#{$font-family}", "#{$path}/#{$name}-webfont", $font-weight, $font-style, $ext);
+    }
+  }
+}
