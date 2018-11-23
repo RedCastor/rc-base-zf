@@ -1,7 +1,9 @@
 /** Import Functions styles */
+@import "functions/string";
 @import "functions/color";
 
 /** Import Mixins styles */
+@import "mixins/font";
 @import "mixins/animation";
 
 /** Import components */
@@ -10,3 +12,4 @@
 @import "components/forms";
 @import "components/dropdown-menu";
 @import "components/grid";
+@import "components/social";

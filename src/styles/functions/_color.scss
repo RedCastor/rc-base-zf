@@ -1,3 +1,6 @@
+//
+// Colors Functions
+// --------------------------------------------------
 @function get-color-lighten($key, $value) {
   @return lighten(get-color($key), $value);
 }

@@ -24227,10 +24227,6 @@ html.is-reveal-open body {
 
 /** Import components */
 
-/*
-*  Licensing: http://www.pixeden.com/icon-fonts/stroke-7-icon-font-set
-*/
-
 @font-face {
   font-family: "rc-base-icons";
   src: url(../dist/fonts/rc-base-icons.ttf) format("truetype"), url(../dist/fonts/rc-base-icons.woff) format("woff"), url(../dist/fonts/rc-base-icons.svg) format("svg");
@@ -25846,13 +25842,7 @@ html.is-reveal-open body {
   content: "\E9A2";
 }
 
-/* line 1, src/styles/components/_buttons.scss */
-
-.test {
-  width: 50%;
-}
-
-/* line 6, src/styles/components/_dropdown-menu.scss */
+/* line 9, src/styles/components/_dropdown-menu.scss */
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   content: "\E906";
@@ -25864,7 +25854,7 @@ html.is-reveal-open body {
   margin-top: 0;
 }
 
-/* line 20, src/styles/components/_dropdown-menu.scss */
+/* line 23, src/styles/components/_dropdown-menu.scss */
 
 .dropdown.menu li.is-active,
 .dropdown.menu li:hover {
@@ -25874,14 +25864,14 @@ html.is-reveal-open body {
   transition: all linear 0.3s;
 }
 
-/* line 26, src/styles/components/_dropdown-menu.scss */
+/* line 29, src/styles/components/_dropdown-menu.scss */
 
 .dropdown.menu li.is-active > a,
 .dropdown.menu li:hover > a {
   color: #fefefe;
 }
 
-/* line 32, src/styles/components/_dropdown-menu.scss */
+/* line 35, src/styles/components/_dropdown-menu.scss */
 
 .dropdown.menu .is-dropdown-submenu {
   border: none;
@@ -25970,6 +25960,26 @@ main {
     margin-right: 0.9375rem;
     margin-left: 0.9375rem;
   }
+}
+
+/* line 4, src/styles/components/_social.scss */
+
+.social-group {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 210, node_modules/foundation-sites/scss/components/_menu.scss */
+
+.social-group li + li {
+  margin-left: 1rem;
+}
+
+/* line 214, node_modules/foundation-sites/scss/components/_menu.scss */
+
+.social-group a {
+  padding: 0;
 }
 
 
