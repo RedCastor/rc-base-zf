@@ -15,6 +15,7 @@ const config = merge({
   open: true,
   copy: 'images/**/*',
   proxyUrl: 'http://localhost:3000',
+  devPublicUrl: '',
   paths: {
     root: rootPath,
     src: path.join(rootPath, 'src'),
