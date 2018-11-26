@@ -20,15 +20,12 @@ $dark-gray-base:         lighten($black-base, 20%) !default;
 $body-background-base: $white-base;
 $body-font-color-base: $black-base;
 
-//== FONT
-$body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-
 //== Global
 $global-flexbox-base: true;
 
-//== Main Grid (Only XY = full, fluid and none)
-$base-container-main: "none";
-$base-container-main-header: "none";
+//== Main Grid (Only XY = full, fluid, gutter and none)
+$base-container-main: none;
+$base-container-main-header: fluid;
 $base-size-sidebar: (
   small: 4,
   medium: 3
@@ -36,3 +33,19 @@ $base-size-sidebar: (
 
 //== Font Icons
 $fi-font-path: "fonts" !default;
+
+//== Font Stack
+$base-font-stack: (
+  /**
+  courier_new: (
+    path: "../fonts/courier_new",
+    ext: woff2 woff ttf,
+    font-family: ("Courier New", Courier, "Nimbus Sans L", monospace),
+    font-weight: normal,
+    font-style: normal,
+  ),
+  */
+);
+
+//== FONT
+$body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
