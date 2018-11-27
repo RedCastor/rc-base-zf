@@ -18,7 +18,7 @@ if (url.parse(target).protocol === 'https:') {
 module.exports = {
   output: {
     pathinfo: true,
-    publicPath: config.proxyUrl + config.devPublicPath,
+    publicPath: config.proxyUrl + config.publicPath,
   },
   devtool: '#cheap-module-source-map',
   stats: false,

@@ -15,7 +15,6 @@ const config = merge({
   open: true,
   copy: 'images/**/*',
   proxyUrl: 'http://localhost:3000',
-  devPublicUrl: '',
   paths: {
     root: rootPath,
     src: path.join(rootPath, 'src'),
@@ -29,6 +28,14 @@ const config = merge({
   },
   watch: [],
 }, userConfig);
+
+
+/**
+ * Provide devPublicPath if you use relative publicPath for watching mode.
+ * Watch enabled resolve publicPath with devPublicPath.
+ */
+config.publicPath = (config.enabled.watcher ? (config.devPublicPath || config.publicPath) : config.publicPath);
+
 
 module.exports = merge(config, {
   env: Object.assign({ production: true }, argv.env),
