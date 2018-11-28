@@ -5,12 +5,12 @@
 @import "../components/icons/variables";
 
 //== Main Grid (Only XY = full, fluid, gutter and none)
-$base-container-main: none;
-$base-container-main-header: fluid;
+$base-container-main        : full !default;
+$base-container-main-header : full !default;
 $base-size-sidebar: (
   small: 4,
   medium: 3
-);
+) !default;
 
 //== Hamburger
 //Source: https://github.com/jonsuh/hamburgers
@@ -72,10 +72,10 @@ $base-font-stack: (
     font-style: normal,
   ),
   */
-);
+) !default;
 
 //== FONT
-$body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 
 //== Font Icons
 $fi-font-path: "fonts" !default;

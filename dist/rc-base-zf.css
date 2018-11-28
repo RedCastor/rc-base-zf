@@ -29672,19 +29672,10 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
 /* line 9, src/styles/components/_grid.scss */
 
 .main-header {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
+  padding-right: 0;
+  padding-left: 0;
   max-width: 100%;
   margin: 0 auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 9, src/styles/components/_grid.scss */
-
-  .main-header {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
 }
 
 /* line 28, src/styles/components/_grid.scss */
@@ -29692,7 +29683,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
 .main-container {
   padding-right: 0;
   padding-left: 0;
-  max-width: 75rem;
+  max-width: 100%;
   margin: 0 auto;
 }
 

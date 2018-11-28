@@ -9,12 +9,12 @@ $base-palette: (
   alert: #cc4b37,
 );
 
-$black-base:             #000 !default;
-$white-base:             #fefefe !default;
-$gray-base:              lighten($black-base, 30%) !default;
-$medium-gray-base:       lighten($black-base, 46.7%) !default;
-$light-gray-base:        lighten($black-base, 93.5%) !default;
-$dark-gray-base:         lighten($black-base, 20%) !default;
+$black-base:             #000;
+$white-base:             #fefefe;
+$gray-base:              lighten($black-base, 30%);
+$medium-gray-base:       lighten($black-base, 46.7%);
+$light-gray-base:        lighten($black-base, 93.5%);
+$dark-gray-base:         lighten($black-base, 20%);
 
 //== Body
 $body-background-base: $white-base;
