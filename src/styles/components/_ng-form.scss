@@ -1,0 +1,59 @@
+//
+// Forms Validation
+// --------------------------------------------------
+
+$ng-form-validation-error   : get-color(alert);
+$ng-form-validation-success : get-color(success);
+
+select.ng-touched.ng-invalid,
+textarea.ng-touched.ng-invalid,
+input.ng-touched.ng-invalid:not(.input-qty) {
+  border-color: $ng-form-validation-error;
+  background-color: lighten($ng-form-validation-error, 46%);
+}
+
+//== UI-Select module
+.ui-select-container.ng-touched.ng-invalid {
+  .ui-select-toggle {
+    border-color: $ng-form-validation-error;
+    background-color: lighten($ng-form-validation-error, 46%);
+  }
+}
+
+select.ng-touched.ng-valid,
+textarea.ng-touched.ng-valid,
+input.ng-touched.ng-valid:not(.input-qty) {
+  border-color: $ng-form-validation-success;
+
+  &.ng-empty {
+    border-color: inherit;
+  }
+}
+
+//== UI-Select module
+.ui-select-container.ng-touched.ng-valid {
+  .ui-select-toggle {
+    border-color: $ng-form-validation-success;
+  }
+
+  &.ng-empty {
+    .ui-select-toggle {
+      border-color: inherit;
+    }
+  }
+}
+
+.radio,
+.checkbox {
+  input.ng-touched.ng-invalid-required ~ label {
+    &::before {
+      border-color: $ng-form-validation-error;
+    }
+  }
+
+  input.ng-touched.ng-valid-required ~ label {
+    &::before {
+      border-color: $ng-form-validation-success;
+    }
+  }
+}

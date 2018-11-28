@@ -29493,10 +29493,68 @@ html.is-reveal-open body {
 
 /** Search form */
 
-/* line 10, src/styles/components/_forms.scss */
+/* line 10, src/styles/components/_form.scss */
 
 .search-form label {
   font-weight: normal;
+}
+
+/* line 8, src/styles/components/_ng-form.scss */
+
+select.ng-touched.ng-invalid,
+textarea.ng-touched.ng-invalid,
+input.ng-touched.ng-invalid:not(.input-qty) {
+  border-color: #cc4b37;
+  background-color: #fcf3f2;
+}
+
+/* line 17, src/styles/components/_ng-form.scss */
+
+.ui-select-container.ng-touched.ng-invalid .ui-select-toggle {
+  border-color: #cc4b37;
+  background-color: #fcf3f2;
+}
+
+/* line 23, src/styles/components/_ng-form.scss */
+
+select.ng-touched.ng-valid,
+textarea.ng-touched.ng-valid,
+input.ng-touched.ng-valid:not(.input-qty) {
+  border-color: #3adb76;
+}
+
+/* line 28, src/styles/components/_ng-form.scss */
+
+select.ng-touched.ng-valid.ng-empty,
+textarea.ng-touched.ng-valid.ng-empty,
+input.ng-touched.ng-valid:not(.input-qty).ng-empty {
+  border-color: inherit;
+}
+
+/* line 35, src/styles/components/_ng-form.scss */
+
+.ui-select-container.ng-touched.ng-valid .ui-select-toggle {
+  border-color: #3adb76;
+}
+
+/* line 40, src/styles/components/_ng-form.scss */
+
+.ui-select-container.ng-touched.ng-valid.ng-empty .ui-select-toggle {
+  border-color: inherit;
+}
+
+/* line 49, src/styles/components/_ng-form.scss */
+
+.radio input.ng-touched.ng-invalid-required ~ label::before,
+.checkbox input.ng-touched.ng-invalid-required ~ label::before {
+  border-color: #cc4b37;
+}
+
+/* line 55, src/styles/components/_ng-form.scss */
+
+.radio input.ng-touched.ng-valid-required ~ label::before,
+.checkbox input.ng-touched.ng-valid-required ~ label::before {
+  border-color: #3adb76;
 }
 
 /* line 8, src/styles/components/_comments.scss */
