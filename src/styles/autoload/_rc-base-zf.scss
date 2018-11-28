@@ -1,6 +1,7 @@
 @import "rc-base-zf/foundation";
 @import "~foundation-sites/scss/foundation";
 @import "~hamburgers/_sass/hamburgers/hamburgers";
+@import "~awesome-foundation6-checkbox/src/awesome-foundation6-checkbox";
 
 @include foundation-everything($global-flexbox);
 
