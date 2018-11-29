@@ -1,6 +1,6 @@
 {
   "name": "rc-base-zf",
-  "version": "1.0.0-b24",
+  "version": "1.0.0-b25",
   "author": "Auban le Grelle <auban@viamonkey.com>",
   "homepage": "https://redcastor.io",
   "licenses": [
@@ -18,7 +18,7 @@
     "sass",
     "js"
   ],
-  "main": "dist/rc-base-zf.min.js",
+  "main": "dist/rc-base-zf.js",
   "browserslist": [
     "last 2 versions",
     "android 4",

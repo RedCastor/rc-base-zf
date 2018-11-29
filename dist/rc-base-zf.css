@@ -30900,14 +30900,28 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   border-color: inherit;
 }
 
-/* line 49, src/styles/components/_ng-form.scss */
+/* line 48, src/styles/components/_ng-form.scss */
+
+.radio label,
+.checkbox label {
+  line-height: 1.2;
+}
+
+/* line 51, src/styles/components/_ng-form.scss */
+
+.radio label::after,
+.checkbox label::after {
+  line-height: 1.8;
+}
+
+/* line 57, src/styles/components/_ng-form.scss */
 
 .radio input.ng-touched.ng-invalid-required ~ label::before,
 .checkbox input.ng-touched.ng-invalid-required ~ label::before {
   border-color: #cc4b37;
 }
 
-/* line 55, src/styles/components/_ng-form.scss */
+/* line 63, src/styles/components/_ng-form.scss */
 
 .radio input.ng-touched.ng-valid-required ~ label::before,
 .checkbox input.ng-touched.ng-valid-required ~ label::before {
