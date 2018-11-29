@@ -25,6 +25,7 @@ module.exports = {
       },
     ],
     'declaration-empty-line-before': null,
-    "at-rule-empty-line-before": null
+    "at-rule-empty-line-before": null,
+    "selector-type-no-unknown": null
   },
 };

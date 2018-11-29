@@ -56,4 +56,12 @@ input.ng-touched.ng-valid:not(.input-qty) {
       border-color: $ng-form-validation-success;
     }
   }
+
+  label {
+    line-height: 1.2;
+
+    &::after {
+      line-height: 1.8;
+    }
+  }
 }
