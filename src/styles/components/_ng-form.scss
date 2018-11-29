@@ -2,8 +2,8 @@
 // Forms Validation
 // --------------------------------------------------
 
-$ng-form-validation-error   : get-color(alert);
-$ng-form-validation-success : get-color(success);
+$ng-form-validation-error   : get-color(alert) !default;
+$ng-form-validation-success : get-color(success) !default;
 
 select.ng-touched.ng-invalid,
 textarea.ng-touched.ng-invalid,
