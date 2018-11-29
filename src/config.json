@@ -6,5 +6,7 @@
     ]
   },
   "publicPath": "..",
-  "devUrl": "http://localhost/projects/RedCastor/lib-github/rc-base-zf/demo"
+  "devUrl": "http://localhost/projects/RedCastor/lib-github/rc-base-zf/demo",
+  "devPublicPath": "/projects/RedCastor/lib-github/rc-base-zf/dist",
+  "proxyUrl": "http://localhost:3000"
 }

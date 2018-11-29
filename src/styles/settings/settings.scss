@@ -1,18 +1,65 @@
 //  Rc Base settings
 //  -----------------------------
 
-@import 'util/util';
+@import "../util/util";
+@import "../components/icons/variables";
 
 //== Main Grid (Only XY = full, fluid, gutter and none)
-$base-container-main: none;
-$base-container-main-header: fluid;
+$base-container-main        : full !default;
+$base-container-main-header : full !default;
 $base-size-sidebar: (
   small: 4,
   medium: 3
-);
+) !default;
 
-//== Font Icons
-$fi-font-path: "fonts" !default;
+//== Hamburger
+//Source: https://github.com/jonsuh/hamburgers
+$hamburger-padding-x           : 15px !default;
+$hamburger-padding-y           : 15px !default;
+$hamburger-layer-width         : 20px !default;
+$hamburger-layer-height        : 1px !default;
+$hamburger-layer-spacing       : 5px !default;
+$hamburger-layer-color         : #000 !default;
+$hamburger-layer-border-radius : 0 !default;
+$hamburger-hover-opacity       : 0.7 !default;
+$hamburger-active-layer-color  : $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+$hamburger-hover-use-filter    : false !default;
+$hamburger-hover-filter        : opacity(50%) !default;
+$hamburger-active-hover-filter : $hamburger-hover-filter !default;
+$hamburger-types: (
+  "3dx",
+  "3dx-r",
+  "3dy",
+  "3dy-r",
+  "3dxy",
+  "3dxy-r",
+  arrow,
+  arrow-r,
+  arrowalt,
+  arrowalt-r,
+  arrowturn,
+  arrowturn-r,
+  boring,
+  collapse,
+  collapse-r,
+  elastic,
+  elastic-r,
+  emphatic,
+  emphatic-r,
+  minus,
+  slider,
+  slider-r,
+  spin,
+  spin-r,
+  spring,
+  spring-r,
+  stand,
+  stand-r,
+  squeeze,
+  vortex,
+  vortex-r
+) !default;
 
 //== Font Stack
 $base-font-stack: (
@@ -25,4 +72,17 @@ $base-font-stack: (
     font-style: normal,
   ),
   */
-);
+) !default;
+
+//== FONT
+$body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+
+//== Font Icons
+$fi-font-path: "fonts" !default;
+$fi-font-family: "rc-base-icons" !default;
+$fi-font-size-base: 1em !default;
+$fi-font-prefix: "fi" !default;
+
+//== Awesome Foundation6 Checkbox
+$afc-font-family: $fi-font-family !default;
+$afc-var-check: $fi-var-check !default;

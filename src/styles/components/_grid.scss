@@ -46,22 +46,25 @@
 
   .main-grid {
     @include xy-grid;
+    @include xy-grid-collapse("main.collapse", $gutter-type: padding);
+    @include xy-grid-collapse(".sidebar.collapse", $gutter-type: padding);
   }
 
-  main {
-    @include xy-cell($grid-columns);
+  main,
+  .sidebar {
+    @include xy-cell($grid-columns, true, $gutter-type: padding);
+  }
 
-    .sidebar-primary & {
+  .sidebar-primary {
+    main {
       @include -zf-breakpoint-value(auto, $base-size-sidebar) {
-        @include xy-cell($grid-columns - $-zf-bp-value);
+        @include xy-cell(($grid-columns - $-zf-bp-value) of $grid-columns , true, $gutter-type: padding);
       }
     }
-  }
 
-  .sidebar {
-    .sidebar-primary & {
+    .sidebar {
       @include -zf-breakpoint-value(auto, $base-size-sidebar) {
-        @include xy-cell($-zf-bp-value);
+        @include xy-cell($-zf-bp-value of $grid-columns , true, $gutter-type: padding);
       }
     }
   }
