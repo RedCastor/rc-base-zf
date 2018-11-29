@@ -7,6 +7,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const CopyGlobsPlugin = require('copy-globs-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const SvgStorePlugin = require('webpack-external-svg-sprite');
 
 const desire = require('./util/desire');
 const config = require('./config');
@@ -179,6 +180,16 @@ let webpackConfig = {
     new StyleLintPlugin({
       failOnError: !config.enabled.watcher,
       syntax: 'scss',
+    }),
+    new SvgStorePlugin({
+      emit: true,
+      directory: config.paths.src + '/images/icons',
+      name: 'images/webicon.svg',
+      prefix: '',
+      suffix: '',
+      svgoOptions: {
+        plugins: [],
+      },
     }),
     new FriendlyErrorsWebpackPlugin(),
   ],
