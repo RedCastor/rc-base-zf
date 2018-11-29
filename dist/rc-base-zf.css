@@ -1707,7 +1707,7 @@
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
   font-family: "rc-base-icons";
-  content: "\E924";
+  content: "\E925";
 }
 
 /* line 91, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -1824,8 +1824,8 @@
 
 .checkbox.success input[type="checkbox"]:checked + label::before,
 .checkbox.success input[type="radio"]:checked + label::before {
-  background-color: #3adb76;
-  border-color: #3adb76;
+  background-color: #18a733;
+  border-color: #18a733;
 }
 
 /* line 14, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -1907,8 +1907,8 @@
 
 .checkbox.success input[type="checkbox"]:indeterminate + label::before,
 .checkbox.success input[type="radio"]:indeterminate + label::before {
-  background-color: #3adb76;
-  border-color: #3adb76;
+  background-color: #18a733;
+  border-color: #18a733;
 }
 
 /* line 27, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -2100,19 +2100,19 @@
 /* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"] + label::after {
-  background-color: #3adb76;
+  background-color: #18a733;
 }
 
 /* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::before {
-  border-color: #3adb76;
+  border-color: #18a733;
 }
 
 /* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::after {
-  background-color: #3adb76;
+  background-color: #18a733;
 }
 
 /* line 241, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -2120,7 +2120,7 @@
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
   font-family: "rc-base-icons";
-  content: "\E924";
+  content: "\E925";
 }
 
 /* line 246, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -7618,7 +7618,7 @@ ol.comment-list {
 .button.success,
 .search-form .success.search-submit,
 .comment-form input.success[type="submit"] {
-  background-color: #3adb76;
+  background-color: #18a733;
   color: #000;
 }
 
@@ -7630,7 +7630,7 @@ ol.comment-list {
 .button.success:focus,
 .search-form .success.search-submit:focus,
 .comment-form input.success:focus[type="submit"] {
-  background-color: #22bb5b;
+  background-color: #138629;
   color: #000;
 }
 
@@ -7816,7 +7816,7 @@ ol.comment-list {
 .button[disabled].success:focus,
 .search-form .search-submit[disabled].success:focus,
 .comment-form input[disabled].success:focus[type="submit"] {
-  background-color: #3adb76;
+  background-color: #18a733;
   color: #000;
 }
 
@@ -8051,8 +8051,8 @@ ol.comment-list {
 .button.hollow.success,
 .search-form .hollow.success.search-submit,
 .comment-form input.hollow.success[type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 186, node_modules/foundation-sites/scss/components/_button.scss */
@@ -8063,8 +8063,8 @@ ol.comment-list {
 .button.hollow.success:focus,
 .search-form .hollow.success.search-submit:focus,
 .comment-form input.hollow.success:focus[type="submit"] {
-  border-color: #157539;
-  color: #157539;
+  border-color: #0c541a;
+  color: #0c541a;
 }
 
 /* line 189, node_modules/foundation-sites/scss/components/_button.scss */
@@ -8081,8 +8081,8 @@ ol.comment-list {
 .button.hollow.success:focus[disabled],
 .search-form .hollow.success.search-submit:focus[disabled],
 .comment-form input.hollow.success:focus[disabled][type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 338, node_modules/foundation-sites/scss/components/_button.scss */
@@ -8418,8 +8418,8 @@ ol.comment-list {
 .button.clear.success,
 .search-form .clear.success.search-submit,
 .comment-form input.clear.success[type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 186, node_modules/foundation-sites/scss/components/_button.scss */
@@ -8430,8 +8430,8 @@ ol.comment-list {
 .button.clear.success:focus,
 .search-form .clear.success.search-submit:focus,
 .comment-form input.clear.success:focus[type="submit"] {
-  border-color: #157539;
-  color: #157539;
+  border-color: #0c541a;
+  color: #0c541a;
 }
 
 /* line 189, node_modules/foundation-sites/scss/components/_button.scss */
@@ -8448,8 +8448,8 @@ ol.comment-list {
 .button.clear.success:focus[disabled],
 .search-form .clear.success.search-submit:focus[disabled],
 .comment-form input.clear.success:focus[disabled][type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 363, node_modules/foundation-sites/scss/components/_button.scss */
@@ -8687,7 +8687,7 @@ ol.comment-list {
 .button.dropdown.clear.success::after,
 .search-form .dropdown.clear.success.search-submit::after,
 .comment-form input.dropdown.clear.success[type="submit"]::after {
-  border-top-color: #3adb76;
+  border-top-color: #18a733;
 }
 
 /* line 391, node_modules/foundation-sites/scss/components/_button.scss */
@@ -8917,7 +8917,7 @@ a.button:focus,
 .search-form .button-group.success .search-submit,
 .button-group.success .comment-form input[type="submit"],
 .comment-form .button-group.success input[type="submit"] {
-  background-color: #3adb76;
+  background-color: #18a733;
   color: #000;
 }
 
@@ -8933,7 +8933,7 @@ a.button:focus,
 .search-form .button-group.success .search-submit:focus,
 .button-group.success .comment-form input:focus[type="submit"],
 .comment-form .button-group.success input:focus[type="submit"] {
-  background-color: #22bb5b;
+  background-color: #138629;
   color: #000;
 }
 
@@ -9205,7 +9205,7 @@ a.button:focus,
 /* line 58, node_modules/foundation-sites/scss/components/_label.scss */
 
 .label.success {
-  background: #3adb76;
+  background: #18a733;
   color: #000;
 }
 
@@ -9249,7 +9249,7 @@ a.button:focus,
 /* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.success .progress-meter {
-  background-color: #3adb76;
+  background-color: #18a733;
 }
 
 /* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
@@ -9804,7 +9804,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 /* line 57, node_modules/foundation-sites/scss/components/_badge.scss */
 
 .badge.success {
-  background: #3adb76;
+  background: #18a733;
   color: #000;
 }
 
@@ -9930,7 +9930,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 /* line 93, node_modules/foundation-sites/scss/components/_callout.scss */
 
 .callout.success {
-  background-color: #e1faea;
+  background-color: #d5f9dc;
   color: #000;
 }
 
@@ -15633,7 +15633,7 @@ html.is-reveal-open body {
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
   font-family: "rc-base-icons";
-  content: "\E924";
+  content: "\E925";
 }
 
 /* line 91, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -15750,8 +15750,8 @@ html.is-reveal-open body {
 
 .checkbox.success input[type="checkbox"]:checked + label::before,
 .checkbox.success input[type="radio"]:checked + label::before {
-  background-color: #3adb76;
-  border-color: #3adb76;
+  background-color: #18a733;
+  border-color: #18a733;
 }
 
 /* line 14, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -15833,8 +15833,8 @@ html.is-reveal-open body {
 
 .checkbox.success input[type="checkbox"]:indeterminate + label::before,
 .checkbox.success input[type="radio"]:indeterminate + label::before {
-  background-color: #3adb76;
-  border-color: #3adb76;
+  background-color: #18a733;
+  border-color: #18a733;
 }
 
 /* line 27, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -16026,19 +16026,19 @@ html.is-reveal-open body {
 /* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"] + label::after {
-  background-color: #3adb76;
+  background-color: #18a733;
 }
 
 /* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::before {
-  border-color: #3adb76;
+  border-color: #18a733;
 }
 
 /* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::after {
-  background-color: #3adb76;
+  background-color: #18a733;
 }
 
 /* line 241, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -16046,7 +16046,7 @@ html.is-reveal-open body {
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
   font-family: "rc-base-icons";
-  content: "\E924";
+  content: "\E925";
 }
 
 /* line 246, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -21544,7 +21544,7 @@ ol.comment-list {
 .button.success,
 .search-form .success.search-submit,
 .comment-form input.success[type="submit"] {
-  background-color: #3adb76;
+  background-color: #18a733;
   color: #000;
 }
 
@@ -21556,7 +21556,7 @@ ol.comment-list {
 .button.success:focus,
 .search-form .success.search-submit:focus,
 .comment-form input.success:focus[type="submit"] {
-  background-color: #22bb5b;
+  background-color: #138629;
   color: #000;
 }
 
@@ -21742,7 +21742,7 @@ ol.comment-list {
 .button[disabled].success:focus,
 .search-form .search-submit[disabled].success:focus,
 .comment-form input[disabled].success:focus[type="submit"] {
-  background-color: #3adb76;
+  background-color: #18a733;
   color: #000;
 }
 
@@ -21977,8 +21977,8 @@ ol.comment-list {
 .button.hollow.success,
 .search-form .hollow.success.search-submit,
 .comment-form input.hollow.success[type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 186, node_modules/foundation-sites/scss/components/_button.scss */
@@ -21989,8 +21989,8 @@ ol.comment-list {
 .button.hollow.success:focus,
 .search-form .hollow.success.search-submit:focus,
 .comment-form input.hollow.success:focus[type="submit"] {
-  border-color: #157539;
-  color: #157539;
+  border-color: #0c541a;
+  color: #0c541a;
 }
 
 /* line 189, node_modules/foundation-sites/scss/components/_button.scss */
@@ -22007,8 +22007,8 @@ ol.comment-list {
 .button.hollow.success:focus[disabled],
 .search-form .hollow.success.search-submit:focus[disabled],
 .comment-form input.hollow.success:focus[disabled][type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 338, node_modules/foundation-sites/scss/components/_button.scss */
@@ -22344,8 +22344,8 @@ ol.comment-list {
 .button.clear.success,
 .search-form .clear.success.search-submit,
 .comment-form input.clear.success[type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 186, node_modules/foundation-sites/scss/components/_button.scss */
@@ -22356,8 +22356,8 @@ ol.comment-list {
 .button.clear.success:focus,
 .search-form .clear.success.search-submit:focus,
 .comment-form input.clear.success:focus[type="submit"] {
-  border-color: #157539;
-  color: #157539;
+  border-color: #0c541a;
+  color: #0c541a;
 }
 
 /* line 189, node_modules/foundation-sites/scss/components/_button.scss */
@@ -22374,8 +22374,8 @@ ol.comment-list {
 .button.clear.success:focus[disabled],
 .search-form .clear.success.search-submit:focus[disabled],
 .comment-form input.clear.success:focus[disabled][type="submit"] {
-  border: 1px solid #3adb76;
-  color: #3adb76;
+  border: 1px solid #18a733;
+  color: #18a733;
 }
 
 /* line 363, node_modules/foundation-sites/scss/components/_button.scss */
@@ -22613,7 +22613,7 @@ ol.comment-list {
 .button.dropdown.clear.success::after,
 .search-form .dropdown.clear.success.search-submit::after,
 .comment-form input.dropdown.clear.success[type="submit"]::after {
-  border-top-color: #3adb76;
+  border-top-color: #18a733;
 }
 
 /* line 391, node_modules/foundation-sites/scss/components/_button.scss */
@@ -22843,7 +22843,7 @@ a.button:focus,
 .search-form .button-group.success .search-submit,
 .button-group.success .comment-form input[type="submit"],
 .comment-form .button-group.success input[type="submit"] {
-  background-color: #3adb76;
+  background-color: #18a733;
   color: #000;
 }
 
@@ -22859,7 +22859,7 @@ a.button:focus,
 .search-form .button-group.success .search-submit:focus,
 .button-group.success .comment-form input:focus[type="submit"],
 .comment-form .button-group.success input:focus[type="submit"] {
-  background-color: #22bb5b;
+  background-color: #138629;
   color: #000;
 }
 
@@ -23131,7 +23131,7 @@ a.button:focus,
 /* line 58, node_modules/foundation-sites/scss/components/_label.scss */
 
 .label.success {
-  background: #3adb76;
+  background: #18a733;
   color: #000;
 }
 
@@ -23175,7 +23175,7 @@ a.button:focus,
 /* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.success .progress-meter {
-  background-color: #3adb76;
+  background-color: #18a733;
 }
 
 /* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
@@ -23730,7 +23730,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 /* line 57, node_modules/foundation-sites/scss/components/_badge.scss */
 
 .badge.success {
-  background: #3adb76;
+  background: #18a733;
   color: #000;
 }
 
@@ -23856,7 +23856,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 /* line 93, node_modules/foundation-sites/scss/components/_callout.scss */
 
 .callout.success {
-  background-color: #e1faea;
+  background-color: #d5f9dc;
   color: #000;
 }
 
@@ -28147,1349 +28147,1353 @@ html.is-reveal-open body {
   vertical-align: middle;
 }
 
-/* line 1, src/styles/components/icons/_icons.scss */
+/* stylelint-disable */
 
-.fi-album::before {
-  content: "\E903";
+/* line 3, src/styles/components/icons/_icons.scss */
+
+.fi-var-add-user:before {
+  content: "\E900";
 }
 
-/* line 5, src/styles/components/icons/_icons.scss */
+/* line 8, src/styles/components/icons/_icons.scss */
 
-.fi-arc::before {
-  content: "\E90E";
-}
-
-/* line 9, src/styles/components/icons/_icons.scss */
-
-.fi-back-2::before {
-  content: "\E911";
+.fi-var-airplay:before {
+  content: "\E901";
 }
 
 /* line 13, src/styles/components/icons/_icons.scss */
 
-.fi-bandaid::before {
-  content: "\E913";
+.fi-var-alarm:before {
+  content: "\E902";
 }
 
-/* line 17, src/styles/components/icons/_icons.scss */
+/* line 18, src/styles/components/icons/_icons.scss */
 
-.fi-car::before {
-  content: "\E920";
+.fi-var-album:before {
+  content: "\E903";
 }
 
-/* line 21, src/styles/components/icons/_icons.scss */
+/* line 23, src/styles/components/icons/_icons.scss */
 
-.fi-diamond::before {
-  content: "\E936";
+.fi-var-albums:before {
+  content: "\E904";
 }
 
-/* line 25, src/styles/components/icons/_icons.scss */
+/* line 28, src/styles/components/icons/_icons.scss */
 
-.fi-door-lock::before {
-  content: "\E93B";
-}
-
-/* line 29, src/styles/components/icons/_icons.scss */
-
-.fi-eyedropper::before {
-  content: "\E944";
+.fi-var-anchor:before {
+  content: "\E905";
 }
 
 /* line 33, src/styles/components/icons/_icons.scss */
 
-.fi-female::before {
-  content: "\E947";
+.fi-var-angle-down:before {
+  content: "\E906";
 }
 
-/* line 37, src/styles/components/icons/_icons.scss */
+/* line 38, src/styles/components/icons/_icons.scss */
 
-.fi-gym::before {
-  content: "\E955";
+.fi-var-angle-down-circle:before {
+  content: "\E907";
 }
 
-/* line 41, src/styles/components/icons/_icons.scss */
+/* line 43, src/styles/components/icons/_icons.scss */
 
-.fi-hammer::before {
-  content: "\E956";
+.fi-var-angle-left:before {
+  content: "\E908";
 }
 
-/* line 45, src/styles/components/icons/_icons.scss */
+/* line 48, src/styles/components/icons/_icons.scss */
 
-.fi-headphones::before {
-  content: "\E957";
-}
-
-/* line 49, src/styles/components/icons/_icons.scss */
-
-.fi-helm::before {
-  content: "\E958";
+.fi-var-angle-left-circle:before {
+  content: "\E909";
 }
 
 /* line 53, src/styles/components/icons/_icons.scss */
 
-.fi-hourglass::before {
-  content: "\E95C";
+.fi-var-angle-right:before {
+  content: "\E90A";
 }
 
-/* line 57, src/styles/components/icons/_icons.scss */
+/* line 58, src/styles/components/icons/_icons.scss */
 
-.fi-leaf::before {
-  content: "\E964";
+.fi-var-angle-right-circle:before {
+  content: "\E90B";
 }
 
-/* line 61, src/styles/components/icons/_icons.scss */
+/* line 63, src/styles/components/icons/_icons.scss */
 
-.fi-magic-wand::before {
-  content: "\E974";
+.fi-var-angle-up:before {
+  content: "\E90C";
 }
 
-/* line 65, src/styles/components/icons/_icons.scss */
+/* line 68, src/styles/components/icons/_icons.scss */
 
-.fi-male::before {
-  content: "\E979";
-}
-
-/* line 69, src/styles/components/icons/_icons.scss */
-
-.fi-map-2::before {
-  content: "\E97B";
+.fi-var-angle-up-circle:before {
+  content: "\E90D";
 }
 
 /* line 73, src/styles/components/icons/_icons.scss */
 
-.fi-next-2::before {
-  content: "\E98B";
+.fi-var-arc:before {
+  content: "\E90E";
 }
 
-/* line 77, src/styles/components/icons/_icons.scss */
+/* line 78, src/styles/components/icons/_icons.scss */
 
-.fi-paint-bucket::before {
-  content: "\E990";
+.fi-var-attention:before {
+  content: "\E90F";
 }
 
-/* line 81, src/styles/components/icons/_icons.scss */
+/* line 83, src/styles/components/icons/_icons.scss */
 
-.fi-pendrive::before {
-  content: "\E994";
+.fi-var-back:before {
+  content: "\E910";
 }
 
-/* line 85, src/styles/components/icons/_icons.scss */
+/* line 88, src/styles/components/icons/_icons.scss */
 
-.fi-photo::before {
-  content: "\E996";
-}
-
-/* line 89, src/styles/components/icons/_icons.scss */
-
-.fi-piggy::before {
-  content: "\E998";
+.fi-var-back-2:before {
+  content: "\E911";
 }
 
 /* line 93, src/styles/components/icons/_icons.scss */
 
-.fi-plugin::before {
-  content: "\E9A0";
+.fi-var-ball:before {
+  content: "\E912";
 }
 
-/* line 97, src/styles/components/icons/_icons.scss */
+/* line 98, src/styles/components/icons/_icons.scss */
 
-.fi-refresh-2::before {
-  content: "\E9A9";
+.fi-var-bandaid:before {
+  content: "\E913";
 }
 
-/* line 101, src/styles/components/icons/_icons.scss */
+/* line 103, src/styles/components/icons/_icons.scss */
 
-.fi-rocket::before {
-  content: "\E9B0";
+.fi-var-battery:before {
+  content: "\E914";
 }
 
-/* line 105, src/styles/components/icons/_icons.scss */
+/* line 108, src/styles/components/icons/_icons.scss */
 
-.fi-settings::before {
-  content: "\E9B6";
-}
-
-/* line 109, src/styles/components/icons/_icons.scss */
-
-.fi-shield::before {
-  content: "\E9B8";
+.fi-var-bell:before {
+  content: "\E915";
 }
 
 /* line 113, src/styles/components/icons/_icons.scss */
 
-.fi-smile::before {
-  content: "\E9BC";
+.fi-var-bicycle:before {
+  content: "\E916";
 }
 
-/* line 117, src/styles/components/icons/_icons.scss */
+/* line 118, src/styles/components/icons/_icons.scss */
 
-.fi-usb::before {
-  content: "\E9CF";
+.fi-var-bluetooth:before {
+  content: "\E917";
 }
 
-/* line 121, src/styles/components/icons/_icons.scss */
+/* line 123, src/styles/components/icons/_icons.scss */
 
-.fi-vector::before {
-  content: "\E9D3";
+.fi-var-bookmarks:before {
+  content: "\E918";
 }
 
-/* line 125, src/styles/components/icons/_icons.scss */
+/* line 128, src/styles/components/icons/_icons.scss */
 
-.fi-wine::before {
-  content: "\E9DB";
-}
-
-/* line 129, src/styles/components/icons/_icons.scss */
-
-.fi-cloud-upload::before {
-  content: "\E92A";
+.fi-var-bottom-arrow:before {
+  content: "\E919";
 }
 
 /* line 133, src/styles/components/icons/_icons.scss */
 
-.fi-cash::before {
-  content: "\E922";
+.fi-var-box1:before {
+  content: "\E91A";
 }
 
-/* line 137, src/styles/components/icons/_icons.scss */
+/* line 138, src/styles/components/icons/_icons.scss */
 
-.fi-close::before {
-  content: "\E926";
+.fi-var-box2:before {
+  content: "\E91B";
 }
 
-/* line 141, src/styles/components/icons/_icons.scss */
+/* line 143, src/styles/components/icons/_icons.scss */
 
-.fi-bluetooth::before {
-  content: "\E917";
+.fi-var-browser:before {
+  content: "\E91C";
 }
 
-/* line 145, src/styles/components/icons/_icons.scss */
+/* line 148, src/styles/components/icons/_icons.scss */
 
-.fi-cloud-download::before {
-  content: "\E929";
-}
-
-/* line 149, src/styles/components/icons/_icons.scss */
-
-.fi-way::before {
-  content: "\E9DA";
+.fi-var-calculator:before {
+  content: "\E91D";
 }
 
 /* line 153, src/styles/components/icons/_icons.scss */
 
-.fi-close-circle::before {
-  content: "\E927";
+.fi-var-call:before {
+  content: "\E91E";
 }
 
-/* line 157, src/styles/components/icons/_icons.scss */
+/* line 158, src/styles/components/icons/_icons.scss */
 
-.fi-id::before {
-  content: "\E95D";
+.fi-var-camera:before {
+  content: "\E91F";
 }
 
-/* line 161, src/styles/components/icons/_icons.scss */
+/* line 163, src/styles/components/icons/_icons.scss */
 
-.fi-angle-up::before {
-  content: "\E90C";
+.fi-var-car:before {
+  content: "\E920";
 }
 
-/* line 165, src/styles/components/icons/_icons.scss */
+/* line 168, src/styles/components/icons/_icons.scss */
 
-.fi-wristwatch::before {
-  content: "\E9DD";
-}
-
-/* line 169, src/styles/components/icons/_icons.scss */
-
-.fi-angle-up-circle::before {
-  content: "\E90D";
+.fi-var-cart:before {
+  content: "\E921";
 }
 
 /* line 173, src/styles/components/icons/_icons.scss */
 
-.fi-world::before {
-  content: "\E9DC";
+.fi-var-cash:before {
+  content: "\E922";
 }
 
-/* line 177, src/styles/components/icons/_icons.scss */
+/* line 178, src/styles/components/icons/_icons.scss */
 
-.fi-angle-right::before {
-  content: "\E90A";
+.fi-var-chat:before {
+  content: "\E923";
 }
 
-/* line 181, src/styles/components/icons/_icons.scss */
+/* line 183, src/styles/components/icons/_icons.scss */
 
-.fi-volume::before {
-  content: "\E9D6";
+.fi-var-check:before {
+  content: "\E924";
 }
 
-/* line 185, src/styles/components/icons/_icons.scss */
+/* line 188, src/styles/components/icons/_icons.scss */
 
-.fi-angle-right-circle::before {
-  content: "\E90B";
-}
-
-/* line 189, src/styles/components/icons/_icons.scss */
-
-.fi-users::before {
-  content: "\E9D2";
+.fi-var-check-2:before {
+  content: "\E925";
 }
 
 /* line 193, src/styles/components/icons/_icons.scss */
 
-.fi-angle-left::before {
-  content: "\E908";
+.fi-var-clock:before {
+  content: "\E926";
 }
 
-/* line 197, src/styles/components/icons/_icons.scss */
+/* line 198, src/styles/components/icons/_icons.scss */
 
-.fi-user-female::before {
-  content: "\E9D1";
+.fi-var-close:before {
+  content: "\E927";
 }
 
-/* line 201, src/styles/components/icons/_icons.scss */
+/* line 203, src/styles/components/icons/_icons.scss */
 
-.fi-angle-left-circle::before {
-  content: "\E909";
+.fi-var-close-circle:before {
+  content: "\E928";
 }
 
-/* line 205, src/styles/components/icons/_icons.scss */
+/* line 208, src/styles/components/icons/_icons.scss */
 
-.fi-up-arrow::before {
-  content: "\E9CB";
-}
-
-/* line 209, src/styles/components/icons/_icons.scss */
-
-.fi-angle-down::before {
-  content: "\E906";
+.fi-var-cloud:before {
+  content: "\E929";
 }
 
 /* line 213, src/styles/components/icons/_icons.scss */
 
-.fi-switch::before {
-  content: "\E9C2";
+.fi-var-cloud-download:before {
+  content: "\E92A";
 }
 
-/* line 217, src/styles/components/icons/_icons.scss */
+/* line 218, src/styles/components/icons/_icons.scss */
 
-.fi-angle-down-circle::before {
-  content: "\E907";
+.fi-var-cloud-upload:before {
+  content: "\E92B";
 }
 
-/* line 221, src/styles/components/icons/_icons.scss */
+/* line 223, src/styles/components/icons/_icons.scss */
 
-.fi-scissors::before {
-  content: "\E9B3";
+.fi-var-coffee:before {
+  content: "\E92C";
 }
 
-/* line 225, src/styles/components/icons/_icons.scss */
+/* line 228, src/styles/components/icons/_icons.scss */
 
-.fi-wallet::before {
-  content: "\E9D9";
-}
-
-/* line 229, src/styles/components/icons/_icons.scss */
-
-.fi-safe::before {
-  content: "\E9B1";
+.fi-var-comment:before {
+  content: "\E92D";
 }
 
 /* line 233, src/styles/components/icons/_icons.scss */
 
-.fi-volume2::before {
-  content: "\E9D8";
+.fi-var-compass:before {
+  content: "\E92E";
 }
 
-/* line 237, src/styles/components/icons/_icons.scss */
+/* line 238, src/styles/components/icons/_icons.scss */
 
-.fi-volume1::before {
-  content: "\E9D7";
+.fi-var-config:before {
+  content: "\E92F";
 }
 
-/* line 241, src/styles/components/icons/_icons.scss */
+/* line 243, src/styles/components/icons/_icons.scss */
 
-.fi-voicemail::before {
-  content: "\E9D5";
+.fi-var-copy-file:before {
+  content: "\E930";
 }
 
-/* line 245, src/styles/components/icons/_icons.scss */
+/* line 248, src/styles/components/icons/_icons.scss */
 
-.fi-video::before {
-  content: "\E9D4";
-}
-
-/* line 249, src/styles/components/icons/_icons.scss */
-
-.fi-user::before {
-  content: "\E9D0";
+.fi-var-credit:before {
+  content: "\E931";
 }
 
 /* line 253, src/styles/components/icons/_icons.scss */
 
-.fi-upload::before {
-  content: "\E9CE";
+.fi-var-crop:before {
+  content: "\E932";
 }
 
-/* line 257, src/styles/components/icons/_icons.scss */
+/* line 258, src/styles/components/icons/_icons.scss */
 
-.fi-unlock::before {
-  content: "\E9CA";
+.fi-var-culture:before {
+  content: "\E933";
 }
 
-/* line 261, src/styles/components/icons/_icons.scss */
+/* line 263, src/styles/components/icons/_icons.scss */
 
-.fi-umbrella::before {
-  content: "\E9C9";
+.fi-var-cup:before {
+  content: "\E934";
 }
 
-/* line 265, src/styles/components/icons/_icons.scss */
+/* line 268, src/styles/components/icons/_icons.scss */
 
-.fi-trash::before {
-  content: "\E9C7";
-}
-
-/* line 269, src/styles/components/icons/_icons.scss */
-
-.fi-tools::before {
-  content: "\E9C6";
+.fi-var-date:before {
+  content: "\E935";
 }
 
 /* line 273, src/styles/components/icons/_icons.scss */
 
-.fi-timer::before {
-  content: "\E9C5";
+.fi-var-delete-user:before {
+  content: "\E936";
 }
 
-/* line 277, src/styles/components/icons/_icons.scss */
+/* line 278, src/styles/components/icons/_icons.scss */
 
-.fi-ticket::before {
-  content: "\E9C4";
+.fi-var-diamond:before {
+  content: "\E937";
 }
 
-/* line 281, src/styles/components/icons/_icons.scss */
+/* line 283, src/styles/components/icons/_icons.scss */
 
-.fi-target::before {
-  content: "\E9C3";
+.fi-var-disk:before {
+  content: "\E938";
 }
 
-/* line 285, src/styles/components/icons/_icons.scss */
+/* line 288, src/styles/components/icons/_icons.scss */
 
-.fi-sun::before {
-  content: "\E9C1";
-}
-
-/* line 289, src/styles/components/icons/_icons.scss */
-
-.fi-study::before {
-  content: "\E9C0";
+.fi-var-diskette:before {
+  content: "\E939";
 }
 
 /* line 293, src/styles/components/icons/_icons.scss */
 
-.fi-stopwatch::before {
-  content: "\E9BF";
+.fi-var-display1:before {
+  content: "\E93A";
 }
 
-/* line 297, src/styles/components/icons/_icons.scss */
+/* line 298, src/styles/components/icons/_icons.scss */
 
-.fi-star::before {
-  content: "\E9BE";
+.fi-var-display2:before {
+  content: "\E93B";
 }
 
-/* line 301, src/styles/components/icons/_icons.scss */
+/* line 303, src/styles/components/icons/_icons.scss */
 
-.fi-speaker::before {
-  content: "\E9BD";
+.fi-var-door-lock:before {
+  content: "\E93C";
 }
 
-/* line 305, src/styles/components/icons/_icons.scss */
+/* line 308, src/styles/components/icons/_icons.scss */
 
-.fi-signal::before {
-  content: "\E9BB";
-}
-
-/* line 309, src/styles/components/icons/_icons.scss */
-
-.fi-shuffle::before {
-  content: "\E9BA";
+.fi-var-down-arrow-2:before {
+  content: "\E93D";
 }
 
 /* line 313, src/styles/components/icons/_icons.scss */
 
-.fi-shopbag::before {
-  content: "\E9B9";
+.fi-var-down-arrow-3:before {
+  content: "\E93E";
 }
 
-/* line 317, src/styles/components/icons/_icons.scss */
+/* line 318, src/styles/components/icons/_icons.scss */
 
-.fi-share::before {
-  content: "\E9B7";
+.fi-var-download:before {
+  content: "\E93F";
 }
 
-/* line 321, src/styles/components/icons/_icons.scss */
+/* line 323, src/styles/components/icons/_icons.scss */
 
-.fi-server::before {
-  content: "\E9B5";
+.fi-var-drawer:before {
+  content: "\E940";
 }
 
-/* line 325, src/styles/components/icons/_icons.scss */
+/* line 328, src/styles/components/icons/_icons.scss */
 
-.fi-search::before {
-  content: "\E9B4";
-}
-
-/* line 329, src/styles/components/icons/_icons.scss */
-
-.fi-film::before {
-  content: "\E949";
+.fi-var-drop:before {
+  content: "\E941";
 }
 
 /* line 333, src/styles/components/icons/_icons.scss */
 
-.fi-science::before {
-  content: "\E9B2";
+.fi-var-edit:before {
+  content: "\E942";
 }
 
-/* line 337, src/styles/components/icons/_icons.scss */
+/* line 338, src/styles/components/icons/_icons.scss */
 
-.fi-disk::before {
-  content: "\E937";
+.fi-var-exapnd2:before {
+  content: "\E943";
 }
 
-/* line 341, src/styles/components/icons/_icons.scss */
+/* line 343, src/styles/components/icons/_icons.scss */
 
-.fi-ribbon::before {
-  content: "\E9AC";
+.fi-var-expand1:before {
+  content: "\E944";
 }
 
-/* line 345, src/styles/components/icons/_icons.scss */
+/* line 348, src/styles/components/icons/_icons.scss */
 
-.fi-repeat::before {
-  content: "\E9AB";
-}
-
-/* line 349, src/styles/components/icons/_icons.scss */
-
-.fi-refresh::before {
-  content: "\E9A8";
+.fi-var-eyedropper:before {
+  content: "\E945";
 }
 
 /* line 353, src/styles/components/icons/_icons.scss */
 
-.fi-add-user::before {
-  content: "\E900";
+.fi-var-facebook:before {
+  content: "\E946";
 }
 
-/* line 357, src/styles/components/icons/_icons.scss */
+/* line 358, src/styles/components/icons/_icons.scss */
 
-.fi-refresh-cloud::before {
-  content: "\E9AA";
+.fi-var-facebook-2:before {
+  content: "\E947";
 }
 
-/* line 361, src/styles/components/icons/_icons.scss */
+/* line 363, src/styles/components/icons/_icons.scss */
 
-.fi-paperclip::before {
-  content: "\E991";
+.fi-var-female:before {
+  content: "\E948";
 }
 
-/* line 365, src/styles/components/icons/_icons.scss */
+/* line 368, src/styles/components/icons/_icons.scss */
 
-.fi-radio::before {
-  content: "\E9A7";
-}
-
-/* line 369, src/styles/components/icons/_icons.scss */
-
-.fi-note2::before {
-  content: "\E98D";
+.fi-var-file:before {
+  content: "\E949";
 }
 
 /* line 373, src/styles/components/icons/_icons.scss */
 
-.fi-print::before {
-  content: "\E9A6";
+.fi-var-film:before {
+  content: "\E94A";
 }
 
-/* line 377, src/styles/components/icons/_icons.scss */
+/* line 378, src/styles/components/icons/_icons.scss */
 
-.fi-network::before {
-  content: "\E988";
+.fi-var-filter:before {
+  content: "\E94B";
 }
 
-/* line 381, src/styles/components/icons/_icons.scss */
+/* line 383, src/styles/components/icons/_icons.scss */
 
-.fi-prev::before {
-  content: "\E9A5";
+.fi-var-flag:before {
+  content: "\E94C";
 }
 
-/* line 385, src/styles/components/icons/_icons.scss */
+/* line 388, src/styles/components/icons/_icons.scss */
 
-.fi-mute::before {
-  content: "\E987";
-}
-
-/* line 389, src/styles/components/icons/_icons.scss */
-
-.fi-power::before {
-  content: "\E9A4";
+.fi-var-folder:before {
+  content: "\E94D";
 }
 
 /* line 393, src/styles/components/icons/_icons.scss */
 
-.fi-medal::before {
-  content: "\E97E";
+.fi-var-gift:before {
+  content: "\E94E";
 }
 
-/* line 397, src/styles/components/icons/_icons.scss */
+/* line 398, src/styles/components/icons/_icons.scss */
 
-.fi-portfolio::before {
-  content: "\E9A3";
+.fi-var-glasses:before {
+  content: "\E94F";
 }
 
-/* line 401, src/styles/components/icons/_icons.scss */
+/* line 403, src/styles/components/icons/_icons.scss */
 
-.fi-like2::before {
-  content: "\E96C";
+.fi-var-gleam:before {
+  content: "\E950";
 }
 
-/* line 405, src/styles/components/icons/_icons.scss */
+/* line 408, src/styles/components/icons/_icons.scss */
 
-.fi-plus::before {
-  content: "\E9A1";
-}
-
-/* line 409, src/styles/components/icons/_icons.scss */
-
-.fi-left-arrow::before {
-  content: "\E965";
+.fi-var-global:before {
+  content: "\E951";
 }
 
 /* line 413, src/styles/components/icons/_icons.scss */
 
-.fi-play::before {
-  content: "\E99D";
+.fi-var-graph:before {
+  content: "\E952";
 }
 
-/* line 417, src/styles/components/icons/_icons.scss */
+/* line 418, src/styles/components/icons/_icons.scss */
 
-.fi-key::before {
-  content: "\E962";
+.fi-var-graph1:before {
+  content: "\E953";
 }
 
-/* line 421, src/styles/components/icons/_icons.scss */
+/* line 423, src/styles/components/icons/_icons.scss */
 
-.fi-plane::before {
-  content: "\E99C";
+.fi-var-graph2:before {
+  content: "\E954";
 }
 
-/* line 425, src/styles/components/icons/_icons.scss */
+/* line 428, src/styles/components/icons/_icons.scss */
 
-.fi-joy::before {
-  content: "\E960";
-}
-
-/* line 429, src/styles/components/icons/_icons.scss */
-
-.fi-photo-gallery::before {
-  content: "\E997";
+.fi-var-graph3:before {
+  content: "\E955";
 }
 
 /* line 433, src/styles/components/icons/_icons.scss */
 
-.fi-pin::before {
-  content: "\E999";
+.fi-var-gym:before {
+  content: "\E956";
 }
 
-/* line 437, src/styles/components/icons/_icons.scss */
+/* line 438, src/styles/components/icons/_icons.scss */
 
-.fi-phone::before {
-  content: "\E995";
+.fi-var-hammer:before {
+  content: "\E957";
 }
 
-/* line 441, src/styles/components/icons/_icons.scss */
+/* line 443, src/styles/components/icons/_icons.scss */
 
-.fi-plug::before {
-  content: "\E99F";
+.fi-var-headphones:before {
+  content: "\E958";
 }
 
-/* line 445, src/styles/components/icons/_icons.scss */
+/* line 448, src/styles/components/icons/_icons.scss */
 
-.fi-pen::before {
-  content: "\E993";
-}
-
-/* line 449, src/styles/components/icons/_icons.scss */
-
-.fi-right-arrow::before {
-  content: "\E9AD";
+.fi-var-helm:before {
+  content: "\E959";
 }
 
 /* line 453, src/styles/components/icons/_icons.scss */
 
-.fi-paper-plane::before {
-  content: "\E992";
+.fi-var-help1:before {
+  content: "\E95A";
 }
 
-/* line 457, src/styles/components/icons/_icons.scss */
+/* line 458, src/styles/components/icons/_icons.scss */
 
-.fi-delete-user::before {
-  content: "\E935";
+.fi-var-help2:before {
+  content: "\E95B";
 }
 
-/* line 461, src/styles/components/icons/_icons.scss */
+/* line 463, src/styles/components/icons/_icons.scss */
 
-.fi-paint::before {
-  content: "\E98F";
+.fi-var-home:before {
+  content: "\E95C";
 }
 
-/* line 465, src/styles/components/icons/_icons.scss */
+/* line 468, src/styles/components/icons/_icons.scss */
 
-.fi-bottom-arrow::before {
-  content: "\E919";
-}
-
-/* line 469, src/styles/components/icons/_icons.scss */
-
-.fi-notebook::before {
-  content: "\E98E";
+.fi-var-hourglass:before {
+  content: "\E95D";
 }
 
 /* line 473, src/styles/components/icons/_icons.scss */
 
-.fi-note::before {
-  content: "\E98C";
+.fi-var-id:before {
+  content: "\E95E";
 }
 
-/* line 477, src/styles/components/icons/_icons.scss */
+/* line 478, src/styles/components/icons/_icons.scss */
 
-.fi-next::before {
-  content: "\E98A";
+.fi-var-info:before {
+  content: "\E95F";
 }
 
-/* line 481, src/styles/components/icons/_icons.scss */
+/* line 483, src/styles/components/icons/_icons.scss */
 
-.fi-news-paper::before {
-  content: "\E989";
+.fi-var-instagram:before {
+  content: "\E960";
 }
 
-/* line 485, src/styles/components/icons/_icons.scss */
+/* line 488, src/styles/components/icons/_icons.scss */
 
-.fi-musiclist::before {
-  content: "\E986";
-}
-
-/* line 489, src/styles/components/icons/_icons.scss */
-
-.fi-music::before {
-  content: "\E985";
+.fi-var-joy:before {
+  content: "\E961";
 }
 
 /* line 493, src/styles/components/icons/_icons.scss */
 
-.fi-mouse::before {
-  content: "\E984";
+.fi-var-junk:before {
+  content: "\E962";
 }
 
-/* line 497, src/styles/components/icons/_icons.scss */
+/* line 498, src/styles/components/icons/_icons.scss */
 
-.fi-more::before {
-  content: "\E983";
+.fi-var-key:before {
+  content: "\E963";
 }
 
-/* line 501, src/styles/components/icons/_icons.scss */
+/* line 503, src/styles/components/icons/_icons.scss */
 
-.fi-moon::before {
-  content: "\E982";
+.fi-var-keypad:before {
+  content: "\E964";
 }
 
-/* line 505, src/styles/components/icons/_icons.scss */
+/* line 508, src/styles/components/icons/_icons.scss */
 
-.fi-monitor::before {
-  content: "\E981";
-}
-
-/* line 509, src/styles/components/icons/_icons.scss */
-
-.fi-micro::before {
-  content: "\E980";
+.fi-var-leaf:before {
+  content: "\E965";
 }
 
 /* line 513, src/styles/components/icons/_icons.scss */
 
-.fi-menu::before {
-  content: "\E97F";
+.fi-var-left-arrow:before {
+  content: "\E966";
 }
 
-/* line 517, src/styles/components/icons/_icons.scss */
+/* line 518, src/styles/components/icons/_icons.scss */
 
-.fi-map::before {
-  content: "\E97A";
+.fi-var-left-arrow-2:before {
+  content: "\E967";
 }
 
-/* line 521, src/styles/components/icons/_icons.scss */
+/* line 523, src/styles/components/icons/_icons.scss */
 
-.fi-map-marker::before {
-  content: "\E97C";
+.fi-var-left-arrow-3:before {
+  content: "\E968";
 }
 
-/* line 525, src/styles/components/icons/_icons.scss */
+/* line 528, src/styles/components/icons/_icons.scss */
 
-.fi-envelope::before {
-  content: "\E976";
-}
-
-/* line 529, src/styles/components/icons/_icons.scss */
-
-.fi-mail::before {
-  content: "\E976";
+.fi-var-less:before {
+  content: "\E969";
 }
 
 /* line 533, src/styles/components/icons/_icons.scss */
 
-.fi-mail-open::before {
-  content: "\E977";
+.fi-var-less-2:before {
+  content: "\E96A";
 }
 
-/* line 537, src/styles/components/icons/_icons.scss */
+/* line 538, src/styles/components/icons/_icons.scss */
 
-.fi-mail-open-file::before {
-  content: "\E978";
+.fi-var-light:before {
+  content: "\E96B";
 }
 
-/* line 541, src/styles/components/icons/_icons.scss */
+/* line 543, src/styles/components/icons/_icons.scss */
 
-.fi-magnet::before {
-  content: "\E975";
+.fi-var-like:before {
+  content: "\E96C";
 }
 
-/* line 545, src/styles/components/icons/_icons.scss */
+/* line 548, src/styles/components/icons/_icons.scss */
 
-.fi-loop::before {
-  content: "\E973";
-}
-
-/* line 549, src/styles/components/icons/_icons.scss */
-
-.fi-look::before {
-  content: "\E972";
+.fi-var-like2:before {
+  content: "\E96D";
 }
 
 /* line 553, src/styles/components/icons/_icons.scss */
 
-.fi-lock::before {
-  content: "\E971";
+.fi-var-link:before {
+  content: "\E96E";
 }
 
-/* line 557, src/styles/components/icons/_icons.scss */
+/* line 558, src/styles/components/icons/_icons.scss */
 
-.fi-lintern::before {
+.fi-var-linkedin:before {
+  content: "\E96F";
+}
+
+/* line 563, src/styles/components/icons/_icons.scss */
+
+.fi-var-linkedin-2:before {
   content: "\E970";
 }
 
-/* line 561, src/styles/components/icons/_icons.scss */
+/* line 568, src/styles/components/icons/_icons.scss */
 
-.fi-link::before {
-  content: "\E96D";
-}
-
-/* line 565, src/styles/components/icons/_icons.scss */
-
-.fi-like::before {
-  content: "\E96B";
-}
-
-/* line 569, src/styles/components/icons/_icons.scss */
-
-.fi-light::before {
-  content: "\E96A";
+.fi-var-lintern:before {
+  content: "\E971";
 }
 
 /* line 573, src/styles/components/icons/_icons.scss */
 
-.fi-less::before {
-  content: "\E968";
+.fi-var-lock:before {
+  content: "\E972";
 }
 
-/* line 577, src/styles/components/icons/_icons.scss */
+/* line 578, src/styles/components/icons/_icons.scss */
 
-.fi-keypad::before {
-  content: "\E963";
+.fi-var-look:before {
+  content: "\E973";
 }
 
-/* line 581, src/styles/components/icons/_icons.scss */
+/* line 583, src/styles/components/icons/_icons.scss */
 
-.fi-junk::before {
-  content: "\E961";
+.fi-var-loop:before {
+  content: "\E974";
 }
 
-/* line 585, src/styles/components/icons/_icons.scss */
+/* line 588, src/styles/components/icons/_icons.scss */
 
-.fi-info::before {
-  content: "\E95E";
-}
-
-/* line 589, src/styles/components/icons/_icons.scss */
-
-.fi-home::before {
-  content: "\E95B";
+.fi-var-magic-wand:before {
+  content: "\E975";
 }
 
 /* line 593, src/styles/components/icons/_icons.scss */
 
-.fi-help2::before {
-  content: "\E95A";
+.fi-var-magnet:before {
+  content: "\E976";
 }
 
-/* line 597, src/styles/components/icons/_icons.scss */
+/* line 598, src/styles/components/icons/_icons.scss */
 
-.fi-help1::before {
-  content: "\E959";
+.fi-var-mail:before {
+  content: "\E977";
 }
 
-/* line 601, src/styles/components/icons/_icons.scss */
+/* line 603, src/styles/components/icons/_icons.scss */
 
-.fi-graph3::before {
-  content: "\E954";
+.fi-var-mail-open:before {
+  content: "\E978";
 }
 
-/* line 605, src/styles/components/icons/_icons.scss */
+/* line 608, src/styles/components/icons/_icons.scss */
 
-.fi-graph2::before {
-  content: "\E953";
-}
-
-/* line 609, src/styles/components/icons/_icons.scss */
-
-.fi-graph1::before {
-  content: "\E952";
+.fi-var-mail-open-file:before {
+  content: "\E979";
 }
 
 /* line 613, src/styles/components/icons/_icons.scss */
 
-.fi-graph::before {
-  content: "\E951";
+.fi-var-male:before {
+  content: "\E97A";
 }
 
-/* line 617, src/styles/components/icons/_icons.scss */
+/* line 618, src/styles/components/icons/_icons.scss */
 
-.fi-global::before {
-  content: "\E950";
+.fi-var-map:before {
+  content: "\E97B";
 }
 
-/* line 621, src/styles/components/icons/_icons.scss */
+/* line 623, src/styles/components/icons/_icons.scss */
 
-.fi-gleam::before {
-  content: "\E94F";
+.fi-var-map-2:before {
+  content: "\E97C";
 }
 
-/* line 625, src/styles/components/icons/_icons.scss */
+/* line 628, src/styles/components/icons/_icons.scss */
 
-.fi-glasses::before {
-  content: "\E94E";
-}
-
-/* line 629, src/styles/components/icons/_icons.scss */
-
-.fi-gift::before {
-  content: "\E94D";
+.fi-var-map-marker:before {
+  content: "\E97D";
 }
 
 /* line 633, src/styles/components/icons/_icons.scss */
 
-.fi-folder::before {
-  content: "\E94C";
+.fi-var-map-marker-2:before {
+  content: "\E97E";
 }
 
-/* line 637, src/styles/components/icons/_icons.scss */
+/* line 638, src/styles/components/icons/_icons.scss */
 
-.fi-flag::before {
-  content: "\E94B";
+.fi-var-medal:before {
+  content: "\E97F";
 }
 
-/* line 641, src/styles/components/icons/_icons.scss */
+/* line 643, src/styles/components/icons/_icons.scss */
 
-.fi-filter::before {
-  content: "\E94A";
+.fi-var-menu:before {
+  content: "\E980";
 }
 
-/* line 645, src/styles/components/icons/_icons.scss */
+/* line 648, src/styles/components/icons/_icons.scss */
 
-.fi-file::before {
-  content: "\E948";
-}
-
-/* line 649, src/styles/components/icons/_icons.scss */
-
-.fi-expand1::before {
-  content: "\E943";
+.fi-var-micro:before {
+  content: "\E981";
 }
 
 /* line 653, src/styles/components/icons/_icons.scss */
 
-.fi-exapnd2::before {
-  content: "\E942";
+.fi-var-monitor:before {
+  content: "\E982";
 }
 
-/* line 657, src/styles/components/icons/_icons.scss */
+/* line 658, src/styles/components/icons/_icons.scss */
 
-.fi-edit::before {
-  content: "\E941";
+.fi-var-moon:before {
+  content: "\E983";
 }
 
-/* line 661, src/styles/components/icons/_icons.scss */
+/* line 663, src/styles/components/icons/_icons.scss */
 
-.fi-drop::before {
-  content: "\E940";
+.fi-var-more:before {
+  content: "\E984";
 }
 
-/* line 665, src/styles/components/icons/_icons.scss */
+/* line 668, src/styles/components/icons/_icons.scss */
 
-.fi-drawer::before {
-  content: "\E93F";
-}
-
-/* line 669, src/styles/components/icons/_icons.scss */
-
-.fi-download::before {
-  content: "\E93E";
+.fi-var-mouse:before {
+  content: "\E985";
 }
 
 /* line 673, src/styles/components/icons/_icons.scss */
 
-.fi-display2::before {
-  content: "\E93A";
+.fi-var-music:before {
+  content: "\E986";
 }
 
-/* line 677, src/styles/components/icons/_icons.scss */
+/* line 678, src/styles/components/icons/_icons.scss */
 
-.fi-display1::before {
-  content: "\E939";
+.fi-var-musiclist:before {
+  content: "\E987";
 }
 
-/* line 681, src/styles/components/icons/_icons.scss */
+/* line 683, src/styles/components/icons/_icons.scss */
 
-.fi-diskette::before {
-  content: "\E938";
+.fi-var-mute:before {
+  content: "\E988";
 }
 
-/* line 685, src/styles/components/icons/_icons.scss */
+/* line 688, src/styles/components/icons/_icons.scss */
 
-.fi-date::before {
-  content: "\E934";
-}
-
-/* line 689, src/styles/components/icons/_icons.scss */
-
-.fi-cup::before {
-  content: "\E933";
+.fi-var-network:before {
+  content: "\E989";
 }
 
 /* line 693, src/styles/components/icons/_icons.scss */
 
-.fi-culture::before {
-  content: "\E932";
+.fi-var-news-paper:before {
+  content: "\E98A";
 }
 
-/* line 697, src/styles/components/icons/_icons.scss */
+/* line 698, src/styles/components/icons/_icons.scss */
 
-.fi-crop::before {
-  content: "\E931";
+.fi-var-next:before {
+  content: "\E98B";
 }
 
-/* line 701, src/styles/components/icons/_icons.scss */
+/* line 703, src/styles/components/icons/_icons.scss */
 
-.fi-credit::before {
-  content: "\E930";
+.fi-var-next-2:before {
+  content: "\E98C";
 }
 
-/* line 705, src/styles/components/icons/_icons.scss */
+/* line 708, src/styles/components/icons/_icons.scss */
 
-.fi-copy-file::before {
-  content: "\E92F";
-}
-
-/* line 709, src/styles/components/icons/_icons.scss */
-
-.fi-config::before {
-  content: "\E92E";
+.fi-var-note:before {
+  content: "\E98D";
 }
 
 /* line 713, src/styles/components/icons/_icons.scss */
 
-.fi-compass::before {
-  content: "\E92D";
+.fi-var-note2:before {
+  content: "\E98E";
 }
 
-/* line 717, src/styles/components/icons/_icons.scss */
+/* line 718, src/styles/components/icons/_icons.scss */
 
-.fi-comment::before {
-  content: "\E92C";
+.fi-var-notebook:before {
+  content: "\E98F";
 }
 
-/* line 721, src/styles/components/icons/_icons.scss */
+/* line 723, src/styles/components/icons/_icons.scss */
 
-.fi-coffee::before {
-  content: "\E92B";
+.fi-var-paint:before {
+  content: "\E990";
 }
 
-/* line 725, src/styles/components/icons/_icons.scss */
+/* line 728, src/styles/components/icons/_icons.scss */
 
-.fi-cloud::before {
-  content: "\E928";
-}
-
-/* line 729, src/styles/components/icons/_icons.scss */
-
-.fi-clock::before {
-  content: "\E925";
+.fi-var-paint-bucket:before {
+  content: "\E991";
 }
 
 /* line 733, src/styles/components/icons/_icons.scss */
 
-.fi-check::before {
-  content: "\E924";
+.fi-var-paperclip:before {
+  content: "\E992";
 }
 
-/* line 737, src/styles/components/icons/_icons.scss */
+/* line 738, src/styles/components/icons/_icons.scss */
 
-.fi-chat::before {
-  content: "\E923";
+.fi-var-paper-plane:before {
+  content: "\E993";
 }
 
-/* line 741, src/styles/components/icons/_icons.scss */
+/* line 743, src/styles/components/icons/_icons.scss */
 
-.fi-cart::before {
-  content: "\E921";
+.fi-var-pen:before {
+  content: "\E994";
 }
 
-/* line 745, src/styles/components/icons/_icons.scss */
+/* line 748, src/styles/components/icons/_icons.scss */
 
-.fi-camera::before {
-  content: "\E91F";
-}
-
-/* line 749, src/styles/components/icons/_icons.scss */
-
-.fi-call::before {
-  content: "\E91E";
+.fi-var-pendrive:before {
+  content: "\E995";
 }
 
 /* line 753, src/styles/components/icons/_icons.scss */
 
-.fi-calculator::before {
-  content: "\E91D";
+.fi-var-phone:before {
+  content: "\E996";
 }
 
-/* line 757, src/styles/components/icons/_icons.scss */
+/* line 758, src/styles/components/icons/_icons.scss */
 
-.fi-browser::before {
-  content: "\E91C";
+.fi-var-photo:before {
+  content: "\E997";
 }
 
-/* line 761, src/styles/components/icons/_icons.scss */
+/* line 763, src/styles/components/icons/_icons.scss */
 
-.fi-box2::before {
-  content: "\E91B";
+.fi-var-photo-gallery:before {
+  content: "\E998";
 }
 
-/* line 765, src/styles/components/icons/_icons.scss */
+/* line 768, src/styles/components/icons/_icons.scss */
 
-.fi-box1::before {
-  content: "\E91A";
-}
-
-/* line 769, src/styles/components/icons/_icons.scss */
-
-.fi-bookmarks::before {
-  content: "\E918";
+.fi-var-piggy:before {
+  content: "\E999";
 }
 
 /* line 773, src/styles/components/icons/_icons.scss */
 
-.fi-bicycle::before {
-  content: "\E916";
+.fi-var-pin:before {
+  content: "\E99A";
 }
 
-/* line 777, src/styles/components/icons/_icons.scss */
+/* line 778, src/styles/components/icons/_icons.scss */
 
-.fi-bell::before {
-  content: "\E915";
+.fi-var-pinterest:before {
+  content: "\E99B";
 }
 
-/* line 781, src/styles/components/icons/_icons.scss */
+/* line 783, src/styles/components/icons/_icons.scss */
 
-.fi-battery::before {
-  content: "\E914";
+.fi-var-pinterest-2:before {
+  content: "\E99C";
 }
 
-/* line 785, src/styles/components/icons/_icons.scss */
+/* line 788, src/styles/components/icons/_icons.scss */
 
-.fi-ball::before {
-  content: "\E912";
-}
-
-/* line 789, src/styles/components/icons/_icons.scss */
-
-.fi-back::before {
-  content: "\E910";
+.fi-var-plane:before {
+  content: "\E99D";
 }
 
 /* line 793, src/styles/components/icons/_icons.scss */
 
-.fi-attention::before {
-  content: "\E90F";
+.fi-var-play:before {
+  content: "\E99E";
 }
 
-/* line 797, src/styles/components/icons/_icons.scss */
+/* line 798, src/styles/components/icons/_icons.scss */
 
-.fi-anchor::before {
-  content: "\E905";
+.fi-var-play-2:before {
+  content: "\E99F";
 }
 
-/* line 801, src/styles/components/icons/_icons.scss */
+/* line 803, src/styles/components/icons/_icons.scss */
 
-.fi-albums::before {
-  content: "\E904";
+.fi-var-plug:before {
+  content: "\E9A0";
 }
 
-/* line 805, src/styles/components/icons/_icons.scss */
+/* line 808, src/styles/components/icons/_icons.scss */
 
-.fi-alarm::before {
-  content: "\E902";
+.fi-var-plugin:before {
+  content: "\E9A1";
 }
 
-/* line 809, src/styles/components/icons/_icons.scss */
+/* line 813, src/styles/components/icons/_icons.scss */
 
-.fi-airplay::before {
-  content: "\E901";
-}
-
-/* line 814, src/styles/components/icons/_icons.scss */
-
-.fi-facebook::before {
-  content: "\E945";
+.fi-var-plus:before {
+  content: "\E9A2";
 }
 
 /* line 818, src/styles/components/icons/_icons.scss */
 
-.fi-facebook-2::before {
-  content: "\E946";
+.fi-var-plus-2:before {
+  content: "\E9A3";
 }
 
-/* line 822, src/styles/components/icons/_icons.scss */
+/* line 823, src/styles/components/icons/_icons.scss */
 
-.fi-instagram::before {
-  content: "\E95F";
+.fi-var-portfolio:before {
+  content: "\E9A4";
 }
 
-/* line 826, src/styles/components/icons/_icons.scss */
+/* line 828, src/styles/components/icons/_icons.scss */
 
-.fi-linkedin::before {
-  content: "\E96E";
+.fi-var-power:before {
+  content: "\E9A5";
 }
 
-/* line 830, src/styles/components/icons/_icons.scss */
+/* line 833, src/styles/components/icons/_icons.scss */
 
-.fi-linkedin-2::before {
-  content: "\E96F";
-}
-
-/* line 834, src/styles/components/icons/_icons.scss */
-
-.fi-pinterest::before {
-  content: "\E99A";
+.fi-var-prev:before {
+  content: "\E9A6";
 }
 
 /* line 838, src/styles/components/icons/_icons.scss */
 
-.fi-pinterest-2::before {
-  content: "\E99B";
+.fi-var-print:before {
+  content: "\E9A7";
 }
 
-/* line 842, src/styles/components/icons/_icons.scss */
+/* line 843, src/styles/components/icons/_icons.scss */
 
-.fi-twitter::before {
-  content: "\E9C8";
+.fi-var-radio:before {
+  content: "\E9A8";
 }
 
-/* line 846, src/styles/components/icons/_icons.scss */
+/* line 848, src/styles/components/icons/_icons.scss */
 
-.fi-youtube::before {
-  content: "\E9DE";
+.fi-var-refresh:before {
+  content: "\E9A9";
 }
 
-/* line 851, src/styles/components/icons/_icons.scss */
+/* line 853, src/styles/components/icons/_icons.scss */
 
-.fi-down-arrow-2::before {
-  content: "\E93C";
+.fi-var-refresh-2:before {
+  content: "\E9AA";
 }
 
-/* line 855, src/styles/components/icons/_icons.scss */
+/* line 858, src/styles/components/icons/_icons.scss */
 
-.fi-down-arrow-3::before {
-  content: "\E93D";
-}
-
-/* line 859, src/styles/components/icons/_icons.scss */
-
-.fi-left-arrow-2::before {
-  content: "\E966";
+.fi-var-refresh-cloud:before {
+  content: "\E9AB";
 }
 
 /* line 863, src/styles/components/icons/_icons.scss */
 
-.fi-left-arrow-3::before {
-  content: "\E967";
+.fi-var-repeat:before {
+  content: "\E9AC";
 }
 
-/* line 867, src/styles/components/icons/_icons.scss */
+/* line 868, src/styles/components/icons/_icons.scss */
 
-.fi-right-arrow-2::before {
+.fi-var-ribbon:before {
+  content: "\E9AD";
+}
+
+/* line 873, src/styles/components/icons/_icons.scss */
+
+.fi-var-right-arrow:before {
   content: "\E9AE";
 }
 
-/* line 871, src/styles/components/icons/_icons.scss */
+/* line 878, src/styles/components/icons/_icons.scss */
 
-.fi-right-arrow-3::before {
+.fi-var-right-arrow-2:before {
   content: "\E9AF";
 }
 
-/* line 875, src/styles/components/icons/_icons.scss */
+/* line 883, src/styles/components/icons/_icons.scss */
 
-.fi-up-arrow-2::before {
-  content: "\E9CC";
-}
-
-/* line 879, src/styles/components/icons/_icons.scss */
-
-.fi-up-arrow-3::before {
-  content: "\E9CD";
-}
-
-/* line 884, src/styles/components/icons/_icons.scss */
-
-.fi-less-2::before {
-  content: "\E969";
+.fi-var-right-arrow-3:before {
+  content: "\E9B0";
 }
 
 /* line 888, src/styles/components/icons/_icons.scss */
 
-.fi-map-marker-2::before {
-  content: "\E97D";
+.fi-var-rocket:before {
+  content: "\E9B1";
 }
 
-/* line 892, src/styles/components/icons/_icons.scss */
+/* line 893, src/styles/components/icons/_icons.scss */
 
-.fi-play-2::before {
-  content: "\E99E";
+.fi-var-safe:before {
+  content: "\E9B2";
 }
 
-/* line 896, src/styles/components/icons/_icons.scss */
+/* line 898, src/styles/components/icons/_icons.scss */
 
-.fi-plus-2::before {
-  content: "\E9A2";
+.fi-var-science:before {
+  content: "\E9B3";
 }
+
+/* line 903, src/styles/components/icons/_icons.scss */
+
+.fi-var-scissors:before {
+  content: "\E9B4";
+}
+
+/* line 908, src/styles/components/icons/_icons.scss */
+
+.fi-var-search:before {
+  content: "\E9B5";
+}
+
+/* line 913, src/styles/components/icons/_icons.scss */
+
+.fi-var-server:before {
+  content: "\E9B6";
+}
+
+/* line 918, src/styles/components/icons/_icons.scss */
+
+.fi-var-settings:before {
+  content: "\E9B7";
+}
+
+/* line 923, src/styles/components/icons/_icons.scss */
+
+.fi-var-share:before {
+  content: "\E9B8";
+}
+
+/* line 928, src/styles/components/icons/_icons.scss */
+
+.fi-var-shield:before {
+  content: "\E9B9";
+}
+
+/* line 933, src/styles/components/icons/_icons.scss */
+
+.fi-var-shopbag:before {
+  content: "\E9BA";
+}
+
+/* line 938, src/styles/components/icons/_icons.scss */
+
+.fi-var-shuffle:before {
+  content: "\E9BB";
+}
+
+/* line 943, src/styles/components/icons/_icons.scss */
+
+.fi-var-signal:before {
+  content: "\E9BC";
+}
+
+/* line 948, src/styles/components/icons/_icons.scss */
+
+.fi-var-smile:before {
+  content: "\E9BD";
+}
+
+/* line 953, src/styles/components/icons/_icons.scss */
+
+.fi-var-speaker:before {
+  content: "\E9BE";
+}
+
+/* line 958, src/styles/components/icons/_icons.scss */
+
+.fi-var-star:before {
+  content: "\E9BF";
+}
+
+/* line 963, src/styles/components/icons/_icons.scss */
+
+.fi-var-stopwatch:before {
+  content: "\E9C0";
+}
+
+/* line 968, src/styles/components/icons/_icons.scss */
+
+.fi-var-study:before {
+  content: "\E9C1";
+}
+
+/* line 973, src/styles/components/icons/_icons.scss */
+
+.fi-var-sun:before {
+  content: "\E9C2";
+}
+
+/* line 978, src/styles/components/icons/_icons.scss */
+
+.fi-var-switch:before {
+  content: "\E9C3";
+}
+
+/* line 983, src/styles/components/icons/_icons.scss */
+
+.fi-var-target:before {
+  content: "\E9C4";
+}
+
+/* line 988, src/styles/components/icons/_icons.scss */
+
+.fi-var-ticket:before {
+  content: "\E9C5";
+}
+
+/* line 993, src/styles/components/icons/_icons.scss */
+
+.fi-var-timer:before {
+  content: "\E9C6";
+}
+
+/* line 998, src/styles/components/icons/_icons.scss */
+
+.fi-var-tools:before {
+  content: "\E9C7";
+}
+
+/* line 1003, src/styles/components/icons/_icons.scss */
+
+.fi-var-trash:before {
+  content: "\E9C8";
+}
+
+/* line 1008, src/styles/components/icons/_icons.scss */
+
+.fi-var-twitter:before {
+  content: "\E9C9";
+}
+
+/* line 1013, src/styles/components/icons/_icons.scss */
+
+.fi-var-umbrella:before {
+  content: "\E9CA";
+}
+
+/* line 1018, src/styles/components/icons/_icons.scss */
+
+.fi-var-unlock:before {
+  content: "\E9CB";
+}
+
+/* line 1023, src/styles/components/icons/_icons.scss */
+
+.fi-var-up-arrow:before {
+  content: "\E9CC";
+}
+
+/* line 1028, src/styles/components/icons/_icons.scss */
+
+.fi-var-up-arrow-2:before {
+  content: "\E9CD";
+}
+
+/* line 1033, src/styles/components/icons/_icons.scss */
+
+.fi-var-up-arrow-3:before {
+  content: "\E9CE";
+}
+
+/* line 1038, src/styles/components/icons/_icons.scss */
+
+.fi-var-upload:before {
+  content: "\E9CF";
+}
+
+/* line 1043, src/styles/components/icons/_icons.scss */
+
+.fi-var-usb:before {
+  content: "\E9D0";
+}
+
+/* line 1048, src/styles/components/icons/_icons.scss */
+
+.fi-var-user:before {
+  content: "\E9D1";
+}
+
+/* line 1053, src/styles/components/icons/_icons.scss */
+
+.fi-var-user-female:before {
+  content: "\E9D2";
+}
+
+/* line 1058, src/styles/components/icons/_icons.scss */
+
+.fi-var-users:before {
+  content: "\E9D3";
+}
+
+/* line 1063, src/styles/components/icons/_icons.scss */
+
+.fi-var-vector:before {
+  content: "\E9D4";
+}
+
+/* line 1068, src/styles/components/icons/_icons.scss */
+
+.fi-var-video:before {
+  content: "\E9D5";
+}
+
+/* line 1073, src/styles/components/icons/_icons.scss */
+
+.fi-var-voicemail:before {
+  content: "\E9D6";
+}
+
+/* line 1078, src/styles/components/icons/_icons.scss */
+
+.fi-var-volume:before {
+  content: "\E9D7";
+}
+
+/* line 1083, src/styles/components/icons/_icons.scss */
+
+.fi-var-volume1:before {
+  content: "\E9D8";
+}
+
+/* line 1088, src/styles/components/icons/_icons.scss */
+
+.fi-var-volume2:before {
+  content: "\E9D9";
+}
+
+/* line 1093, src/styles/components/icons/_icons.scss */
+
+.fi-var-wallet:before {
+  content: "\E9DA";
+}
+
+/* line 1098, src/styles/components/icons/_icons.scss */
+
+.fi-var-way:before {
+  content: "\E9DB";
+}
+
+/* line 1103, src/styles/components/icons/_icons.scss */
+
+.fi-var-wine:before {
+  content: "\E9DC";
+}
+
+/* line 1108, src/styles/components/icons/_icons.scss */
+
+.fi-var-world:before {
+  content: "\E9DD";
+}
+
+/* line 1113, src/styles/components/icons/_icons.scss */
+
+.fi-var-wristwatch:before {
+  content: "\E9DE";
+}
+
+/* line 1118, src/styles/components/icons/_icons.scss */
+
+.fi-var-youtube:before {
+  content: "\E9DF";
+}
+
+/* stylelint-enable */
 
 /** Search form */
 
@@ -29520,7 +29524,7 @@ input.ng-touched.ng-invalid:not(.input-qty) {
 select.ng-touched.ng-valid,
 textarea.ng-touched.ng-valid,
 input.ng-touched.ng-valid:not(.input-qty) {
-  border-color: #3adb76;
+  border-color: #18a733;
 }
 
 /* line 28, src/styles/components/_ng-form.scss */
@@ -29534,7 +29538,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
 /* line 35, src/styles/components/_ng-form.scss */
 
 .ui-select-container.ng-touched.ng-valid .ui-select-toggle {
-  border-color: #3adb76;
+  border-color: #18a733;
 }
 
 /* line 40, src/styles/components/_ng-form.scss */
@@ -29554,7 +29558,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
 
 .radio input.ng-touched.ng-valid-required ~ label::before,
 .checkbox input.ng-touched.ng-valid-required ~ label::before {
-  border-color: #3adb76;
+  border-color: #18a733;
 }
 
 /* line 8, src/styles/components/_comments.scss */
