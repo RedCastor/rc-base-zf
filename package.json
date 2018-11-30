@@ -1,8 +1,8 @@
 {
   "name": "rc-base-zf",
-  "version": "1.0.0-b26",
+  "version": "1.0.0-b28",
   "author": "Auban le Grelle <auban@viamonkey.com>",
-  "homepage": "https://redcastor.io",
+  "homepage": "https://github.com/RedCastor/rc-base-zf",
   "licenses": [
     {
       "type": "MIT",

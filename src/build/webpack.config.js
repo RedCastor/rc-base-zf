@@ -183,10 +183,10 @@ let webpackConfig = {
     }),
     new SvgStorePlugin({
       emit: true,
-      directory: config.paths.src + '/images/icons',
-      name: 'images/webicon.svg',
-      prefix: '',
-      suffix: '',
+      directory: config.svgStore.directory,
+      name: config.svgStore.name,
+      prefix: config.svgStore.prefix || '',
+      suffix: config.svgStore.suffix || '',
       svgoOptions: {
         plugins: [],
       },
