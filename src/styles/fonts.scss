@@ -5,4 +5,7 @@
 //== Add Util
 @import "util/util";
 
+
+$base-font-stack: () !default;
+
 @include font-face-stack($base-font-stack)
