@@ -29,8 +29,8 @@ const config = merge({
   watch: [],
   svgStore: {
     directory: 'images/icons',
-    name: 'images/webicon.svg'
-  }
+    name: 'images/webicon.svg',
+  },
 }, userConfig);
 
 /**
@@ -46,7 +46,7 @@ module.exports = merge(config, {
   manifest: {},
   svgStore: {
     directory: path.join(config.paths.src, config.svgStore.directory),
-  }
+  },
 });
 
 
