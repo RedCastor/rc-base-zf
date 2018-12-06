@@ -3,4 +3,5 @@
 // --------------------------------------------------
 .social-group {
   @include menu-base;
+  flex-wrap: nowrap !important;
 }
