@@ -27,8 +27,11 @@ const config = merge({
     watcher: !!argv.watch,
   },
   watch: [],
+  svgStore: {
+    directory: 'images/icons',
+    name: 'images/webicon.svg',
+  },
 }, userConfig);
-
 
 /**
  * Provide devPublicPath if you use relative publicPath for watching mode.
@@ -41,7 +44,11 @@ module.exports = merge(config, {
   env: Object.assign({ production: true }, argv.env),
   publicPath: `${config.publicPath}/${path.basename(config.paths.dist)}/`,
   manifest: {},
+  svgStore: {
+    directory: path.join(config.paths.src, config.svgStore.directory),
+  },
 });
+
 
 if (process.env.NODE_ENV === undefined) {
   process.env.NODE_ENV = 'production';
