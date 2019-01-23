@@ -31145,6 +31145,8 @@ main,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
 }
 
 /* line 202, node_modules/foundation-sites/scss/util/_mixins.scss */
