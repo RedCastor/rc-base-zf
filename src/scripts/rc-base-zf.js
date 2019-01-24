@@ -9,7 +9,10 @@ jQuery(document).ready($ => {
 
   $(document).webicons({
     svgSet: {
-      'fi': '../dist/images/webicon.svg',
+      'rc-base': '../dist/images/webicon.svg',
+    },
+    alias: {
+      fi: 'rc-base',
     },
   });
 });
