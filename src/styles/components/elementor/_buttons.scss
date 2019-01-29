@@ -1,0 +1,50 @@
+//
+// Buttons
+// --------------------------------------------------
+
+@mixin rc-base-elementor-button {
+  .elementor-button {
+    @extend .button;
+
+    &.elementor-size-xs,
+    &.elementor-size-sm,
+    &.elementor-size-md,
+    &.elementor-size-lg,
+    &.elementor-size-xl {
+      border-radius: $global-radius;
+    }
+  }
+
+  .elementor-button-hollow {
+    .elementor-button {
+      @extend .hollow;
+    }
+  }
+
+  .elementor-element {
+    &.elementor-button-info {
+      .elementor-button {
+        @extend .secondary;
+      }
+    }
+
+    &.elementor-button-success {
+      .elementor-button {
+        @extend .success;
+        color: $white-base;
+      }
+    }
+
+    &.elementor-button-warning {
+      .elementor-button {
+        @extend .warning;
+      }
+    }
+
+    &.elementor-button-danger {
+      .elementor-button {
+        @extend .alert;
+      }
+    }
+  }
+}

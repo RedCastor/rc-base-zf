@@ -20,3 +20,10 @@
 @import "components/dropdown-menu";
 @import "components/grid";
 @import "components/social";
+
+/** Import elementor components */
+@import "components/elementor/buttons";
+
+@mixin rc-base-elementor-everything {
+  @include rc-base-elementor-button;
+}
