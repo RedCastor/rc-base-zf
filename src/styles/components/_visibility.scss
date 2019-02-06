@@ -8,5 +8,9 @@
     .nojs-for-#{$size} {
       @include hide-for($size);
     }
+
+    .nojs-for-#{$size}-only {
+      @include hide-for-only($size);
+    }
   }
 }
