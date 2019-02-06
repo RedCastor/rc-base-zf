@@ -1,0 +1,12 @@
+//
+// Visibility
+// --------------------------------------------------
+
+/* Responsive no javascript */
+.no-js {
+  @each $size in $breakpoint-classes {
+    .nojs-for-#{$size} {
+      @include hide-for($size);
+    }
+  }
+}
