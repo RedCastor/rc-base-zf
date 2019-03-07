@@ -33,6 +33,10 @@
   }
 }
 
+.page-title {
+  @extend .text-center;
+}
+
 @include breakpoint(medium) {
   .alignleft {
     float: left;
