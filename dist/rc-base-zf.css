@@ -31092,7 +31092,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
-/* line 9, src/styles/components/_grid.scss */
+/* line 11, src/styles/components/_grid.scss */
 
 .main-header {
   padding-right: 0;
@@ -31102,7 +31102,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   margin-right: auto;
 }
 
-/* line 28, src/styles/components/_grid.scss */
+/* line 27, src/styles/components/_grid.scss */
 
 .main-container {
   padding-right: 0;
@@ -31112,7 +31112,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   margin-right: auto;
 }
 
-/* line 47, src/styles/components/_grid.scss */
+/* line 43, src/styles/components/_grid.scss */
 
 .main-grid {
   display: -webkit-box;
@@ -31142,7 +31142,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   padding-left: 0;
 }
 
-/* line 53, src/styles/components/_grid.scss */
+/* line 49, src/styles/components/_grid.scss */
 
 main,
 .sidebar {
@@ -31151,7 +31151,7 @@ main,
   padding-left: 0.625rem;
 }
 
-/* line 59, src/styles/components/_grid.scss */
+/* line 55, src/styles/components/_grid.scss */
 
 .sidebar-primary main {
   width: 66.66667%;
@@ -31160,16 +31160,32 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 59, src/styles/components/_grid.scss */
+  /* line 55, src/styles/components/_grid.scss */
 
   .sidebar-primary main {
-    width: 75%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    width: auto;
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
   }
 }
 
-/* line 65, src/styles/components/_grid.scss */
+@media print, screen and (min-width: 64em) {
+  /* line 55, src/styles/components/_grid.scss */
+
+  .sidebar-primary main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    width: auto;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 78, src/styles/components/_grid.scss */
 
 .sidebar-primary .sidebar {
   width: 33.33333%;
@@ -31178,10 +31194,26 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 65, src/styles/components/_grid.scss */
+  /* line 78, src/styles/components/_grid.scss */
 
   .sidebar-primary .sidebar {
-    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: auto;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  /* line 78, src/styles/components/_grid.scss */
+
+  .sidebar-primary .sidebar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: auto;
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
   }

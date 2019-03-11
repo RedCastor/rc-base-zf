@@ -5,21 +5,20 @@
 // Foundation Grid system
 @if $xy-grid {
 
+  $base-size-main: 100% !default;
+
   //Grid
   .main-header {
     //Container
     @if $base-container-main-header == full {
       @include xy-grid-container(100%, 0);
     }
-
     @else if $base-container-main-header == fluid {
       @include xy-grid-container(100%);
     }
-
     @else if $base-container-main-header == gutter {
       @include xy-grid-container($grid-container, $grid-container-padding);
     }
-
     @else {
       @include xy-grid-container($grid-container, 0);
     }
@@ -30,15 +29,12 @@
     @if $base-container-main == full {
       @include xy-grid-container(100%, 0);
     }
-
     @else if $base-container-main == fluid {
       @include xy-grid-container(100%);
     }
-
     @else if $base-container-main == gutter {
       @include xy-grid-container($grid-container, $grid-container-padding);
     }
-
     @else {
       @include xy-grid-container($grid-container, 0);
     }
@@ -57,14 +53,49 @@
 
   .sidebar-primary {
     main {
-      @include -zf-breakpoint-value(auto, $base-size-sidebar) {
-        @include xy-cell(($grid-columns - $-zf-bp-value) of $grid-columns , true, $gutter-type: padding);
+      @include -zf-each-breakpoint() {
+
+        $-zf-bp-value: -zf-get-bp-val($base-size-sidebar, $-zf-size);
+
+        @if type-of($-zf-bp-value) == 'number' {
+          @if unit($-zf-bp-value) == '%' {
+            @include xy-cell((100% - $-zf-bp-value), true, $gutter-type: padding);
+          }
+          @else if unit($-zf-bp-value) == 'px' {
+            width: calc(#{$base-size-main} - #{$-zf-bp-value});
+            @include xy-gutters($gutter-type: padding, $gutter-position: right left);
+          }
+          @else {
+            @include xy-cell(($grid-columns - $-zf-bp-value) of $grid-columns , true, $gutter-type: padding);
+          }
+        }
+        @else {
+          @include xy-cell(auto, true, $gutter-type: padding);
+        }
       }
     }
 
     .sidebar {
-      @include -zf-breakpoint-value(auto, $base-size-sidebar) {
-        @include xy-cell($-zf-bp-value of $grid-columns , true, $gutter-type: padding);
+      @include -zf-each-breakpoint() {
+
+        $-zf-bp-value: -zf-get-bp-val($base-size-sidebar, $-zf-size);
+
+        @if type-of($-zf-bp-value) == 'number' {
+
+          @if unit($-zf-bp-value) == '%' {
+            @include xy-cell($-zf-bp-value, true, $gutter-type: padding);
+          }
+          @else if unit($-zf-bp-value) == 'px' {
+            width: $-zf-bp-value;
+            @include xy-gutters($gutter-type: padding, $gutter-position: right left);
+          }
+          @else {
+            @include xy-cell($-zf-bp-value of $grid-columns, true, $gutter-type: padding);
+          }
+        }
+        @else {
+          @include xy-cell(#{$-zf-bp-value}, true, $gutter-type: padding);
+        }
       }
     }
   }
