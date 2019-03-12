@@ -31185,40 +31185,6 @@ main,
   }
 }
 
-/* line 78, src/styles/components/_grid.scss */
-
-.sidebar-primary .sidebar {
-  width: 33.33333%;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 78, src/styles/components/_grid.scss */
-
-  .sidebar-primary .sidebar {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: auto;
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-@media print, screen and (min-width: 64em) {
-  /* line 78, src/styles/components/_grid.scss */
-
-  .sidebar-primary .sidebar {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: auto;
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
 /* line 4, src/styles/components/_social.scss */
 
 .social-group {
