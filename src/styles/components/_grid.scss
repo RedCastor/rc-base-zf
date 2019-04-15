@@ -2,6 +2,18 @@
 // Grid
 // --------------------------------------------------
 
+@mixin xy-collapse-grid-container-classes() {
+  @include -zf-each-breakpoint {
+    &.#{$-zf-size}-collapse {
+      @include grid-column-gutter(0);
+    }
+
+    &.#{$-zf-size}-uncollapse {
+      @include grid-column-gutter($-zf-size);
+    }
+  }
+}
+
 // Foundation Grid system
 @if $xy-grid {
 
@@ -98,5 +110,11 @@
         }
       }
     }
+  }
+
+  //Classes for collapse grid-container
+  .grid-container {
+
+    @include xy-collapse-grid-container-classes();
   }
 }
