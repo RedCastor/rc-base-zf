@@ -1707,7 +1707,7 @@
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
   font-family: "rc-base-icons";
-  content: "\E926";
+  content: "\E925";
 }
 
 /* line 91, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -2120,7 +2120,7 @@
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
   font-family: "rc-base-icons";
-  content: "\E926";
+  content: "\E925";
 }
 
 /* line 246, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -15635,7 +15635,7 @@ html.is-reveal-open body {
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
   font-family: "rc-base-icons";
-  content: "\E926";
+  content: "\E925";
 }
 
 /* line 91, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -16048,7 +16048,7 @@ html.is-reveal-open body {
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
   font-family: "rc-base-icons";
-  content: "\E926";
+  content: "\E925";
 }
 
 /* line 246, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -29558,6 +29558,18 @@ html.is-reveal-open body {
 
 .fi-youtube:before {
   content: "\E9E1";
+}
+
+/* line 1135, src/styles/components/icons/_icons.scss */
+
+.fi-credit-card:before {
+  content: "\E932";
+}
+
+/* line 1140, src/styles/components/icons/_icons.scss */
+
+.fi-eye:before {
+  content: "\E975";
 }
 
 /* stylelint-enable */
