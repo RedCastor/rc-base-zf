@@ -1,0 +1,23 @@
+//
+// Classes
+// --------------------------------------------------
+
+//-- Clearfix
+.cf {
+  @include clearfix;
+}
+
+//-- Absolute Center
+.absolute-center {
+  @include absolute-center;
+}
+
+//-- Horizontal Center
+.horizontal-center {
+  @include horizontal-center;
+}
+
+//-- Vertical Center
+.vertical-center {
+  @include vertical-center;
+}
