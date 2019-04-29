@@ -10,6 +10,5 @@
 }
 
 .comment-form input[type="submit"] {
-  @extend .button;
-  @extend .secondary;
+  @include button(false, $secondary-color, auto, $button-color, $button-fill);
 }

@@ -16,6 +16,5 @@
 }
 
 .search-form .search-submit {
-  @extend .button;
-  @extend .secondary;
+  @include button(false, $secondary-color, auto, $button-color, $button-fill);
 }

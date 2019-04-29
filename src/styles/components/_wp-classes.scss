@@ -34,7 +34,7 @@
 }
 
 .page-title {
-  @extend .text-center;
+  text-align: center;
 }
 
 @include breakpoint(medium) {
