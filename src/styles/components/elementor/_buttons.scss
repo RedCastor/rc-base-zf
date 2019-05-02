@@ -4,7 +4,7 @@
 
 @mixin rc-base-elementor-button {
   .elementor-button {
-    @extend .button;
+    @include button;
 
     &.elementor-size-xs,
     &.elementor-size-sm,
@@ -17,33 +17,33 @@
 
   .elementor-button-hollow {
     .elementor-button {
-      @extend .hollow;
+      @include button-hollow;
+      @include button-hollow-style;
     }
   }
 
   .elementor-element {
     &.elementor-button-info {
       .elementor-button {
-        @extend .secondary;
+        @include button-style($secondary-color, auto, $button-color);
       }
     }
 
     &.elementor-button-success {
       .elementor-button {
-        @extend .success;
-        color: $white-base;
+        @include button-style($success-color, auto, $button-color);
       }
     }
 
     &.elementor-button-warning {
       .elementor-button {
-        @extend .warning;
+        @include button-style($warning-color, auto, $button-color);
       }
     }
 
     &.elementor-button-danger {
       .elementor-button {
-        @extend .alert;
+        @include button-style($alert-color, auto, $button-color);
       }
     }
   }
