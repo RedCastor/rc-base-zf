@@ -559,6 +559,11 @@
     content: $fi-var-like2;
   }
 }
+.fi-like-solid {
+  &:before {
+    content: $fi-var-like-solid;
+  }
+}
 .fi-link {
   &:before {
     content: $fi-var-link;
@@ -1127,18 +1132,6 @@
 .fi-youtube {
   &:before {
     content: $fi-var-youtube;
-  }
-}
-
-//-- Additionnal class
-.fi-credit-card {
-  &:before {
-    content: $fi-var-credit;
-  }
-}
-.fi-eye {
-  &:before {
-    content: $fi-var-look;
   }
 }
 /* stylelint-enable */
