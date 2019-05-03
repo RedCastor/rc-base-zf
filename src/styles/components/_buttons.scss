@@ -1,3 +1,32 @@
 //
 // Buttons
 // --------------------------------------------------
+
+//-- Button link
+.button-link {
+  @include button($style: hollow);
+
+  // Sizes
+  @each $size, $value in map-remove($button-sizes, default) {
+    &.#{$size} {
+      font-size: $value;
+    }
+  }
+
+  // Colors
+  @each $name, $color in $button-palette {
+    &.#{$name} {
+      @include button-hollow-style($color);
+    }
+  }
+
+  margin: 0;
+  padding: 0;
+
+  &,
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    outline: none;
+  }
+}
