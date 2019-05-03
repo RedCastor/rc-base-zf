@@ -28467,6 +28467,18 @@ html.is-reveal-open body {
   outline: none;
 }
 
+/* line 32, src/styles/components/_buttons.scss */
+
+.button-link.disabled,
+.button-link[disabled],
+.button-link:hover.disabled,
+.button-link:hover[disabled],
+.button-link:focus.disabled,
+.button-link:focus[disabled] {
+  border-color: transparent;
+  outline: none;
+}
+
 /** Search form */
 
 /* line 10, src/styles/components/_form.scss */

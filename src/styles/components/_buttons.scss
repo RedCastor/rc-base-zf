@@ -28,5 +28,11 @@
   &:focus {
     border-color: transparent;
     outline: none;
+
+    &.disabled,
+    &[disabled] {
+      border-color: transparent;
+      outline: none;
+    }
   }
 }
