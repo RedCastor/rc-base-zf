@@ -8,7 +8,7 @@
 
 /**
  * Foundation for Sites by ZURB
- * Version 6.5.3
+ * Version 6.5.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -3564,8 +3564,7 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -3583,8 +3582,7 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -3602,8 +3600,7 @@ ol.comment-list {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* line 26, node_modules/foundation-sites/scss/xy-grid/_classes.scss */
@@ -8556,7 +8553,7 @@ a.button:focus {
   color: #000;
 }
 
-/* line 42, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 43, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress {
   height: 1rem;
@@ -8565,37 +8562,37 @@ a.button:focus {
   background-color: #777777;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.primary .progress-meter {
   background-color: #1779ba;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.secondary .progress-meter {
   background-color: #767676;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.success .progress-meter {
   background-color: #18a733;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.warning .progress-meter {
   background-color: #ffae00;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.alert .progress-meter {
   background-color: #cc4b37;
 }
 
-/* line 55, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 56, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter {
   position: relative;
@@ -8605,7 +8602,7 @@ a.button:focus {
   background-color: #1779ba;
 }
 
-/* line 60, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 61, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter-text {
   position: absolute;
@@ -8614,6 +8611,7 @@ a.button:focus {
   -webkit-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  position: absolute;
   margin: 0;
   font-size: 0.75rem;
   font-weight: bold;
@@ -10942,6 +10940,7 @@ a.thumbnail image {
   border-left-width: 0;
   border-right-style: solid;
   border-color: transparent #1779ba transparent transparent;
+  border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.75rem;
@@ -13251,7 +13250,7 @@ html.is-reveal-open body {
 
 /**
  * Foundation for Sites by ZURB
- * Version 6.5.3
+ * Version 6.5.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -16807,8 +16806,7 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -16826,8 +16824,7 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -16845,8 +16842,7 @@ ol.comment-list {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* line 26, node_modules/foundation-sites/scss/xy-grid/_classes.scss */
@@ -21799,7 +21795,7 @@ a.button:focus {
   color: #000;
 }
 
-/* line 42, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 43, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress {
   height: 1rem;
@@ -21808,37 +21804,37 @@ a.button:focus {
   background-color: #777777;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.primary .progress-meter {
   background-color: #1779ba;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.secondary .progress-meter {
   background-color: #767676;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.success .progress-meter {
   background-color: #18a733;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.warning .progress-meter {
   background-color: #ffae00;
 }
 
-/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.alert .progress-meter {
   background-color: #cc4b37;
 }
 
-/* line 55, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 56, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter {
   position: relative;
@@ -21848,7 +21844,7 @@ a.button:focus {
   background-color: #1779ba;
 }
 
-/* line 60, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 61, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter-text {
   position: absolute;
@@ -21857,6 +21853,7 @@ a.button:focus {
   -webkit-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  position: absolute;
   margin: 0;
   font-size: 0.75rem;
   font-weight: bold;
@@ -24185,6 +24182,7 @@ a.thumbnail image {
   border-left-width: 0;
   border-right-style: solid;
   border-color: transparent #1779ba transparent transparent;
+  border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.75rem;
@@ -26739,7 +26737,13 @@ html.is-reveal-open body {
   margin-left: 0.3em;
 }
 
-/* line 94, src/styles/components/icons/_helper.scss */
+/* line 93, src/styles/components/icons/_helper.scss */
+
+.fi.webicon {
+  width: 1em;
+}
+
+/* line 98, src/styles/components/icons/_helper.scss */
 
 .fi-spin {
   -webkit-animation: spin 2s infinite linear;
@@ -26785,7 +26789,7 @@ html.is-reveal-open body {
   }
 }
 
-/* line 111, src/styles/components/icons/_helper.scss */
+/* line 115, src/styles/components/icons/_helper.scss */
 
 .fi-rotate-90 {
   /* stylelint-disable-next-line */
@@ -26795,7 +26799,7 @@ html.is-reveal-open body {
           transform: rotate(90deg);
 }
 
-/* line 117, src/styles/components/icons/_helper.scss */
+/* line 121, src/styles/components/icons/_helper.scss */
 
 .fi-rotate-180 {
   /* stylelint-disable-next-line */
@@ -26805,7 +26809,7 @@ html.is-reveal-open body {
           transform: rotate(180deg);
 }
 
-/* line 123, src/styles/components/icons/_helper.scss */
+/* line 127, src/styles/components/icons/_helper.scss */
 
 .fi-rotate-270 {
   /* stylelint-disable-next-line */
@@ -26815,7 +26819,7 @@ html.is-reveal-open body {
           transform: rotate(270deg);
 }
 
-/* line 129, src/styles/components/icons/_helper.scss */
+/* line 133, src/styles/components/icons/_helper.scss */
 
 .fi-flip-horizontal {
   /* stylelint-disable-next-line */
@@ -26825,7 +26829,7 @@ html.is-reveal-open body {
           transform: scale(-1, 1);
 }
 
-/* line 135, src/styles/components/icons/_helper.scss */
+/* line 139, src/styles/components/icons/_helper.scss */
 
 .fi-flip-vertical {
   /* stylelint-disable-next-line */
@@ -26835,7 +26839,7 @@ html.is-reveal-open body {
           transform: scale(1, -1);
 }
 
-/* line 141, src/styles/components/icons/_helper.scss */
+/* line 145, src/styles/components/icons/_helper.scss */
 
 .fi-stack {
   position: relative;
@@ -26846,7 +26850,7 @@ html.is-reveal-open body {
   vertical-align: middle;
 }
 
-/* line 151, src/styles/components/icons/_helper.scss */
+/* line 155, src/styles/components/icons/_helper.scss */
 
 .fi-stack-1x,
 .fi-stack-2x {
@@ -26856,19 +26860,19 @@ html.is-reveal-open body {
   text-align: center;
 }
 
-/* line 160, src/styles/components/icons/_helper.scss */
+/* line 164, src/styles/components/icons/_helper.scss */
 
 .fi-stack-1x {
   line-height: inherit;
 }
 
-/* line 165, src/styles/components/icons/_helper.scss */
+/* line 169, src/styles/components/icons/_helper.scss */
 
 .fi-stack-2x {
   font-size: 2em;
 }
 
-/* line 170, src/styles/components/icons/_helper.scss */
+/* line 174, src/styles/components/icons/_helper.scss */
 
 .fi-inverse {
   color: #fff;
@@ -26876,7 +26880,7 @@ html.is-reveal-open body {
 
 /* Custom classes / mods - PIXEDEN */
 
-/* line 176, src/styles/components/icons/_helper.scss */
+/* line 180, src/styles/components/icons/_helper.scss */
 
 .fi-va {
   vertical-align: middle;
@@ -28767,8 +28771,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* line 39, src/styles/components/_grid.scss */
@@ -28777,8 +28780,7 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* line 55, src/styles/components/_grid.scss */
