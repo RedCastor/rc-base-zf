@@ -1,6 +1,9 @@
 //
 // Badge
 // --------------------------------------------------
+/// opacity for a disabled button.
+/// @type List
+$badge-opacity-disable: 0.35 !default;
 
 .badge {
   &.square {
@@ -8,12 +11,19 @@
   }
 
   &.hollow {
+    background: transparent;
+    border: solid 1px $primary-color;
+    color: $primary-color;
+
     @each $name, $color in $badge-palette {
       &.#{$name} {
-        background: transparent;
-        border: solid 1px $color;
+        border-color: $color;
         color: $color;
       }
     }
+  }
+
+  &.disable {
+    opacity: $badge-opacity-disable;
   }
 }

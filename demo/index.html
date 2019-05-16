@@ -117,6 +117,8 @@
                           </div>
 
                           <div class="grid-container">
+                            <span class="badge hollow">1</span>
+                            <span class="badge hollow square">1</span>
                             <span class="badge hollow square primary">1</span>
                             <span class="badge hollow square secondary">2</span>
                             <span class="badge hollow success">3</span>
@@ -124,11 +126,27 @@
                             <span class="badge hollow warning">B</span>
                           </div>
                           <div class="grid-container">
+                            <span class="badge">1</span>
+                            <span class="badge square">1</span>
                             <span class="badge square primary">1</span>
                             <span class="badge square secondary">2</span>
                             <span class="badge success">3</span>
                             <span class="badge alert">A</span>
                             <span class="badge warning">B</span>
+                          </div>
+
+                          <div class="product-attribute attribute-pa_tailles" ng-class="['attribute-' + attribute.slug]" ng-repeat="attribute in item.attributes">
+                            <span class="badge hollow attribute-term disable" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">S</span>
+                            <span class="badge hollow attribute-term disable" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">M</span>
+                            <span class="badge hollow attribute-term" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">L</span>
+                            <span class="badge hollow attribute-term" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">XL</span>
+                          </div>
+
+                          <div class="product-attribute attribute-pa_tailles" ng-class="['attribute-' + attribute.slug]" ng-repeat="attribute in item.attributes">
+                            <span class="badge attribute-term disable" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">S</span>
+                            <span class="badge attribute-term disable" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">M</span>
+                            <span class="badge attribute-term" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">L</span>
+                            <span class="badge attribute-term" ng-class="{'disable' : !term.available}" ng-repeat="term in attribute.options">XL</span>
                           </div>
                         </main>
 

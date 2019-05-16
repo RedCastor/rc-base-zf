@@ -28983,50 +28983,59 @@ main,
   display: inline-block;
 }
 
-/* line 6, src/styles/components/_badge.scss */
+/* line 9, src/styles/components/_badge.scss */
 
 .badge.square {
   border-radius: 0;
 }
 
-/* line 12, src/styles/components/_badge.scss */
+/* line 13, src/styles/components/_badge.scss */
 
-.badge.hollow.primary {
+.badge.hollow {
   background: transparent;
   border: solid 1px #1779ba;
   color: #1779ba;
 }
 
-/* line 12, src/styles/components/_badge.scss */
+/* line 19, src/styles/components/_badge.scss */
+
+.badge.hollow.primary {
+  border-color: #1779ba;
+  color: #1779ba;
+}
+
+/* line 19, src/styles/components/_badge.scss */
 
 .badge.hollow.secondary {
-  background: transparent;
-  border: solid 1px #767676;
+  border-color: #767676;
   color: #767676;
 }
 
-/* line 12, src/styles/components/_badge.scss */
+/* line 19, src/styles/components/_badge.scss */
 
 .badge.hollow.success {
-  background: transparent;
-  border: solid 1px #18a733;
+  border-color: #18a733;
   color: #18a733;
 }
 
-/* line 12, src/styles/components/_badge.scss */
+/* line 19, src/styles/components/_badge.scss */
 
 .badge.hollow.warning {
-  background: transparent;
-  border: solid 1px #ffae00;
+  border-color: #ffae00;
   color: #ffae00;
 }
 
-/* line 12, src/styles/components/_badge.scss */
+/* line 19, src/styles/components/_badge.scss */
 
 .badge.hollow.alert {
-  background: transparent;
-  border: solid 1px #cc4b37;
+  border-color: #cc4b37;
   color: #cc4b37;
+}
+
+/* line 26, src/styles/components/_badge.scss */
+
+.badge.disable {
+  opacity: 0.35;
 }
 
 /** Import elementor components */
