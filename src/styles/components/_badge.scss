@@ -1,0 +1,19 @@
+//
+// Badge
+// --------------------------------------------------
+
+.badge {
+  &.square {
+    border-radius: 0;
+  }
+
+  &.hollow {
+    @each $name, $color in $badge-palette {
+      &.#{$name} {
+        background: transparent;
+        border: solid 1px $color;
+        color: $color;
+      }
+    }
+  }
+}

@@ -28983,6 +28983,52 @@ main,
   display: inline-block;
 }
 
+/* line 6, src/styles/components/_badge.scss */
+
+.badge.square {
+  border-radius: 0;
+}
+
+/* line 12, src/styles/components/_badge.scss */
+
+.badge.hollow.primary {
+  background: transparent;
+  border: solid 1px #1779ba;
+  color: #1779ba;
+}
+
+/* line 12, src/styles/components/_badge.scss */
+
+.badge.hollow.secondary {
+  background: transparent;
+  border: solid 1px #767676;
+  color: #767676;
+}
+
+/* line 12, src/styles/components/_badge.scss */
+
+.badge.hollow.success {
+  background: transparent;
+  border: solid 1px #18a733;
+  color: #18a733;
+}
+
+/* line 12, src/styles/components/_badge.scss */
+
+.badge.hollow.warning {
+  background: transparent;
+  border: solid 1px #ffae00;
+  color: #ffae00;
+}
+
+/* line 12, src/styles/components/_badge.scss */
+
+.badge.hollow.alert {
+  background: transparent;
+  border: solid 1px #cc4b37;
+  color: #cc4b37;
+}
+
 /** Import elementor components */
 
 /* line 6, src/styles/components/elementor/_buttons.scss */
