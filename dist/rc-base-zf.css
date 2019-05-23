@@ -8,7 +8,7 @@
 
 /**
  * Foundation for Sites by ZURB
- * Version 6.5.1
+ * Version 6.5.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -3564,7 +3564,8 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 75rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -3582,7 +3583,8 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -3600,7 +3602,8 @@ ol.comment-list {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 26, node_modules/foundation-sites/scss/xy-grid/_classes.scss */
@@ -8553,7 +8556,7 @@ a.button:focus {
   color: #000;
 }
 
-/* line 43, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 42, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress {
   height: 1rem;
@@ -8562,37 +8565,37 @@ a.button:focus {
   background-color: #777777;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.primary .progress-meter {
   background-color: #1779ba;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.secondary .progress-meter {
   background-color: #767676;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.success .progress-meter {
   background-color: #18a733;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.warning .progress-meter {
   background-color: #ffae00;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.alert .progress-meter {
   background-color: #cc4b37;
 }
 
-/* line 56, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 55, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter {
   position: relative;
@@ -8602,7 +8605,7 @@ a.button:focus {
   background-color: #1779ba;
 }
 
-/* line 61, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 60, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter-text {
   position: absolute;
@@ -8611,7 +8614,6 @@ a.button:focus {
   -webkit-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  position: absolute;
   margin: 0;
   font-size: 0.75rem;
   font-weight: bold;
@@ -10940,7 +10942,6 @@ a.thumbnail image {
   border-left-width: 0;
   border-right-style: solid;
   border-color: transparent #1779ba transparent transparent;
-  border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.75rem;
@@ -13250,7 +13251,7 @@ html.is-reveal-open body {
 
 /**
  * Foundation for Sites by ZURB
- * Version 6.5.1
+ * Version 6.5.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -16806,7 +16807,8 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 75rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -16824,7 +16826,8 @@ ol.comment-list {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media print, screen and (min-width: 40em) {
@@ -16842,7 +16845,8 @@ ol.comment-list {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 26, node_modules/foundation-sites/scss/xy-grid/_classes.scss */
@@ -21795,7 +21799,7 @@ a.button:focus {
   color: #000;
 }
 
-/* line 43, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 42, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress {
   height: 1rem;
@@ -21804,37 +21808,37 @@ a.button:focus {
   background-color: #777777;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.primary .progress-meter {
   background-color: #1779ba;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.secondary .progress-meter {
   background-color: #767676;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.success .progress-meter {
   background-color: #18a733;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.warning .progress-meter {
   background-color: #ffae00;
 }
 
-/* line 48, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 47, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress.alert .progress-meter {
   background-color: #cc4b37;
 }
 
-/* line 56, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 55, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter {
   position: relative;
@@ -21844,7 +21848,7 @@ a.button:focus {
   background-color: #1779ba;
 }
 
-/* line 61, node_modules/foundation-sites/scss/components/_progress-bar.scss */
+/* line 60, node_modules/foundation-sites/scss/components/_progress-bar.scss */
 
 .progress-meter-text {
   position: absolute;
@@ -21853,7 +21857,6 @@ a.button:focus {
   -webkit-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  position: absolute;
   margin: 0;
   font-size: 0.75rem;
   font-weight: bold;
@@ -24182,7 +24185,6 @@ a.thumbnail image {
   border-left-width: 0;
   border-right-style: solid;
   border-color: transparent #1779ba transparent transparent;
-  border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.75rem;
@@ -28771,7 +28773,8 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 39, src/styles/components/_grid.scss */
@@ -28780,7 +28783,8 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 55, src/styles/components/_grid.scss */
