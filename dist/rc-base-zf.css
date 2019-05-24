@@ -29078,8 +29078,8 @@ main,
 
 /* line 21, src/styles/components/_table.scss */
 
-.table .table-header > *,
-.table .table-row > * {
+.table .table-header > .table-cell,
+.table .table-row > .table-cell {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
 }
@@ -29087,8 +29087,8 @@ main,
 @media print, screen and (min-width: 40em) {
   /* line 21, src/styles/components/_table.scss */
 
-  .table .table-header > *,
-  .table .table-row > * {
+  .table .table-header > .table-cell,
+  .table .table-row > .table-cell {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
   }
@@ -29098,18 +29098,25 @@ main,
 
 .table .table-header .table-cell,
 .table .table-row .table-cell {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  min-height: 0px;
-  min-width: 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
   width: auto;
 }
 
-/* line 29, src/styles/components/_table.scss */
+/* line 28, src/styles/components/_table.scss */
 
 .table .table-header .table-cell.shrink,
 .table .table-row .table-cell.shrink {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+/* line 34, src/styles/components/_table.scss */
+
+.table .table-header.shrink > .table-cell,
+.table .table-row.shrink > .table-cell {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
