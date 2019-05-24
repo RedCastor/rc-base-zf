@@ -1,0 +1,29 @@
+//
+// Table
+// --------------------------------------------------
+.table {
+  .table-header {
+    background-color: $table-head-background;
+    padding: ($global-padding / 2) 0;
+    margin-bottom: ($global-padding / 2);
+  }
+
+  .table-header,
+  .table-row {
+    @include xy-grid;
+    @include xy-gutters($negative: true);
+
+    & > * {
+      @include xy-gutters($grid-padding-gutters, padding);
+    }
+
+    .table-cell {
+      @include xy-cell-base();
+      @include xy-cell-static(shrink, false, $gutter-type: padding);
+
+      &.auto {
+        @include xy-cell-base(auto);
+      }
+    }
+  }
+}
