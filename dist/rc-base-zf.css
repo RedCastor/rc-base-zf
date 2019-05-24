@@ -29042,15 +29042,16 @@ main,
   opacity: 0.35;
 }
 
-/* line 5, src/styles/components/_table.scss */
+/* line 9, src/styles/components/_table.scss */
 
 .table .table-header {
   background-color: #f8f8f8;
+  color: #000;
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
 }
 
-/* line 11, src/styles/components/_table.scss */
+/* line 16, src/styles/components/_table.scss */
 
 .table .table-header,
 .table .table-row {
@@ -29066,7 +29067,7 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 11, src/styles/components/_table.scss */
+  /* line 16, src/styles/components/_table.scss */
 
   .table .table-header,
   .table .table-row {
@@ -29075,7 +29076,7 @@ main,
   }
 }
 
-/* line 16, src/styles/components/_table.scss */
+/* line 21, src/styles/components/_table.scss */
 
 .table .table-header > *,
 .table .table-row > * {
@@ -29084,7 +29085,7 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 16, src/styles/components/_table.scss */
+  /* line 21, src/styles/components/_table.scss */
 
   .table .table-header > *,
   .table .table-row > * {
@@ -29093,7 +29094,7 @@ main,
   }
 }
 
-/* line 20, src/styles/components/_table.scss */
+/* line 25, src/styles/components/_table.scss */
 
 .table .table-header .table-cell,
 .table .table-row .table-cell {
@@ -29105,13 +29106,13 @@ main,
   width: auto;
 }
 
-/* line 24, src/styles/components/_table.scss */
+/* line 29, src/styles/components/_table.scss */
 
-.table .table-header .table-cell.auto,
-.table .table-row .table-cell.auto {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0px;
+.table .table-header .table-cell.shrink,
+.table .table-row .table-cell.shrink {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 /** Import elementor components */
