@@ -7,7 +7,7 @@
  * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
  */
 
-/** Media alignment */
+//-- Media alignment
 .alignnone {
   margin-left: 0;
   margin-right: 0;
@@ -33,10 +33,6 @@
   }
 }
 
-.page-title {
-  text-align: center;
-}
-
 @include breakpoint(medium) {
   .alignleft {
     float: left;
@@ -53,6 +49,16 @@
       margin-left: (rem-calc($-zf-bp-value) / 2);
     }
   }
+}
+
+//-- Page Title
+.page-title {
+  text-align: center;
+}
+
+//-- Password form
+.post-password-form input[type="submit"] {
+  @include button(false, $secondary-color, auto, $button-color, $button-fill);
 }
 
 /** Captions */
