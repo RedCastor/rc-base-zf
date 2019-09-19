@@ -18,15 +18,20 @@ $table-head-margin-bottom: ($global-padding / 2) !default;
     @include xy-grid;
     @include xy-gutters($negative: true);
 
-    & > * {
+    & > .table-cell {
       @include xy-gutters($grid-padding-gutters, padding);
     }
 
     .table-cell {
-      @include xy-cell-base();
-      @include xy-cell-static(auto, false, $gutter-type: padding);
+      @include xy-cell(auto, false, $gutter-type: padding);
 
       &.shrink {
+        @include xy-cell-base(shrink);
+      }
+    }
+
+    &.shrink {
+      & > .table-cell {
         @include xy-cell-base(shrink);
       }
     }
