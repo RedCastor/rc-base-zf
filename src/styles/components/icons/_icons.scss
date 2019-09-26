@@ -589,6 +589,11 @@
     content: $fi-var-lock;
   }
 }
+.fi-log-out {
+  &:before {
+    content: $fi-var-log-out;
+  }
+}
 .fi-look {
   &:before {
     content: $fi-var-look;
