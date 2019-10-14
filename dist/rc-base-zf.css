@@ -28900,7 +28900,7 @@ main,
   }
 }
 
-/* line 90, src/styles/components/_grid.scss */
+/* line 101, src/styles/components/_grid.scss */
 
 .sidebar-primary .sidebar {
   width: 33.33333%;
@@ -28909,7 +28909,7 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 90, src/styles/components/_grid.scss */
+  /* line 101, src/styles/components/_grid.scss */
 
   .sidebar-primary .sidebar {
     -webkit-box-flex: 0;
@@ -28922,7 +28922,7 @@ main,
 }
 
 @media print, screen and (min-width: 64em) {
-  /* line 90, src/styles/components/_grid.scss */
+  /* line 101, src/styles/components/_grid.scss */
 
   .sidebar-primary .sidebar {
     -webkit-box-flex: 0;
