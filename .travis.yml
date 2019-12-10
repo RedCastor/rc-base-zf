@@ -5,9 +5,9 @@ node_js:
   - lts/*
 
 env:
-- TRAVIS_NODE_VERSION="6"
-- TRAVIS_NODE_VERSION="7"
 - TRAVIS_NODE_VERSION="10"
+- TRAVIS_NODE_VERSION="11"
+- TRAVIS_NODE_VERSION="12"
 
 matrix:
   fast_finish: true
