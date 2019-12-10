@@ -2604,6 +2604,10 @@ input[type='search'] {
   color: #777777;
 }
 
+::-moz-placeholder {
+  color: #777777;
+}
+
 ::-ms-input-placeholder {
   color: #777777;
 }
@@ -2909,6 +2913,10 @@ select[multiple] {
 /* line 49, node_modules/foundation-sites/scss/forms/_error.scss */
 
 .is-invalid-input:not(:focus)::-webkit-input-placeholder {
+  color: #cc4b37;
+}
+
+.is-invalid-input:not(:focus)::-moz-placeholder {
   color: #cc4b37;
 }
 
@@ -15847,6 +15855,10 @@ input[type='search'] {
   color: #777777;
 }
 
+::-moz-placeholder {
+  color: #777777;
+}
+
 ::-ms-input-placeholder {
   color: #777777;
 }
@@ -16152,6 +16164,10 @@ select[multiple] {
 /* line 49, node_modules/foundation-sites/scss/forms/_error.scss */
 
 .is-invalid-input:not(:focus)::-webkit-input-placeholder {
+  color: #cc4b37;
+}
+
+.is-invalid-input:not(:focus)::-moz-placeholder {
   color: #cc4b37;
 }
 
