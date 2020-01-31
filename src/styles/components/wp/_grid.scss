@@ -1,0 +1,116 @@
+//
+// WordPress Grid
+// --------------------------------------------------
+
+//-- alignment
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  height: auto;
+
+  @include -zf-breakpoint-value(auto, $grid-padding-gutters) {
+    margin: (rem-calc($-zf-bp-value) / 2) auto;
+  }
+}
+
+.alignleft,
+.alignright {
+  height: auto;
+
+  @include -zf-breakpoint-value(auto, $grid-padding-gutters) {
+    margin-bottom: (rem-calc($-zf-bp-value) / 2);
+  }
+}
+
+//-- Align position
+@include breakpoint(medium) {
+  .alignleft {
+    float: left;
+
+    @include -zf-breakpoint-value(medium, $grid-padding-gutters) {
+      margin-right: (rem-calc($-zf-bp-value) / 2);
+    }
+  }
+
+  .alignright {
+    float: right;
+
+    @include -zf-breakpoint-value(medium, $grid-padding-gutters) {
+      margin-left: (rem-calc($-zf-bp-value) / 2);
+    }
+  }
+}
+
+//-- Block alignment
+@if $xy-grid {
+  [class*="wp-block"].alignwide {
+    > [class*="__inner-container"],
+    > [class*="embed__wrapper"],
+    > .blocks-gallery-grid,
+    &.wp-block-columns,
+    &.wp-block-table,
+    &.wp-block-image,
+    &.wp-block-cover {
+      @include xy-grid-container(100%);
+    }
+  }
+
+  [class*="wp-block"].alignfull {
+    > [class*="__inner-container"],
+    > [class*="embed__wrapper"],
+    > .blocks-gallery-grid,
+    &.wp-block-columns,
+    &.wp-block-table,
+    &.wp-block-image,
+    &.wp-block-cover {
+      @include xy-grid-container(100%, 0);
+    }
+  }
+
+  [class*="wp-block"]:not(.alignfull):not(.alignwide) {
+    > [class*="__inner-container"],
+    > [class*="embed__wrapper"],
+    > .blocks-gallery-grid,
+    &.wp-block-columns,
+    &.wp-block-table,
+    &.wp-block-image,
+    &.wp-block-cover {
+      @include xy-grid-container;
+    }
+  }
+
+  //Set default container
+  main {
+    > p,
+    > ul,
+    > ol,
+    > pre,
+    > .wp-block-button {
+      @include xy-grid-container;
+    }
+
+    > *:not(.alignfull):not(.alignwide) {
+      > p,
+      > ul,
+      > ol,
+      > pre,
+      > pre,
+      > .wp-block-button {
+        @include xy-grid-container;
+      }
+    }
+
+    @for $index from 1 through 6 {
+      > h#{$index},
+      > *:not(.alignfull):not(.alignwide) > h#{$index} {
+        @include xy-grid-container;
+      }
+    }
+  }
+}

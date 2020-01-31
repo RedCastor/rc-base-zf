@@ -1,0 +1,25 @@
+//
+// Editor Grid
+// --------------------------------------------------
+.wp-block {
+  max-width: 720px;
+
+  /* Width of "wide" blocks */
+  &[data-align="wide"] {
+    max-width: 1080px;
+  }
+
+  /* Width of "full-wide" blocks */
+  &[data-align="full"] {
+    max-width: none;
+    margin-left: -20px;
+  }
+
+  .wp-block:not([data-align="full"]):not([data-align="wide"]) {
+    max-width: none;
+  }
+
+  .wp-block[data-align="full"] {
+    max-width: none;
+  }
+}

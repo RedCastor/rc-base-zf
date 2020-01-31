@@ -13181,6 +13181,7 @@ html.is-reveal-open body {
 /* line 96, node_modules/foundation-sites/scss/components/_visibility.scss */
 
 .show-for-sr,
+.screen-reader-text,
 .show-on-focus,
 .screen-reader-text {
   position: absolute !important;
@@ -26432,6 +26433,7 @@ html.is-reveal-open body {
 /* line 96, node_modules/foundation-sites/scss/components/_visibility.scss */
 
 .show-for-sr,
+.screen-reader-text,
 .show-on-focus,
 .screen-reader-text {
   position: absolute !important;
@@ -28677,115 +28679,6 @@ input.ng-touched.ng-valid:not(.input-qty).ng-empty {
   color: #fefefe;
 }
 
-/**
- * WordPress Generated Classes
- * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
- */
-
-/* line 11, src/styles/components/_wp-classes.scss */
-
-.alignnone {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 18, src/styles/components/_wp-classes.scss */
-
-.aligncenter {
-  display: block;
-  height: auto;
-  margin: 0.625rem auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 18, src/styles/components/_wp-classes.scss */
-
-  .aligncenter {
-    margin: 0.9375rem auto;
-  }
-}
-
-/* line 27, src/styles/components/_wp-classes.scss */
-
-.alignleft,
-.alignright {
-  height: auto;
-  margin-bottom: 0.625rem;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 27, src/styles/components/_wp-classes.scss */
-
-  .alignleft,
-  .alignright {
-    margin-bottom: 0.9375rem;
-  }
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 37, src/styles/components/_wp-classes.scss */
-
-  .alignleft {
-    float: left;
-    margin-right: 0.9375rem;
-  }
-
-  /* line 45, src/styles/components/_wp-classes.scss */
-
-  .alignright {
-    float: right;
-    margin-left: 0.9375rem;
-  }
-}
-
-/* line 55, src/styles/components/_wp-classes.scss */
-
-.page-title {
-  text-align: center;
-}
-
-/* line 60, src/styles/components/_wp-classes.scss */
-
-.post-password-form input[type="submit"] {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 1rem 0;
-  padding: 0.85em 1em;
-  border: 1px solid transparent;
-  border-radius: 0;
-  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  font-family: inherit;
-  font-size: 0.9rem;
-  -webkit-appearance: none;
-  line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  background-color: #767676;
-  color: #fefefe;
-}
-
-/* line 202, node_modules/foundation-sites/scss/util/_mixins.scss */
-
-[data-whatinput='mouse'] .post-password-form input[type="submit"] {
-  outline: 0;
-}
-
-/* line 153, node_modules/foundation-sites/scss/components/_button.scss */
-
-.post-password-form input[type="submit"]:hover,
-.post-password-form input[type="submit"]:focus {
-  background-color: #5e5e5e;
-  color: #fefefe;
-}
-
-/** Captions */
-
-/** Text meant only for screen readers */
-
 /* line 9, src/styles/components/_dropdown-menu.scss */
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
@@ -29176,6 +29069,408 @@ main,
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+/** Import wordpress components */
+
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+/* line 11, src/styles/components/wp/_global.scss */
+
+.page-title {
+  text-align: center;
+}
+
+/* line 16, src/styles/components/wp/_global.scss */
+
+.post-password-form input[type="submit"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  border: 1px solid transparent;
+  border-radius: 0;
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-family: inherit;
+  font-size: 0.9rem;
+  -webkit-appearance: none;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #767676;
+  color: #fefefe;
+}
+
+/* line 202, node_modules/foundation-sites/scss/util/_mixins.scss */
+
+[data-whatinput='mouse'] .post-password-form input[type="submit"] {
+  outline: 0;
+}
+
+/* line 153, node_modules/foundation-sites/scss/components/_button.scss */
+
+.post-password-form input[type="submit"]:hover,
+.post-password-form input[type="submit"]:focus {
+  background-color: #5e5e5e;
+  color: #fefefe;
+}
+
+/** Captions */
+
+/** Text meant only for screen readers */
+
+/* line 6, src/styles/components/wp/_grid.scss */
+
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 13, src/styles/components/wp/_grid.scss */
+
+.aligncenter {
+  display: block;
+  height: auto;
+  margin: 0.625rem auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 13, src/styles/components/wp/_grid.scss */
+
+  .aligncenter {
+    margin: 0.9375rem auto;
+  }
+}
+
+/* line 22, src/styles/components/wp/_grid.scss */
+
+.alignleft,
+.alignright {
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 22, src/styles/components/wp/_grid.scss */
+
+  .alignleft,
+  .alignright {
+    margin-bottom: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 33, src/styles/components/wp/_grid.scss */
+
+  .alignleft {
+    float: left;
+    margin-right: 0.9375rem;
+  }
+
+  /* line 41, src/styles/components/wp/_grid.scss */
+
+  .alignright {
+    float: right;
+    margin-left: 0.9375rem;
+  }
+}
+
+/* line 53, src/styles/components/wp/_grid.scss */
+
+[class*="wp-block"].alignwide > [class*="__inner-container"],
+[class*="wp-block"].alignwide > .blocks-gallery-grid,
+[class*="wp-block"].alignwide.wp-block-columns,
+[class*="wp-block"].alignwide.wp-block-table,
+[class*="wp-block"].alignwide.wp-block-image,
+[class*="wp-block"].alignwide.wp-block-cover {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 53, src/styles/components/wp/_grid.scss */
+
+  [class*="wp-block"].alignwide > [class*="__inner-container"],
+  [class*="wp-block"].alignwide > .blocks-gallery-grid,
+  [class*="wp-block"].alignwide.wp-block-columns,
+  [class*="wp-block"].alignwide.wp-block-table,
+  [class*="wp-block"].alignwide.wp-block-image,
+  [class*="wp-block"].alignwide.wp-block-cover {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 64, src/styles/components/wp/_grid.scss */
+
+[class*="wp-block"].alignfull > [class*="__inner-container"],
+[class*="wp-block"].alignfull > .blocks-gallery-grid,
+[class*="wp-block"].alignfull.wp-block-columns,
+[class*="wp-block"].alignfull.wp-block-table,
+[class*="wp-block"].alignfull.wp-block-image,
+[class*="wp-block"].alignfull.wp-block-cover {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 75, src/styles/components/wp/_grid.scss */
+
+[class*="wp-block"]:not(.alignfull):not(.alignwide) > [class*="__inner-container"],
+[class*="wp-block"]:not(.alignfull):not(.alignwide) > .blocks-gallery-grid,
+[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-columns,
+[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-table,
+[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-image,
+[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-cover {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 75, src/styles/components/wp/_grid.scss */
+
+  [class*="wp-block"]:not(.alignfull):not(.alignwide) > [class*="__inner-container"],
+  [class*="wp-block"]:not(.alignfull):not(.alignwide) > .blocks-gallery-grid,
+  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-columns,
+  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-table,
+  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-image,
+  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-cover {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 87, src/styles/components/wp/_grid.scss */
+
+main > p,
+main > ul,
+main > ol,
+main > pre,
+main > .wp-block-button {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 87, src/styles/components/wp/_grid.scss */
+
+  main > p,
+  main > ul,
+  main > ol,
+  main > pre,
+  main > .wp-block-button {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 96, src/styles/components/wp/_grid.scss */
+
+main > *:not(.alignfull):not(.alignwide) > p,
+main > *:not(.alignfull):not(.alignwide) > ul,
+main > *:not(.alignfull):not(.alignwide) > ol,
+main > *:not(.alignfull):not(.alignwide) > pre,
+main > *:not(.alignfull):not(.alignwide) > .wp-block-button {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 96, src/styles/components/wp/_grid.scss */
+
+  main > *:not(.alignfull):not(.alignwide) > p,
+  main > *:not(.alignfull):not(.alignwide) > ul,
+  main > *:not(.alignfull):not(.alignwide) > ol,
+  main > *:not(.alignfull):not(.alignwide) > pre,
+  main > *:not(.alignfull):not(.alignwide) > .wp-block-button {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 106, src/styles/components/wp/_grid.scss */
+
+main > h1,
+main > *:not(.alignfull):not(.alignwide) > h1 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 106, src/styles/components/wp/_grid.scss */
+
+  main > h1,
+  main > *:not(.alignfull):not(.alignwide) > h1 {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 106, src/styles/components/wp/_grid.scss */
+
+main > h2,
+main > *:not(.alignfull):not(.alignwide) > h2 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 106, src/styles/components/wp/_grid.scss */
+
+  main > h2,
+  main > *:not(.alignfull):not(.alignwide) > h2 {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 106, src/styles/components/wp/_grid.scss */
+
+main > h3,
+main > *:not(.alignfull):not(.alignwide) > h3 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 106, src/styles/components/wp/_grid.scss */
+
+  main > h3,
+  main > *:not(.alignfull):not(.alignwide) > h3 {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 106, src/styles/components/wp/_grid.scss */
+
+main > h4,
+main > *:not(.alignfull):not(.alignwide) > h4 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 106, src/styles/components/wp/_grid.scss */
+
+  main > h4,
+  main > *:not(.alignfull):not(.alignwide) > h4 {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 106, src/styles/components/wp/_grid.scss */
+
+main > h5,
+main > *:not(.alignfull):not(.alignwide) > h5 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 106, src/styles/components/wp/_grid.scss */
+
+  main > h5,
+  main > *:not(.alignfull):not(.alignwide) > h5 {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 106, src/styles/components/wp/_grid.scss */
+
+main > h6,
+main > *:not(.alignfull):not(.alignwide) > h6 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 106, src/styles/components/wp/_grid.scss */
+
+  main > h6,
+  main > *:not(.alignfull):not(.alignwide) > h6 {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+/* line 103, node_modules/foundation-sites/scss/components/_table.scss */
+
+.wp-block-table table thead tr,
+.wp-block-table table tbody tr,
+.wp-block-table table tfoot tr {
+  border-bottom: 0;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fefefe;
+}
+
+/* line 15, src/styles/components/wp/blocks/_table.scss */
+
+.wp-block-table table thead th:not(.has-text-align-left):not(.has-text-align-right) {
+  text-align: center;
+}
+
+/* line 21, src/styles/components/wp/blocks/_table.scss */
+
+.wp-block-table table tfoot td {
+  font-weight: normal;
+}
+
+/* line 27, src/styles/components/wp/blocks/_table.scss */
+
+.wp-block-table table.has-background thead,
+.wp-block-table table.has-background tbody,
+.wp-block-table table.has-background tfoot {
+  background-color: transparent;
+}
+
+/* line 32, src/styles/components/wp/blocks/_table.scss */
+
+.wp-block-table table.has-background thead tr,
+.wp-block-table table.has-background tbody tr,
+.wp-block-table table.has-background tfoot tr {
+  background-color: transparent;
 }
 
 /** Import elementor components */

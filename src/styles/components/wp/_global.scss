@@ -1,0 +1,29 @@
+//
+// WordPress Global
+// --------------------------------------------------
+
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+//-- Page Title
+.page-title {
+  text-align: center;
+}
+
+//-- Password form
+.post-password-form input[type="submit"] {
+  @include button(false, $secondary-color, auto, $button-color, $button-fill);
+}
+
+/** Captions */
+// TODO: .wp-caption {}
+// TODO: .wp-caption img {}
+// TODO: .wp-caption-text {}
+
+/** Text meant only for screen readers */
+.screen-reader-text {
+  @extend .show-for-sr;
+  @extend .show-on-focus;
+}

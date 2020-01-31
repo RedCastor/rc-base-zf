@@ -1,0 +1,38 @@
+//
+// WordPress Table Block
+// --------------------------------------------------
+
+//Unstriped default style
+.wp-block-table {
+  table {
+    thead,
+    tbody,
+    tfoot {
+      @include -zf-table-unstripe();
+    }
+
+    thead {
+      th:not(.has-text-align-left):not(.has-text-align-right) {
+        text-align: center;
+      }
+    }
+
+    tfoot {
+      td {
+        font-weight: normal;
+      }
+    }
+
+    &.has-background {
+      thead,
+      tbody,
+      tfoot {
+        background-color: transparent;
+
+        tr {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
