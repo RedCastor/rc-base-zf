@@ -92,10 +92,18 @@
   }
 }
 
+.is-style-wide {
+  @include xy-grid-container(100%);
+}
+
+.is-style-default {
+  //Empty
+}
+
 //-- Block alignment (compatible woocommerce)
 @if $xy-grid {
   [class*="wc-block"]:not([class*="__"]),
-  [class*="wp-block"]:not([class*="__"]) {
+  [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
     @include wp-block-grid-container;
     @include wp-block-grid-container(wide);
     @include wp-block-grid-container(full);
