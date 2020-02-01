@@ -1,6 +1,11 @@
 //
 // Editor
 // --------------------------------------------------
+@import "common/variables";
+@import "settings/settings";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
 
 //-- Import components editor
 @import "components/wp/editor/global";
