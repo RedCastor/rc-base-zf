@@ -29124,7 +29124,7 @@ main,
 
 /** Text meant only for screen readers */
 
-/* line 6, src/styles/components/wp/_grid.scss */
+/* line 51, src/styles/components/wp/_grid.scss */
 
 .alignnone {
   margin-left: 0;
@@ -29133,7 +29133,7 @@ main,
   height: auto;
 }
 
-/* line 13, src/styles/components/wp/_grid.scss */
+/* line 58, src/styles/components/wp/_grid.scss */
 
 .aligncenter {
   display: block;
@@ -29142,14 +29142,14 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 13, src/styles/components/wp/_grid.scss */
+  /* line 58, src/styles/components/wp/_grid.scss */
 
   .aligncenter {
     margin: 0.9375rem auto;
   }
 }
 
-/* line 22, src/styles/components/wp/_grid.scss */
+/* line 67, src/styles/components/wp/_grid.scss */
 
 .alignleft,
 .alignright {
@@ -29158,7 +29158,7 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 22, src/styles/components/wp/_grid.scss */
+  /* line 67, src/styles/components/wp/_grid.scss */
 
   .alignleft,
   .alignright {
@@ -29167,14 +29167,14 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 33, src/styles/components/wp/_grid.scss */
+  /* line 78, src/styles/components/wp/_grid.scss */
 
   .alignleft {
     float: left;
     margin-right: 0.9375rem;
   }
 
-  /* line 41, src/styles/components/wp/_grid.scss */
+  /* line 86, src/styles/components/wp/_grid.scss */
 
   .alignright {
     float: right;
@@ -29182,43 +29182,69 @@ main,
   }
 }
 
-/* line 53, src/styles/components/wp/_grid.scss */
+/* line 97, src/styles/components/wp/_grid.scss */
 
-[class*="wp-block"].alignwide > [class*="__inner-container"],
-[class*="wp-block"].alignwide > .blocks-gallery-grid,
-[class*="wp-block"].alignwide.wp-block-columns,
-[class*="wp-block"].alignwide.wp-block-table,
-[class*="wp-block"].alignwide.wp-block-image,
-[class*="wp-block"].alignwide.wp-block-cover {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+[class*="wc-block"]:not([class*="__"]),
+[class*="wp-block"]:not([class*="__"]) {
+  max-width: 75rem;
+  width: auto;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-@media print, screen and (min-width: 40em) {
-  /* line 53, src/styles/components/wp/_grid.scss */
+@media screen and (max-width: 77.8125em) {
+  /* line 97, src/styles/components/wp/_grid.scss */
 
-  [class*="wp-block"].alignwide > [class*="__inner-container"],
-  [class*="wp-block"].alignwide > .blocks-gallery-grid,
-  [class*="wp-block"].alignwide.wp-block-columns,
-  [class*="wp-block"].alignwide.wp-block-table,
-  [class*="wp-block"].alignwide.wp-block-image,
-  [class*="wp-block"].alignwide.wp-block-cover {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
+  [class*="wc-block"]:not([class*="__"]),
+  [class*="wp-block"]:not([class*="__"]) {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
   }
 }
 
-/* line 64, src/styles/components/wp/_grid.scss */
+/* line 24, src/styles/components/wp/_grid.scss */
 
-[class*="wp-block"].alignfull > [class*="__inner-container"],
-[class*="wp-block"].alignfull > .blocks-gallery-grid,
-[class*="wp-block"].alignfull.wp-block-columns,
-[class*="wp-block"].alignfull.wp-block-table,
-[class*="wp-block"].alignfull.wp-block-image,
-[class*="wp-block"].alignfull.wp-block-cover {
+[class*="wc-block"]:not([class*="__"]).alignwide,
+[class*="wp-block"]:not([class*="__"]).alignwide {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+  width: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 24, src/styles/components/wp/_grid.scss */
+
+  [class*="wc-block"]:not([class*="__"]).alignwide,
+  [class*="wp-block"]:not([class*="__"]).alignwide {
+    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
+  }
+}
+
+/* line 29, src/styles/components/wp/_grid.scss */
+
+[class*="wc-block"]:not([class*="__"]).alignwide > [class*="__inner-container"],
+[class*="wc-block"]:not([class*="__"]).alignwide > [class*="embed__wrapper"],
+[class*="wp-block"]:not([class*="__"]).alignwide > [class*="__inner-container"],
+[class*="wp-block"]:not([class*="__"]).alignwide > [class*="embed__wrapper"] {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+/* line 39, src/styles/components/wp/_grid.scss */
+
+[class*="wc-block"]:not([class*="__"]).alignfull,
+[class*="wp-block"]:not([class*="__"]).alignfull {
   padding-right: 0;
   padding-left: 0;
   max-width: 100%;
@@ -29226,212 +29252,77 @@ main,
   margin-right: auto;
 }
 
-/* line 75, src/styles/components/wp/_grid.scss */
+/* line 42, src/styles/components/wp/_grid.scss */
 
-[class*="wp-block"]:not(.alignfull):not(.alignwide) > [class*="__inner-container"],
-[class*="wp-block"]:not(.alignfull):not(.alignwide) > .blocks-gallery-grid,
-[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-columns,
-[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-table,
-[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-image,
-[class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-cover {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
+[class*="wc-block"]:not([class*="__"]).alignfull > [class*="__inner-container"],
+[class*="wc-block"]:not([class*="__"]).alignfull > [class*="embed__wrapper"],
+[class*="wp-block"]:not([class*="__"]).alignfull > [class*="__inner-container"],
+[class*="wp-block"]:not([class*="__"]).alignfull > [class*="embed__wrapper"] {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media print, screen and (min-width: 40em) {
-  /* line 75, src/styles/components/wp/_grid.scss */
-
-  [class*="wp-block"]:not(.alignfull):not(.alignwide) > [class*="__inner-container"],
-  [class*="wp-block"]:not(.alignfull):not(.alignwide) > .blocks-gallery-grid,
-  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-columns,
-  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-table,
-  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-image,
-  [class*="wp-block"]:not(.alignfull):not(.alignwide).wp-block-cover {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 87, src/styles/components/wp/_grid.scss */
+/* line 105, src/styles/components/wp/_grid.scss */
 
 main > p,
 main > ul,
 main > ol,
-main > pre,
-main > .wp-block-button {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
+main > h1,
+main > h2,
+main > h3,
+main > h4,
+main > h5,
+main > h6,
+main > span,
+main > label,
+main > * > p,
+main > * > ul,
+main > * > ol,
+main > * > h1,
+main > * > h2,
+main > * > h3,
+main > * > h4,
+main > * > h5,
+main > * > h6,
+main > * > span,
+main > * > label {
   max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-@media print, screen and (min-width: 40em) {
-  /* line 87, src/styles/components/wp/_grid.scss */
+@media screen and (max-width: 77.8125em) {
+  /* line 105, src/styles/components/wp/_grid.scss */
 
   main > p,
   main > ul,
   main > ol,
-  main > pre,
-  main > .wp-block-button {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 96, src/styles/components/wp/_grid.scss */
-
-main > *:not(.alignfull):not(.alignwide) > p,
-main > *:not(.alignfull):not(.alignwide) > ul,
-main > *:not(.alignfull):not(.alignwide) > ol,
-main > *:not(.alignfull):not(.alignwide) > pre,
-main > *:not(.alignfull):not(.alignwide) > .wp-block-button {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 96, src/styles/components/wp/_grid.scss */
-
-  main > *:not(.alignfull):not(.alignwide) > p,
-  main > *:not(.alignfull):not(.alignwide) > ul,
-  main > *:not(.alignfull):not(.alignwide) > ol,
-  main > *:not(.alignfull):not(.alignwide) > pre,
-  main > *:not(.alignfull):not(.alignwide) > .wp-block-button {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 106, src/styles/components/wp/_grid.scss */
-
-main > h1,
-main > *:not(.alignfull):not(.alignwide) > h1 {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 106, src/styles/components/wp/_grid.scss */
-
   main > h1,
-  main > *:not(.alignfull):not(.alignwide) > h1 {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 106, src/styles/components/wp/_grid.scss */
-
-main > h2,
-main > *:not(.alignfull):not(.alignwide) > h2 {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 106, src/styles/components/wp/_grid.scss */
-
   main > h2,
-  main > *:not(.alignfull):not(.alignwide) > h2 {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 106, src/styles/components/wp/_grid.scss */
-
-main > h3,
-main > *:not(.alignfull):not(.alignwide) > h3 {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 106, src/styles/components/wp/_grid.scss */
-
   main > h3,
-  main > *:not(.alignfull):not(.alignwide) > h3 {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 106, src/styles/components/wp/_grid.scss */
-
-main > h4,
-main > *:not(.alignfull):not(.alignwide) > h4 {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 106, src/styles/components/wp/_grid.scss */
-
   main > h4,
-  main > *:not(.alignfull):not(.alignwide) > h4 {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 106, src/styles/components/wp/_grid.scss */
-
-main > h5,
-main > *:not(.alignfull):not(.alignwide) > h5 {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 106, src/styles/components/wp/_grid.scss */
-
   main > h5,
-  main > *:not(.alignfull):not(.alignwide) > h5 {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-/* line 106, src/styles/components/wp/_grid.scss */
-
-main > h6,
-main > *:not(.alignfull):not(.alignwide) > h6 {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media print, screen and (min-width: 40em) {
-  /* line 106, src/styles/components/wp/_grid.scss */
-
   main > h6,
-  main > *:not(.alignfull):not(.alignwide) > h6 {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
+  main > span,
+  main > label,
+  main > * > p,
+  main > * > ul,
+  main > * > ol,
+  main > * > h1,
+  main > * > h2,
+  main > * > h3,
+  main > * > h4,
+  main > * > h5,
+  main > * > h6,
+  main > * > span,
+  main > * > label {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
   }
 }
 

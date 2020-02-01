@@ -7,16 +7,23 @@
   /* Width of "wide" blocks */
   &[data-align="wide"] {
     max-width: 1080px;
+
+    .wp-block {
+      max-width: none;
+    }
   }
 
   /* Width of "full-wide" blocks */
   &[data-align="full"] {
     max-width: none;
-    margin-left: -20px;
+
+    .wp-block {
+      max-width: none;
+    }
   }
 
-  .wp-block:not([data-align="full"]):not([data-align="wide"]) {
-    max-width: none;
+  .wp-block[data-align="wide"] {
+    max-width: 968px;
   }
 
   .wp-block[data-align="full"] {

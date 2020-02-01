@@ -2,6 +2,51 @@
 // WordPress Grid
 // --------------------------------------------------
 
+@mixin wp-block-grid-container($type: null) {
+
+  //Set default container
+  @if ($type == null) {
+    max-width: $grid-container;
+    width: auto;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+
+    $wp_block_gutters_small : rem-calc(map-get($grid-margin-gutters, medium));
+    @include breakpoint(($grid-container + ($wp_block_gutters_small * 1.5))  down) {
+      margin-left: $wp_block_gutters_small / 2;
+      margin-right: $wp_block_gutters_small / 2;
+    }
+  }
+
+  //Wide container
+  @if ($type == wide) {
+    &.alignwide {
+      @include xy-grid-container(100%, 0);
+      @include xy-gutters($gutter-type: margin);
+      width: auto;
+
+      > [class*="__inner-container"],
+      > [class*="embed__wrapper"] {
+        @include xy-grid-container(100%, 0);
+        width: auto;
+      }
+    }
+  }
+
+  //Full container
+  @if ($type == wide) {
+    &.alignfull {
+      @include xy-grid-container(100%, 0);
+
+      > [class*="__inner-container"],
+      > [class*="embed__wrapper"] {
+        @include xy-grid-container(100%, 0);
+      }
+    }
+  }
+}
+
 //-- alignment
 .alignnone {
   margin-left: 0;
@@ -47,70 +92,39 @@
   }
 }
 
-//-- Block alignment
+//-- Block alignment (compatible woocommerce)
 @if $xy-grid {
-  [class*="wp-block"].alignwide {
-    > [class*="__inner-container"],
-    > [class*="embed__wrapper"],
-    > .blocks-gallery-grid,
-    &.wp-block-columns,
-    &.wp-block-table,
-    &.wp-block-image,
-    &.wp-block-cover {
-      @include xy-grid-container(100%);
-    }
+  [class*="wc-block"]:not([class*="__"]),
+  [class*="wp-block"]:not([class*="__"]) {
+    @include wp-block-grid-container;
+    @include wp-block-grid-container(wide);
+    @include wp-block-grid-container(full);
   }
 
-  [class*="wp-block"].alignfull {
-    > [class*="__inner-container"],
-    > [class*="embed__wrapper"],
-    > .blocks-gallery-grid,
-    &.wp-block-columns,
-    &.wp-block-table,
-    &.wp-block-image,
-    &.wp-block-cover {
-      @include xy-grid-container(100%, 0);
-    }
-  }
-
-  [class*="wp-block"]:not(.alignfull):not(.alignwide) {
-    > [class*="__inner-container"],
-    > [class*="embed__wrapper"],
-    > .blocks-gallery-grid,
-    &.wp-block-columns,
-    &.wp-block-table,
-    &.wp-block-image,
-    &.wp-block-cover {
-      @include xy-grid-container;
-    }
-  }
-
-  //Set default container
   main {
     > p,
     > ul,
     > ol,
-    > pre,
-    > .wp-block-button {
-      @include xy-grid-container;
-    }
-
-    > *:not(.alignfull):not(.alignwide) {
-      > p,
-      > ul,
-      > ol,
-      > pre,
-      > pre,
-      > .wp-block-button {
-        @include xy-grid-container;
-      }
-    }
-
-    @for $index from 1 through 6 {
-      > h#{$index},
-      > *:not(.alignfull):not(.alignwide) > h#{$index} {
-        @include xy-grid-container;
-      }
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6,
+    > span,
+    > label,
+    > * > p,
+    > * > ul,
+    > * > ol,
+    > * > h1,
+    > * > h2,
+    > * > h3,
+    > * > h4,
+    > * > h5,
+    > * > h6,
+    > * > span,
+    > * > label {
+      @include wp-block-grid-container;
     }
   }
 }
