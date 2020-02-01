@@ -3,9 +3,6 @@
     "rc-base-zf": [
       "./scripts/rc-base-zf.js",
       "./styles/main.scss"
-    ],
-    "editor": [
-      "./styles/editor.scss"
     ]
   },
   "publicPath": "..",
