@@ -1,0 +1,10 @@
+//
+// WordPress Separator Block
+// --------------------------------------------------
+
+hr.wp-block-separator:not(.is-style-dots) {
+  border: none;
+  height: 1px;
+  overflow: visible;
+  position: relative;
+}

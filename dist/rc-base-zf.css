@@ -29383,6 +29383,15 @@ main > * > label {
   background-color: transparent;
 }
 
+/* line 5, src/styles/components/wp/blocks/_separator.scss */
+
+hr.wp-block-separator:not(.is-style-dots) {
+  border: none;
+  height: 1px;
+  overflow: visible;
+  position: relative;
+}
+
 /** Import elementor components */
 
 /* line 6, src/styles/components/elementor/_buttons.scss */
