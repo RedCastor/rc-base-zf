@@ -1,32 +1,36 @@
 //
-// Editor Grid
+// Editor Grid (based on twentytwenty theme)
 // --------------------------------------------------
 .wp-block {
   max-width: 720px;
 
-  /* Width of "wide" blocks */
-  &[data-align="wide"] {
-    max-width: 1080px;
-
-    .wp-block {
-      max-width: none;
-    }
+  &[data-align="wide"] .wp-block[data-align="wide"],
+  &[data-align="full"] .wp-block[data-align="wide"] {
+    max-width: 1200px;
   }
 
-  /* Width of "full-wide" blocks */
-  &[data-align="full"] {
-    max-width: none;
-
-    .wp-block {
-      max-width: none;
-    }
-  }
-
-  .wp-block[data-align="wide"] {
-    max-width: 968px;
+  &[data-type="core/group"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]),
+  .wp-block[data-type="core/cover"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
   }
 
   .wp-block[data-align="full"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &[data-align="wide"] {
+    max-width: 1200px;
+  }
+
+  &[data-align="full"] {
     max-width: none;
   }
+}
+
+*[data-align="right"] .wp-block-edit,
+*[data-align="left"] .wp-block-edit {
+  max-width: 50%;
 }
