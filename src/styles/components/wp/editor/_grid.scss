@@ -4,6 +4,19 @@
 .wp-block {
   max-width: 720px;
 
+  &[data-align="wide"] {
+    max-width: 1200px;
+  }
+
+  &[data-align="full"] {
+    max-width: none;
+  }
+
+  .wp-block[data-align="full"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   &[data-align="wide"] .wp-block[data-align="wide"],
   &[data-align="full"] .wp-block[data-align="wide"] {
     max-width: 1200px;
@@ -14,19 +27,6 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 720px;
-  }
-
-  .wp-block[data-align="full"] {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  &[data-align="wide"] {
-    max-width: 1200px;
-  }
-
-  &[data-align="full"] {
-    max-width: none;
   }
 }
 

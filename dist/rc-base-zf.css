@@ -29126,30 +29126,34 @@ main,
 
 /* line 51, src/styles/components/wp/_grid.scss */
 
+.aligncenter,
 .alignnone {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 58, src/styles/components/wp/_grid.scss */
-
-.aligncenter {
   display: block;
   height: auto;
-  margin: 0.625rem auto;
+  margin: auto;
 }
 
-@media print, screen and (min-width: 40em) {
-  /* line 58, src/styles/components/wp/_grid.scss */
+@media screen and (max-width: 76.875em) {
+  /* line 51, src/styles/components/wp/_grid.scss */
 
-  .aligncenter {
-    margin: 0.9375rem auto;
+  .aligncenter,
+  .alignnone {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
   }
 }
 
-/* line 67, src/styles/components/wp/_grid.scss */
+@media screen and (min-width: 40em) and (max-width: 77.8125em) {
+  /* line 51, src/styles/components/wp/_grid.scss */
+
+  .aligncenter,
+  .alignnone {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+
+/* line 66, src/styles/components/wp/_grid.scss */
 
 .alignleft,
 .alignright {
@@ -29158,7 +29162,7 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 67, src/styles/components/wp/_grid.scss */
+  /* line 66, src/styles/components/wp/_grid.scss */
 
   .alignleft,
   .alignright {
@@ -29167,14 +29171,14 @@ main,
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 78, src/styles/components/wp/_grid.scss */
+  /* line 77, src/styles/components/wp/_grid.scss */
 
   .alignleft {
     float: left;
     margin-right: 0.9375rem;
   }
 
-  /* line 86, src/styles/components/wp/_grid.scss */
+  /* line 85, src/styles/components/wp/_grid.scss */
 
   .alignright {
     float: right;
@@ -29201,21 +29205,130 @@ main,
   }
 }
 
-/* line 105, src/styles/components/wp/_grid.scss */
+/* line 104, src/styles/components/wp/_grid.scss */
 
-[class*="wc-block"]:not([class*="__"]),
+.entry-content > * {
+  max-width: 75rem;
+  width: auto;
+  margin: auto;
+}
+
+@media screen and (max-width: 76.875em) {
+  /* line 104, src/styles/components/wp/_grid.scss */
+
+  .entry-content > * {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 77.8125em) {
+  /* line 104, src/styles/components/wp/_grid.scss */
+
+  .entry-content > * {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+
+/* line 24, src/styles/components/wp/_grid.scss */
+
+.entry-content > *.alignwide {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+  width: auto;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 24, src/styles/components/wp/_grid.scss */
+
+  .entry-content > *.alignwide {
+    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
+  }
+}
+
+/* line 29, src/styles/components/wp/_grid.scss */
+
+.entry-content > *.alignwide > [class*="__inner-container"],
+.entry-content > *.alignwide > [class*="embed__wrapper"] {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+/* line 39, src/styles/components/wp/_grid.scss */
+
+.entry-content > *.alignfull {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 42, src/styles/components/wp/_grid.scss */
+
+.entry-content > *.alignfull > [class*="__inner-container"],
+.entry-content > *.alignfull > [class*="embed__wrapper"] {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 111, src/styles/components/wp/_grid.scss */
+
+.entry-content > *:first-child {
+  margin-top: 0;
+}
+
+/* line 115, src/styles/components/wp/_grid.scss */
+
+.entry-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* line 119, src/styles/components/wp/_grid.scss */
+
+.entry-content > .alignwide:not(.wp-block-group.has-background),
+.entry-content > .alignfull:not(.wp-block-group.has-background) {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
+/* line 126, src/styles/components/wp/_grid.scss */
+
+[class*="wp-block"]:not([class*="__"]),
 [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
   max-width: 75rem;
   width: auto;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
+  margin: auto;
 }
 
-@media screen and (max-width: 77.8125em) {
-  /* line 105, src/styles/components/wp/_grid.scss */
+@media screen and (max-width: 76.875em) {
+  /* line 126, src/styles/components/wp/_grid.scss */
 
-  [class*="wc-block"]:not([class*="__"]),
+  [class*="wp-block"]:not([class*="__"]),
+  [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 77.8125em) {
+  /* line 126, src/styles/components/wp/_grid.scss */
+
+  [class*="wp-block"]:not([class*="__"]),
   [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
     margin-left: 0.9375rem;
     margin-right: 0.9375rem;
@@ -29224,7 +29337,7 @@ main,
 
 /* line 24, src/styles/components/wp/_grid.scss */
 
-[class*="wc-block"]:not([class*="__"]).alignwide,
+[class*="wp-block"]:not([class*="__"]).alignwide,
 [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default).alignwide {
   padding-right: 0;
   padding-left: 0;
@@ -29239,7 +29352,7 @@ main,
 @media print, screen and (min-width: 40em) {
   /* line 24, src/styles/components/wp/_grid.scss */
 
-  [class*="wc-block"]:not([class*="__"]).alignwide,
+  [class*="wp-block"]:not([class*="__"]).alignwide,
   [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default).alignwide {
     margin-right: 0.9375rem;
     margin-left: 0.9375rem;
@@ -29248,8 +29361,8 @@ main,
 
 /* line 29, src/styles/components/wp/_grid.scss */
 
-[class*="wc-block"]:not([class*="__"]).alignwide > [class*="__inner-container"],
-[class*="wc-block"]:not([class*="__"]).alignwide > [class*="embed__wrapper"],
+[class*="wp-block"]:not([class*="__"]).alignwide > [class*="__inner-container"],
+[class*="wp-block"]:not([class*="__"]).alignwide > [class*="embed__wrapper"],
 [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default).alignwide > [class*="__inner-container"],
 [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default).alignwide > [class*="embed__wrapper"] {
   padding-right: 0;
@@ -29262,7 +29375,7 @@ main,
 
 /* line 39, src/styles/components/wp/_grid.scss */
 
-[class*="wc-block"]:not([class*="__"]).alignfull,
+[class*="wp-block"]:not([class*="__"]).alignfull,
 [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default).alignfull {
   padding-right: 0;
   padding-left: 0;
@@ -29273,8 +29386,8 @@ main,
 
 /* line 42, src/styles/components/wp/_grid.scss */
 
-[class*="wc-block"]:not([class*="__"]).alignfull > [class*="__inner-container"],
-[class*="wc-block"]:not([class*="__"]).alignfull > [class*="embed__wrapper"],
+[class*="wp-block"]:not([class*="__"]).alignfull > [class*="__inner-container"],
+[class*="wp-block"]:not([class*="__"]).alignfull > [class*="embed__wrapper"],
 [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default).alignfull > [class*="__inner-container"],
 [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default).alignfull > [class*="embed__wrapper"] {
   padding-right: 0;
@@ -29282,67 +29395,6 @@ main,
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* line 113, src/styles/components/wp/_grid.scss */
-
-main > p,
-main > ul,
-main > ol,
-main > h1,
-main > h2,
-main > h3,
-main > h4,
-main > h5,
-main > h6,
-main > span,
-main > label,
-main > * > p,
-main > * > ul,
-main > * > ol,
-main > * > h1,
-main > * > h2,
-main > * > h3,
-main > * > h4,
-main > * > h5,
-main > * > h6,
-main > * > span,
-main > * > label {
-  max-width: 75rem;
-  width: auto;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@media screen and (max-width: 77.8125em) {
-  /* line 113, src/styles/components/wp/_grid.scss */
-
-  main > p,
-  main > ul,
-  main > ol,
-  main > h1,
-  main > h2,
-  main > h3,
-  main > h4,
-  main > h5,
-  main > h6,
-  main > span,
-  main > label,
-  main > * > p,
-  main > * > ul,
-  main > * > ol,
-  main > * > h1,
-  main > * > h2,
-  main > * > h3,
-  main > * > h4,
-  main > * > h5,
-  main > * > h6,
-  main > * > span,
-  main > * > label {
-    margin-left: 0.9375rem;
-    margin-right: 0.9375rem;
-  }
 }
 
 /* line 103, node_modules/foundation-sites/scss/components/_table.scss */
