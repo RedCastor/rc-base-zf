@@ -8,19 +8,19 @@
   @if ($type == null) {
     max-width: $grid-container;
     width: auto;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
+    margin: auto;
 
-    $wp_block_gutters_small : rem-calc(map-get($grid-margin-gutters, medium));
-    @include breakpoint(($grid-container + ($wp_block_gutters_small * 1.5))  down) {
-      margin-left: $wp_block_gutters_small / 2;
-      margin-right: $wp_block_gutters_small / 2;
+    @include -zf-breakpoint-value(auto, $grid-margin-gutters) {
+      $wp_block_gutters_small : rem-calc($-zf-bp-value);
+      @include breakpoint(($grid-container + ($wp_block_gutters_small * 1.5))  down) {
+        margin-left: $wp_block_gutters_small / 2;
+        margin-right: $wp_block_gutters_small / 2;
+      }
     }
   }
 
   //Wide container
-  @if ($type == wide) {
+  @if ($type == wide and $xy-grid) {
     &.alignwide {
       @include xy-grid-container(100%, 0);
       @include xy-gutters($gutter-type: margin);
@@ -35,7 +35,7 @@
   }
 
   //Full container
-  @if ($type == wide) {
+  @if ($type == wide and $xy-grid) {
     &.alignfull {
       @include xy-grid-container(100%, 0);
 
@@ -48,19 +48,17 @@
 }
 
 //-- alignment
-.alignnone {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-.aligncenter {
+.aligncenter, .alignnone {
   display: block;
   height: auto;
+  margin: auto;
 
-  @include -zf-breakpoint-value(auto, $grid-padding-gutters) {
-    margin: (rem-calc($-zf-bp-value) / 2) auto;
+  @include -zf-breakpoint-value(auto, $grid-margin-gutters) {
+    $wp_block_gutters_small : rem-calc($-zf-bp-value);
+    @include breakpoint(($grid-container + ($wp_block_gutters_small * 1.5))  down) {
+      margin-left: $wp_block_gutters_small / 2;
+      margin-right: $wp_block_gutters_small / 2;
+    }
   }
 }
 
@@ -68,7 +66,7 @@
 .alignright {
   height: auto;
 
-  @include -zf-breakpoint-value(auto, $grid-padding-gutters) {
+  @include -zf-breakpoint-value(auto, $grid-margin-gutters) {
     margin-bottom: (rem-calc($-zf-bp-value) / 2);
   }
 }
@@ -78,7 +76,7 @@
   .alignleft {
     float: left;
 
-    @include -zf-breakpoint-value(medium, $grid-padding-gutters) {
+    @include -zf-breakpoint-value(medium, $grid-margin-gutters) {
       margin-right: (rem-calc($-zf-bp-value) / 2);
     }
   }
@@ -86,12 +84,13 @@
   .alignright {
     float: right;
 
-    @include -zf-breakpoint-value(medium, $grid-padding-gutters) {
+    @include -zf-breakpoint-value(medium, $grid-margin-gutters) {
       margin-left: (rem-calc($-zf-bp-value) / 2);
     }
   }
 }
 
+//-- Condition style
 .is-style-wide {
   @include xy-grid-container(100%);
 }
@@ -100,39 +99,32 @@
   //Empty
 }
 
-//-- Block alignment (compatible woocommerce)
-@if $xy-grid {
-  [class*="wc-block"]:not([class*="__"]),
-  [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
-    @include wp-block-grid-container;
-    @include wp-block-grid-container(wide);
-    @include wp-block-grid-container(full);
-  }
+//-- Content
+.entry-content > * {
 
-  main {
-    > p,
-    > ul,
-    > ol,
-    > h1,
-    > h2,
-    > h3,
-    > h4,
-    > h5,
-    > h6,
-    > span,
-    > label,
-    > * > p,
-    > * > ul,
-    > * > ol,
-    > * > h1,
-    > * > h2,
-    > * > h3,
-    > * > h4,
-    > * > h5,
-    > * > h6,
-    > * > span,
-    > * > label {
-      @include wp-block-grid-container;
-    }
-  }
+  @include wp-block-grid-container;
+  @include wp-block-grid-container(wide);
+  @include wp-block-grid-container(full);
+}
+
+.entry-content > *:first-child {
+  margin-top: 0;
+}
+
+.entry-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.entry-content > .alignwide:not(.wp-block-group.has-background),
+.entry-content > .alignfull:not(.wp-block-group.has-background) {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
+//-- Blocks
+[class*="wp-block"]:not([class*="__"]),
+[class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
+  @include wp-block-grid-container;
+  @include wp-block-grid-container(wide);
+  @include wp-block-grid-container(full);
 }
