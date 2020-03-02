@@ -100,32 +100,35 @@
   //Empty
 }
 
-//-- Content
-.entry-content > * {
+//-- Content if 'entry-align' class is present
+.entry-align {
+  &.entry-content > * {
 
-  @include wp-block-grid-container;
-  @include wp-block-grid-container(wide);
-  @include wp-block-grid-container(full);
+    @include wp-block-grid-container;
+    @include wp-block-grid-container(wide);
+    @include wp-block-grid-container(full);
+  }
+
+  &.entry-content > *:first-child {
+    margin-top: 0;
+  }
+
+  &.entry-content > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &.entry-content > .alignwide:not(.wp-block-group.has-background),
+  &.entry-content > .alignfull:not(.wp-block-group.has-background) {
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
+
+  //-- Blocks
+  [class*="wp-block"]:not([class*="__"]),
+  [class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
+    @include wp-block-grid-container;
+    @include wp-block-grid-container(wide);
+    @include wp-block-grid-container(full);
+  }
 }
 
-.entry-content > *:first-child {
-  margin-top: 0;
-}
-
-.entry-content > *:last-child {
-  margin-bottom: 0;
-}
-
-.entry-content > .alignwide:not(.wp-block-group.has-background),
-.entry-content > .alignfull:not(.wp-block-group.has-background) {
-  margin-bottom: 6rem;
-  margin-top: 6rem;
-}
-
-//-- Blocks
-[class*="wp-block"]:not([class*="__"]),
-[class*="wp-block"]:not([class*="__"]):not(.is-style-wide):not(.is-style-default) {
-  @include wp-block-grid-container;
-  @include wp-block-grid-container(wide);
-  @include wp-block-grid-container(full);
-}
