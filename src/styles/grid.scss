@@ -2,5 +2,8 @@
 // Grid Align container, wide, full
 // --------------------------------------------------
 
+//-- Import XY-grid
+@import "~foundation-sites/scss/xy-grid/xy-grid";
+
 //-- Import components wp grid
 @import "components/wp/grid";
