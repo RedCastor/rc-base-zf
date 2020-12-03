@@ -50,17 +50,8 @@
 //-- alignment
 .aligncenter,
 .alignnone {
-  display: block;
   height: auto;
   margin: auto;
-
-  @include -zf-breakpoint-value(auto, $grid-margin-gutters) {
-    $wp_block_gutters_small : rem-calc($-zf-bp-value);
-    @include breakpoint(($grid-container + ($wp_block_gutters_small * 1.5))  down) {
-      margin-left: $wp_block_gutters_small / 2;
-      margin-right: $wp_block_gutters_small / 2;
-    }
-  }
 }
 
 .alignleft,
