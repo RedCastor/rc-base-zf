@@ -29173,7 +29173,7 @@ hr.wp-block-separator:not(.is-style-dots) {
 
 /* line 6, src/styles/components/wp/blocks/_button.scss */
 
-[class*="wp-block-button"] {
+.wp-block-button {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
@@ -29195,14 +29195,14 @@ hr.wp-block-separator:not(.is-style-dots) {
 
 /* line 202, node_modules/foundation-sites/scss/util/_mixins.scss */
 
-[data-whatinput='mouse'] [class*="wp-block-button"] {
+[data-whatinput='mouse'] .wp-block-button {
   outline: 0;
 }
 
 /* line 153, node_modules/foundation-sites/scss/components/_button.scss */
 
-[class*="wp-block-button"]:hover,
-[class*="wp-block-button"]:focus {
+.wp-block-button:hover,
+.wp-block-button:focus {
   background-color: #14679e;
   color: #fefefe;
 }
