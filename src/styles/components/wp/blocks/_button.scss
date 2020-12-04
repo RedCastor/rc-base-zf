@@ -1,0 +1,8 @@
+//
+// WordPress Button Block
+// --------------------------------------------------
+
+//-- Blocks
+[class*="wp-block-button"] {
+  @include button;
+}
