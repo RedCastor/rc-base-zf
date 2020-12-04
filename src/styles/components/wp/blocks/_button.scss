@@ -3,6 +3,6 @@
 // --------------------------------------------------
 
 //-- Blocks
-.wp-block-button {
+[class*="wp-block-button__"] {
   @include button;
 }
