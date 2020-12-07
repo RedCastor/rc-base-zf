@@ -89,7 +89,8 @@
 }
 
 //-- Content if 'entry-align' class is present
-.entry-content > * {
+.entry-content > *,
+.wp-block-group {
 
   @include wp-block-grid-container;
   @include wp-block-grid-container(wide);
