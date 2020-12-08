@@ -95,6 +95,14 @@
   @include wp-block-grid-container;
   @include wp-block-grid-container(wide);
   @include wp-block-grid-container(full);
+
+  //Set negative gutter if grid padding or margin
+  & > * {
+    & > .grid-padding-x,
+    & > .grid-margin-x {
+      @include xy-gutters($negative: true);
+    }
+  }
 }
 
 .entry-content > *:first-child {
