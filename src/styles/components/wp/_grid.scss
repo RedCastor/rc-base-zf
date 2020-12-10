@@ -88,8 +88,6 @@
   //Empty
 }
 
-//-- Content if 'entry-align' class is present
-.entry-content > *,
 .wp-block-group {
 
   @include wp-block-grid-container;
@@ -105,16 +103,32 @@
   }
 }
 
-.entry-content > *:first-child {
+//-- Content if 'entry-align' class is present
+.main > .entry-content > * {
+
+  @include wp-block-grid-container;
+  @include wp-block-grid-container(wide);
+  @include wp-block-grid-container(full);
+
+  //Set negative gutter if grid padding or margin
+  & > * {
+    & > .grid-padding-x,
+    & > .grid-margin-x {
+      @include xy-gutters($negative: true);
+    }
+  }
+}
+
+.main > .entry-content > *:first-child {
   margin-top: 0;
 }
 
-.entry-content > *:last-child {
+.main > .entry-content > *:last-child {
   margin-bottom: 0;
 }
 
-.entry-content > .alignwide:not(.wp-block-group.has-background),
-.entry-content > .alignfull:not(.wp-block-group.has-background) {
+.main > .entry-content > .alignwide:not(.wp-block-group.has-background),
+.main > .entry-content > .alignfull:not(.wp-block-group.has-background) {
   margin-bottom: 6rem;
   margin-top: 6rem;
 }
