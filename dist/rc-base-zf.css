@@ -1637,10 +1637,12 @@
 /* line 35, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox {
+  position: relative;
   padding-left: 20px;
+  margin: 1rem;
 }
 
-/* line 38, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 40, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox label {
   display: inline-block;
@@ -1650,7 +1652,7 @@
   height: 23px;
 }
 
-/* line 45, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 47, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox label::before {
   content: "";
@@ -1668,7 +1670,7 @@
   transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-/* line 59, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 61, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox label::after {
   display: inline-block;
@@ -1683,7 +1685,7 @@
   color: #000;
 }
 
-/* line 73, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 75, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"],
 .checkbox input[type="radio"] {
@@ -1695,14 +1697,14 @@
   height: 17px;
 }
 
-/* line 82, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 84, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:focus + label::before,
 .checkbox input[type="radio"]:focus + label::before {
   outline: 0;
 }
 
-/* line 86, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 88, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
@@ -1710,7 +1712,7 @@
   content: "\E925";
 }
 
-/* line 91, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 93, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:indeterminate + label::after,
 .checkbox input[type="radio"]:indeterminate + label::after {
@@ -1724,14 +1726,14 @@
   margin-top: 11px;
 }
 
-/* line 102, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 104, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:disabled + label,
 .checkbox input[type="radio"]:disabled + label {
   opacity: 0.65;
 }
 
-/* line 105, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 107, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:disabled + label::before,
 .checkbox input[type="radio"]:disabled + label::before {
@@ -1739,13 +1741,13 @@
   cursor: not-allowed;
 }
 
-/* line 113, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 115, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox.checkbox-circle label::before {
   border-radius: 50%;
 }
 
-/* line 117, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 119, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox.checkbox-inline {
   margin-top: 0;
@@ -1902,13 +1904,13 @@
   background-color: #fff;
 }
 
-/* line 160, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 162, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio {
   padding-left: 20px;
 }
 
-/* line 163, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 165, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio label {
   display: inline-block;
@@ -1918,7 +1920,7 @@
   height: 23px;
 }
 
-/* line 170, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 172, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio label::before {
   content: "";
@@ -1936,7 +1938,7 @@
   transition: border 0.15s ease-in-out;
 }
 
-/* line 184, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 186, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio label::after {
   display: inline-block;
@@ -1959,7 +1961,7 @@
   transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33), -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33), -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
 }
 
-/* line 200, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 202, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"] {
   position: absolute;
@@ -1970,13 +1972,13 @@
   height: 17px;
 }
 
-/* line 208, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 210, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:focus + label::before {
   outline: 0;
 }
 
-/* line 212, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 214, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:checked + label::after {
   -webkit-transform: scale(1, 1);
@@ -1984,116 +1986,116 @@
           transform: scale(1, 1);
 }
 
-/* line 216, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 218, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:disabled + label {
   opacity: 0.65;
 }
 
-/* line 219, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 221, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:disabled + label::before {
   cursor: not-allowed;
 }
 
-/* line 226, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 228, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.radio-inline {
   margin-top: 0;
   display: inline-block;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.primary input[type="radio"] + label::after {
   background-color: #1779ba;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.primary input[type="radio"]:checked + label::before {
   border-color: #1779ba;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.primary input[type="radio"]:checked + label::after {
   background-color: #1779ba;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.secondary input[type="radio"] + label::after {
   background-color: #767676;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.secondary input[type="radio"]:checked + label::before {
   border-color: #767676;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.secondary input[type="radio"]:checked + label::after {
   background-color: #767676;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.alert input[type="radio"] + label::after {
   background-color: #cc4b37;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.alert input[type="radio"]:checked + label::before {
   border-color: #cc4b37;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.alert input[type="radio"]:checked + label::after {
   background-color: #cc4b37;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.warning input[type="radio"] + label::after {
   background-color: #ffae00;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.warning input[type="radio"]:checked + label::before {
   border-color: #ffae00;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.warning input[type="radio"]:checked + label::after {
   background-color: #ffae00;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"] + label::after {
   background-color: #18a733;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::before {
   border-color: #18a733;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::after {
   background-color: #18a733;
 }
 
-/* line 241, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 243, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
@@ -2101,14 +2103,14 @@ input[type="radio"].styled:checked + label:after {
   content: "\E925";
 }
 
-/* line 246, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 248, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 input[type="checkbox"] .styled:checked + label::before,
 input[type="radio"] .styled:checked + label::before {
   color: #fff;
 }
 
-/* line 249, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 251, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 input[type="checkbox"] .styled:checked + label::after,
 input[type="radio"] .styled:checked + label::after {
@@ -14889,10 +14891,12 @@ html.is-reveal-open body {
 /* line 35, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox {
+  position: relative;
   padding-left: 20px;
+  margin: 1rem;
 }
 
-/* line 38, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 40, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox label {
   display: inline-block;
@@ -14902,7 +14906,7 @@ html.is-reveal-open body {
   height: 23px;
 }
 
-/* line 45, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 47, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox label::before {
   content: "";
@@ -14920,7 +14924,7 @@ html.is-reveal-open body {
   transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-/* line 59, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 61, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox label::after {
   display: inline-block;
@@ -14935,7 +14939,7 @@ html.is-reveal-open body {
   color: #000;
 }
 
-/* line 73, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 75, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"],
 .checkbox input[type="radio"] {
@@ -14947,14 +14951,14 @@ html.is-reveal-open body {
   height: 17px;
 }
 
-/* line 82, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 84, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:focus + label::before,
 .checkbox input[type="radio"]:focus + label::before {
   outline: 0;
 }
 
-/* line 86, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 88, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
@@ -14962,7 +14966,7 @@ html.is-reveal-open body {
   content: "\E925";
 }
 
-/* line 91, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 93, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:indeterminate + label::after,
 .checkbox input[type="radio"]:indeterminate + label::after {
@@ -14976,14 +14980,14 @@ html.is-reveal-open body {
   margin-top: 11px;
 }
 
-/* line 102, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 104, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:disabled + label,
 .checkbox input[type="radio"]:disabled + label {
   opacity: 0.65;
 }
 
-/* line 105, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 107, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox input[type="checkbox"]:disabled + label::before,
 .checkbox input[type="radio"]:disabled + label::before {
@@ -14991,13 +14995,13 @@ html.is-reveal-open body {
   cursor: not-allowed;
 }
 
-/* line 113, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 115, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox.checkbox-circle label::before {
   border-radius: 50%;
 }
 
-/* line 117, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 119, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .checkbox.checkbox-inline {
   margin-top: 0;
@@ -15154,13 +15158,13 @@ html.is-reveal-open body {
   background-color: #fff;
 }
 
-/* line 160, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 162, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio {
   padding-left: 20px;
 }
 
-/* line 163, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 165, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio label {
   display: inline-block;
@@ -15170,7 +15174,7 @@ html.is-reveal-open body {
   height: 23px;
 }
 
-/* line 170, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 172, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio label::before {
   content: "";
@@ -15188,7 +15192,7 @@ html.is-reveal-open body {
   transition: border 0.15s ease-in-out;
 }
 
-/* line 184, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 186, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio label::after {
   display: inline-block;
@@ -15211,7 +15215,7 @@ html.is-reveal-open body {
   transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33), -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33), -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
 }
 
-/* line 200, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 202, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"] {
   position: absolute;
@@ -15222,13 +15226,13 @@ html.is-reveal-open body {
   height: 17px;
 }
 
-/* line 208, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 210, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:focus + label::before {
   outline: 0;
 }
 
-/* line 212, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 214, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:checked + label::after {
   -webkit-transform: scale(1, 1);
@@ -15236,116 +15240,116 @@ html.is-reveal-open body {
           transform: scale(1, 1);
 }
 
-/* line 216, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 218, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:disabled + label {
   opacity: 0.65;
 }
 
-/* line 219, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 221, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio input[type="radio"]:disabled + label::before {
   cursor: not-allowed;
 }
 
-/* line 226, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 228, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.radio-inline {
   margin-top: 0;
   display: inline-block;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.primary input[type="radio"] + label::after {
   background-color: #1779ba;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.primary input[type="radio"]:checked + label::before {
   border-color: #1779ba;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.primary input[type="radio"]:checked + label::after {
   background-color: #1779ba;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.secondary input[type="radio"] + label::after {
   background-color: #767676;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.secondary input[type="radio"]:checked + label::before {
   border-color: #767676;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.secondary input[type="radio"]:checked + label::after {
   background-color: #767676;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.alert input[type="radio"] + label::after {
   background-color: #cc4b37;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.alert input[type="radio"]:checked + label::before {
   border-color: #cc4b37;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.alert input[type="radio"]:checked + label::after {
   background-color: #cc4b37;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.warning input[type="radio"] + label::after {
   background-color: #ffae00;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.warning input[type="radio"]:checked + label::before {
   border-color: #ffae00;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.warning input[type="radio"]:checked + label::after {
   background-color: #ffae00;
 }
 
-/* line 145, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 147, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"] + label::after {
   background-color: #18a733;
 }
 
-/* line 150, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 152, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::before {
   border-color: #18a733;
 }
 
-/* line 153, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 155, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 .radio.success input[type="radio"]:checked + label::after {
   background-color: #18a733;
 }
 
-/* line 241, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 243, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
@@ -15353,14 +15357,14 @@ input[type="radio"].styled:checked + label:after {
   content: "\E925";
 }
 
-/* line 246, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 248, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 input[type="checkbox"] .styled:checked + label::before,
 input[type="radio"] .styled:checked + label::before {
   color: #fff;
 }
 
-/* line 249, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
+/* line 251, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
 
 input[type="checkbox"] .styled:checked + label::after,
 input[type="radio"] .styled:checked + label::after {
