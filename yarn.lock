@@ -648,10 +648,10 @@ autoprefixer@~8.2.0:
     postcss "^6.0.20"
     postcss-value-parser "^3.2.3"
 
-awesome-foundation6-checkbox@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/awesome-foundation6-checkbox/-/awesome-foundation6-checkbox-2.0.2.tgz#60a98ba6a81806b08f3318dc1adda41d7c9e1ca1"
-  integrity sha512-j7Vvz6M0CV1SCDmFA3DT2HDIaTai+r8/ujIB1/OsMCO00hLXKTPEn0O/jZowb43nwGDwgTUzzlkJYZTNcaWkAg==
+awesome-foundation6-checkbox@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/awesome-foundation6-checkbox/-/awesome-foundation6-checkbox-2.0.3.tgz#06220fa403f755d4fd08d13db39eee1df9402553"
+  integrity sha512-Bj0d75nO7KsTvD+iLLXejLnSSxwddnbBTv6DHC/AlyRBs4Pd2Kk+HoygCLaEEF6Uz/+pfC0pcTVF+KlkDOYJew==
 
 aws-sign2@~0.7.0:
   version "0.7.0"

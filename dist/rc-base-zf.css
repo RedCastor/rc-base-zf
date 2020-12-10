@@ -1639,7 +1639,7 @@
 .checkbox {
   position: relative;
   padding-left: 20px;
-  margin: 1rem;
+  margin: 0 0 0.5rem;
 }
 
 /* line 40, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -14893,7 +14893,7 @@ html.is-reveal-open body {
 .checkbox {
   position: relative;
   padding-left: 20px;
-  margin: 1rem;
+  margin: 0 0 0.5rem;
 }
 
 /* line 40, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
