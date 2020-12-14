@@ -1,0 +1,63 @@
+//
+// Headers
+// --------------------------------------------------
+@each $prop-tag in ("h1", "h2", "h3", "h4", "h5", "h6", "p", "small", "strong", ) {
+  .text-font-body--#{$prop-tag} {
+    #{$prop-tag},
+    .#{$prop-tag} {
+      font-family: $body-font-family;
+    }
+  }
+
+  .text-font-header--#{$prop-tag} {
+    #{$prop-tag},
+    .#{$prop-tag} {
+      font-family: $header-font-family;
+    }
+  }
+
+  .text-font-title--#{$prop-tag} {
+    #{$prop-tag},
+    .#{$prop-tag} {
+      font-family: $title-font-family;
+    }
+  }
+
+  @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
+    .text-#{$prop_val}--#{$prop-tag} {
+      #{$prop-tag},
+      .#{$prop-tag} {
+        text-transform: #{$prop_val};
+      }
+    }
+  }
+}
+
+// Heading styles for widgets with title h3 in parent
+@each $size, $headers in $header-styles {
+  @include breakpoint($size) {
+    @each $header, $header-defs in $headers {
+
+      @if map-has-key($header-defs, font-family) {
+        #{$header},
+        .#{$header} {
+          font-family: map-get($header-defs, font-family);
+        }
+      }
+
+      @if map-has-key($header-defs, font-weight) {
+        #{$header},
+        .#{$header} {
+          font-weight: map-get($header-defs, font-weight);
+        }
+      }
+
+      @if map-has-key($header-defs, text-transform) {
+        #{$header},
+        .#{$header} {
+          text-transform: map-get($header-defs, text-transform);
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,11 @@
 // import and modify the default settings through
 // @import 'settings/settings';
 
+/** Import Debug */
+@import "debug/debug";
+
 /** Import components */
+@import "components/styles";
 @import "components/visibility";
 @import "components/classes";
 @import "components/icons";
@@ -35,4 +39,8 @@
 
 @mixin rc-base-elementor-everything {
   @include rc-base-elementor-button;
+}
+
+@mixin rc-base-style-classes {
+  @include style_classes;
 }

@@ -1,0 +1,53 @@
+//
+// Debug map
+// --------------------------------------------------
+
+/*
+# Print Map
+
+Usage:
+
+  // option 1
+  .debug {
+    @include print-map($map);
+  }
+
+  // option 2
+  @include print-map($map, "body");
+
+*/
+@function print-map ( $map, $str: "" ) {
+  @each $k, $v in $map {
+    @if type-of($v) == map {
+      $str: "#{$str} \000D\000A #{$k}: ( #{print-map($v)} \000D\000A ), ";
+    }
+    @else {
+      $str: "#{$str} \000D\000A \0009 #{$k}: #{$v}, ";
+    }
+  } // each
+  @return $str;
+} // @function print-map
+
+@mixin print-map ( $map, $tag: "&" ) {
+  #{$tag} {
+    margin: 0.25em;
+    padding: 0.25em;
+    border: 1px solid #333;
+  } // tag
+  #{$tag}::before {
+    display: block;
+    font-family: monospace;
+    content: $tag;
+    color: #333;
+    background: #efefef;
+    font-weight: bold;
+  } // before
+  #{$tag}::after {
+    display: block;
+    font-family: monospace;
+    content: print-map($map);
+    white-space: pre;
+    color: #444;
+    background: #efefef;
+  } // after
+} // @mixin print-map

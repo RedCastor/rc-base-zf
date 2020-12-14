@@ -1,0 +1,150 @@
+//
+// Title
+// --------------------------------------------------
+
+$base-styles: (
+  small: (
+    "p": (
+      "selectors": ("p", ".p"),
+      "style": (font-size: inherit),
+      "proto": false
+    )
+  ),
+  medium: (
+    "p": (
+      "selectors": ("p", ".p"),
+      "style":(font-size: inherit),
+      "proto": false
+    )
+  ),
+) !default;
+
+// Get Styles merged with header styles
+@function build_base-styles_with_header-styles($base-styles, $header-styles) {
+
+  @each $size, $headers in $header-styles {
+    $-base-styles: map-get($base-styles, $size);
+
+    @each $header, $header_style in $headers {
+      $base-style: map-get($-base-styles, $header);
+
+      @if type-of($base-style) == "map" {
+        $-style: map-get($base-style, "style");
+
+        $-style: map-merge($-style, $header_style);
+
+        $base-style: map-merge($base-style, ("style": $-style));
+      }
+      @else {
+        $base-style: ("selectors": ("#{$header}", ".#{$header}"), "style": $header_style, "proto": false);
+      }
+
+      $-base-styles: map-merge($-base-styles, ($header: $base-style));
+    }
+
+    $base-styles: map-merge($base-styles, ($size: $-base-styles));
+  }
+  @return $base-styles;
+}
+
+$base-styles: build_base-styles_with_header-styles($base-styles, $header-styles);
+
+// Get base style by key and property
+@function get-style-prop($key: "p", $prop: "font-size", $default: false, $size: medium) {
+
+  $-base-styles: -zf-get-bp-val($base-styles, $size);
+
+  @if map-has-key($-base-styles, $key) {
+    $-base-style: map_get($-base-styles, $key);
+
+    @if map-has-key($-base-style, "style") {
+      $-style: map_get($-base-style, "style");
+
+      @if map-has-key($-style, $prop) {
+        @return map_get($-style, $prop);
+      }
+    }
+  }
+
+  @return $default;
+}
+
+@mixin style-prop($key: "p", $prop: "font-size", $default: false) {
+
+  @include -zf-each-breakpoint() {
+
+    $-val: get-style-prop($key, $prop, $default, $-zf-size);
+
+    @if $-val {
+      #{$prop}: $-val;
+    }
+  }
+}
+
+@mixin style_classes() {
+
+  @include -zf-each-breakpoint() {
+    $-base-styles: -zf-get-bp-val($base-styles, $-zf-size);
+
+    @include breakpoint($-zf-size) {
+      @each $key, $base-style in $-base-styles {
+
+        $-selectors: null;
+
+        @if map-has-key($base-style, "selectors") {
+          $-selectors: map-get($base-style, "selectors");
+        }
+
+        @if type-of($-selectors) != "map" and type-of($-selectors) != "string" {
+          $-selectors: ("#{$key}", ".#{$key}");
+        }
+
+        #{$-selectors} {
+          &.base-font-body {
+            font-family: $body-font-family;
+          }
+
+          &.base-font-header {
+            font-family: $header-font-family;
+          }
+
+          &.base-font-title {
+            font-family: $title-font-family;
+          }
+
+          @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
+            &.base-#{$prop_val} {
+              text-transform: #{$prop_val};
+            }
+          }
+        }
+
+        .base-font-body--#{$key} {
+          #{$-selectors} {
+            font-family: $body-font-family;
+          }
+        }
+
+        .base-font-header--#{$key} {
+          #{$-selectors} {
+            font-family: $header-font-family;
+          }
+        }
+
+        .base-font-title--#{$key} {
+          #{$-selectors} {
+            font-family: $title-font-family;
+          }
+        }
+
+        @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
+          .base-#{$prop_val}--#{$key} {
+            #{$-selectors} {
+              text-transform: #{$prop_val};
+            }
+          }
+        }
+      }
+    }
+  }
+}

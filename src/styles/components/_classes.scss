@@ -17,7 +17,27 @@
   @include horizontal-center;
 }
 
+@include breakpoint(small only) {
+  &.vertical-center-small-only {
+    @include vertical-center;
+  }
+
+  &.horizontal-center-small-only {
+    @include horizontal-center;
+  }
+}
+
 //-- Vertical Center
 .vertical-center {
   @include vertical-center;
+}
+
+@include breakpoint(medium) {
+  &.vertical-center-medium {
+    @include vertical-center;
+  }
+
+  &.horizontal-center-medium {
+    @include horizontal-center;
+  }
 }

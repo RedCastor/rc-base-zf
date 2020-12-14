@@ -69,16 +69,16 @@
 
         $-zf-bp-value: -zf-get-bp-val($base-size-sidebar, $-zf-size);
 
-        @if type-of($-zf-bp-value) == 'number' {
-          @if unit($-zf-bp-value) == '%' {
-            @if $-zf-bp-value == '100%' {
+        @if type-of($-zf-bp-value) == "number" {
+          @if unit($-zf-bp-value) == "%" {
+            @if $-zf-bp-value == "100%" {
               @include xy-cell(100%, true, $gutter-type: padding);
             }
             @else {
               @include xy-cell((100% - $-zf-bp-value), true, $gutter-type: padding);
             }
           }
-          @else if unit($-zf-bp-value) == 'px' {
+          @else if unit($-zf-bp-value) == "px" {
             width: calc(#{$base-size-main} - #{$-zf-bp-value});
             @include xy-gutters($gutter-type: padding, $gutter-position: right left);
           }
@@ -89,7 +89,7 @@
             @include xy-cell(($grid-columns - $-zf-bp-value) of $grid-columns , true, $gutter-type: padding);
           }
         }
-        @else if $-zf-bp-value == 'auto' {
+        @else if $-zf-bp-value == "auto" {
           @include xy-cell(shrink, true, $gutter-type: padding);
         }
         @else {
@@ -103,12 +103,12 @@
 
         $-zf-bp-value: -zf-get-bp-val($base-size-sidebar, $-zf-size);
 
-        @if type-of($-zf-bp-value) == 'number' {
+        @if type-of($-zf-bp-value) == "number" {
 
-          @if unit($-zf-bp-value) == '%' {
+          @if unit($-zf-bp-value) == "%" {
             @include xy-cell($-zf-bp-value, true, $gutter-type: padding);
           }
-          @else if unit($-zf-bp-value) == 'px' {
+          @else if unit($-zf-bp-value) == "px" {
             width: $-zf-bp-value;
             @include xy-gutters($gutter-type: padding, $gutter-position: right left);
           }
@@ -128,4 +128,9 @@
 
     @include xy-collapse-grid-container-classes();
   }
+}
+
+.main-grid-archive {
+
+  margin-top: $hr-margin;
 }

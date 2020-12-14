@@ -12,6 +12,24 @@ $base-size-sidebar: (
   medium: shrink
 ) !default;
 
+//== Base Styles
+$base-styles: (
+  small: (
+    "p": (
+      "selector": "p",
+      "style": (font-size: inherit),
+      "proto": false
+    )
+  ),
+  medium: (
+    "p": (
+      "selector": "p",
+      "style":(font-size: inherit),
+      "proto": false
+    )
+  ),
+) !default;
+
 //== Hamburger
 //Source: https://github.com/jonsuh/hamburgers
 $hamburger-padding-x           : 15px !default;
@@ -75,7 +93,9 @@ $base-font-stack: (
 ) !default;
 
 //== FONT
-$body-font-family-base: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$body-font-family-base: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$title-font-family-base: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$title-font-family:      $title-font-family-base !default;
 
 //== Font Icons
 $fi-font-path: "fonts" !default;
