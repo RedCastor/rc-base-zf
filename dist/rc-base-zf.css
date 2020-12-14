@@ -26561,6 +26561,14 @@ Usage:
 
 /** Import components */
 
+/** Get base style font weight */
+
+/** Mixin style property */
+
+/** Mixin style font weight */
+
+/** Mixin style classes */
+
 /* Responsive no javascript */
 
 /* line 8, src/styles/components/_visibility.scss */
@@ -29494,112 +29502,112 @@ hr.wp-block-separator:not(.is-style-dots) {
   color: #fefefe;
 }
 
-/* line 100, src/styles/components/_styles.scss */
+/* line 145, src/styles/components/_styles.scss */
 
 h3.base-font-body,
 .h3.base-font-body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 104, src/styles/components/_styles.scss */
+/* line 149, src/styles/components/_styles.scss */
 
 h3.base-font-header,
 .h3.base-font-header {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 108, src/styles/components/_styles.scss */
+/* line 153, src/styles/components/_styles.scss */
 
 h3.base-font-title,
 .h3.base-font-title {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 113, src/styles/components/_styles.scss */
+/* line 158, src/styles/components/_styles.scss */
 
 h3.base-uppercase,
 .h3.base-uppercase {
   text-transform: uppercase;
 }
 
-/* line 113, src/styles/components/_styles.scss */
+/* line 158, src/styles/components/_styles.scss */
 
 h3.base-inherit,
 .h3.base-inherit {
   text-transform: inherit;
 }
 
-/* line 113, src/styles/components/_styles.scss */
+/* line 158, src/styles/components/_styles.scss */
 
 h3.base-none,
 .h3.base-none {
   text-transform: none;
 }
 
-/* line 113, src/styles/components/_styles.scss */
+/* line 158, src/styles/components/_styles.scss */
 
 h3.base-capitalize,
 .h3.base-capitalize {
   text-transform: capitalize;
 }
 
-/* line 113, src/styles/components/_styles.scss */
+/* line 158, src/styles/components/_styles.scss */
 
 h3.base-lowercase,
 .h3.base-lowercase {
   text-transform: lowercase;
 }
 
-/* line 120, src/styles/components/_styles.scss */
+/* line 165, src/styles/components/_styles.scss */
 
 .base-font-body--h3 h3,
 .base-font-body--h3 .h3 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 126, src/styles/components/_styles.scss */
+/* line 171, src/styles/components/_styles.scss */
 
 .base-font-header--h3 h3,
 .base-font-header--h3 .h3 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 132, src/styles/components/_styles.scss */
+/* line 177, src/styles/components/_styles.scss */
 
 .base-font-title--h3 h3,
 .base-font-title--h3 .h3 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-/* line 139, src/styles/components/_styles.scss */
+/* line 184, src/styles/components/_styles.scss */
 
 .base-uppercase--h3 h3,
 .base-uppercase--h3 .h3 {
   text-transform: uppercase;
 }
 
-/* line 139, src/styles/components/_styles.scss */
+/* line 184, src/styles/components/_styles.scss */
 
 .base-inherit--h3 h3,
 .base-inherit--h3 .h3 {
   text-transform: inherit;
 }
 
-/* line 139, src/styles/components/_styles.scss */
+/* line 184, src/styles/components/_styles.scss */
 
 .base-none--h3 h3,
 .base-none--h3 .h3 {
   text-transform: none;
 }
 
-/* line 139, src/styles/components/_styles.scss */
+/* line 184, src/styles/components/_styles.scss */
 
 .base-capitalize--h3 h3,
 .base-capitalize--h3 .h3 {
   text-transform: capitalize;
 }
 
-/* line 139, src/styles/components/_styles.scss */
+/* line 184, src/styles/components/_styles.scss */
 
 .base-lowercase--h3 h3,
 .base-lowercase--h3 .h3 {
@@ -29607,112 +29615,112 @@ h3.base-lowercase,
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  /* line 100, src/styles/components/_styles.scss */
+  /* line 145, src/styles/components/_styles.scss */
 
   h3.base-font-body,
   .h3.base-font-body {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 104, src/styles/components/_styles.scss */
+  /* line 149, src/styles/components/_styles.scss */
 
   h3.base-font-header,
   .h3.base-font-header {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 108, src/styles/components/_styles.scss */
+  /* line 153, src/styles/components/_styles.scss */
 
   h3.base-font-title,
   .h3.base-font-title {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-uppercase,
   .h3.base-uppercase {
     text-transform: uppercase;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-inherit,
   .h3.base-inherit {
     text-transform: inherit;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-none,
   .h3.base-none {
     text-transform: none;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-capitalize,
   .h3.base-capitalize {
     text-transform: capitalize;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-lowercase,
   .h3.base-lowercase {
     text-transform: lowercase;
   }
 
-  /* line 120, src/styles/components/_styles.scss */
+  /* line 165, src/styles/components/_styles.scss */
 
   .base-font-body--h3 h3,
   .base-font-body--h3 .h3 {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 126, src/styles/components/_styles.scss */
+  /* line 171, src/styles/components/_styles.scss */
 
   .base-font-header--h3 h3,
   .base-font-header--h3 .h3 {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 132, src/styles/components/_styles.scss */
+  /* line 177, src/styles/components/_styles.scss */
 
   .base-font-title--h3 h3,
   .base-font-title--h3 .h3 {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-uppercase--h3 h3,
   .base-uppercase--h3 .h3 {
     text-transform: uppercase;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-inherit--h3 h3,
   .base-inherit--h3 .h3 {
     text-transform: inherit;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-none--h3 h3,
   .base-none--h3 .h3 {
     text-transform: none;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-capitalize--h3 h3,
   .base-capitalize--h3 .h3 {
     text-transform: capitalize;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-lowercase--h3 h3,
   .base-lowercase--h3 .h3 {
@@ -29721,112 +29729,112 @@ h3.base-lowercase,
 }
 
 @media print, screen and (min-width: 64em) and (min-width: 64em) {
-  /* line 100, src/styles/components/_styles.scss */
+  /* line 145, src/styles/components/_styles.scss */
 
   h3.base-font-body,
   .h3.base-font-body {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 104, src/styles/components/_styles.scss */
+  /* line 149, src/styles/components/_styles.scss */
 
   h3.base-font-header,
   .h3.base-font-header {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 108, src/styles/components/_styles.scss */
+  /* line 153, src/styles/components/_styles.scss */
 
   h3.base-font-title,
   .h3.base-font-title {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-uppercase,
   .h3.base-uppercase {
     text-transform: uppercase;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-inherit,
   .h3.base-inherit {
     text-transform: inherit;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-none,
   .h3.base-none {
     text-transform: none;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-capitalize,
   .h3.base-capitalize {
     text-transform: capitalize;
   }
 
-  /* line 113, src/styles/components/_styles.scss */
+  /* line 158, src/styles/components/_styles.scss */
 
   h3.base-lowercase,
   .h3.base-lowercase {
     text-transform: lowercase;
   }
 
-  /* line 120, src/styles/components/_styles.scss */
+  /* line 165, src/styles/components/_styles.scss */
 
   .base-font-body--h3 h3,
   .base-font-body--h3 .h3 {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 126, src/styles/components/_styles.scss */
+  /* line 171, src/styles/components/_styles.scss */
 
   .base-font-header--h3 h3,
   .base-font-header--h3 .h3 {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 132, src/styles/components/_styles.scss */
+  /* line 177, src/styles/components/_styles.scss */
 
   .base-font-title--h3 h3,
   .base-font-title--h3 .h3 {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-uppercase--h3 h3,
   .base-uppercase--h3 .h3 {
     text-transform: uppercase;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-inherit--h3 h3,
   .base-inherit--h3 .h3 {
     text-transform: inherit;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-none--h3 h3,
   .base-none--h3 .h3 {
     text-transform: none;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-capitalize--h3 h3,
   .base-capitalize--h3 .h3 {
     text-transform: capitalize;
   }
 
-  /* line 139, src/styles/components/_styles.scss */
+  /* line 184, src/styles/components/_styles.scss */
 
   .base-lowercase--h3 h3,
   .base-lowercase--h3 .h3 {

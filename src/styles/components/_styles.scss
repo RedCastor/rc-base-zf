@@ -53,7 +53,15 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
       $-style: map_get($-base-style, "style");
 
       @if map-has-key($-style, $prop) {
-        @return map_get($-style, $prop);
+        $-prop-val: map_get($-style, $prop);
+
+        @if $prop == "font-size" and type-of($-prop-val) == "number" {
+          @if unit($-prop-val) != "px" or unit($-prop-val) != "%" {
+            $-prop-val: rem-calc($-prop-val);
+          }
+        }
+
+        @return $-prop-val;
       }
     }
   }
@@ -61,6 +69,32 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
   @return $default;
 }
 
+/** Get base style font weight */
+@function get-style-font-weight($type: "regular", $family: null) {
+
+  @if $family == null and map-has-key($base-font, family) {
+
+    $family: map-get($base-font, family);
+  }
+
+  @if $family {
+
+    @each $key, $-base-font in $base-font-stack {
+
+      @if type-of($-base-font) == "map" and map-has-key($-base-font, family) and map-has-key($-base-font, type) {
+
+        @if $type == map-get($-base-font, type) {
+
+          @return map-get($-base-font, font-weight);
+        }
+      }
+    }
+  }
+
+  @return null;
+}
+
+/** Mixin style property */
 @mixin style-prop($key: "p", $prop: "font-size", $default: false) {
 
   @include -zf-each-breakpoint() {
@@ -73,6 +107,17 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
   }
 }
 
+/** Mixin style font weight */
+@mixin style-font-weight($type: "regular", $family: null) {
+
+  $-weight: get-style-font-weight($type, $family);
+
+  @if $-weight {
+    font-weight: $-weight;
+  }
+}
+
+/** Mixin style classes */
 @mixin style_classes() {
 
   @include -zf-each-breakpoint() {
