@@ -15,17 +15,15 @@ $base-size-sidebar: (
 //== Base Styles
 $base-styles: (
   small: (
-    "p": (
-      "selector": "p",
-      "style": (font-size: inherit),
-      "proto": false
+    "h3": (
+      "selectors": ("h3", ".h3"),
+      "proto": true
     )
   ),
   medium: (
-    "p": (
-      "selector": "p",
-      "style":(font-size: inherit),
-      "proto": false
+    "h3": (
+      "selectors": ("h3", ".h3"),
+      "proto": true
     )
   ),
 ) !default;

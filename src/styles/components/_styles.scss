@@ -2,22 +2,7 @@
 // Title
 // --------------------------------------------------
 
-$base-styles: (
-  small: (
-    "p": (
-      "selectors": ("p", ".p"),
-      "style": (font-size: inherit),
-      "proto": false
-    )
-  ),
-  medium: (
-    "p": (
-      "selectors": ("p", ".p"),
-      "style":(font-size: inherit),
-      "proto": false
-    )
-  ),
-) !default;
+$base-styles: () !default;
 
 // Get Styles merged with header styles
 @function build_base-styles_with_header-styles($base-styles, $header-styles) {
@@ -29,7 +14,14 @@ $base-styles: (
       $base-style: map-get($-base-styles, $header);
 
       @if type-of($base-style) == "map" {
-        $-style: map-get($base-style, "style");
+        $-style: null;
+        @if map-has-key($base-style, "style") {
+          $-style: map-get($base-style, "style");
+        }
+
+        @if type-of($-style) != "map" {
+          $-style: ();
+        }
 
         $-style: map-merge($-style, $header_style);
 
@@ -89,58 +81,65 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
     @include breakpoint($-zf-size) {
       @each $key, $base-style in $-base-styles {
 
-        $-selectors: null;
+        @if map-has-key($base-style, "proto") {
+          $-proto: map-get($base-style, "proto");
 
-        @if map-has-key($base-style, "selectors") {
-          $-selectors: map-get($base-style, "selectors");
-        }
+          @if $-proto == true {
 
-        @if type-of($-selectors) != "map" and type-of($-selectors) != "string" {
-          $-selectors: ("#{$key}", ".#{$key}");
-        }
+            $-selectors: null;
 
-        #{$-selectors} {
-          &.base-font-body {
-            font-family: $body-font-family;
-          }
-
-          &.base-font-header {
-            font-family: $header-font-family;
-          }
-
-          &.base-font-title {
-            font-family: $title-font-family;
-          }
-
-          @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
-            &.base-#{$prop_val} {
-              text-transform: #{$prop_val};
+            @if map-has-key($base-style, "selectors") {
+              $-selectors: map-get($base-style, "selectors");
             }
-          }
-        }
 
-        .base-font-body--#{$key} {
-          #{$-selectors} {
-            font-family: $body-font-family;
-          }
-        }
+            @if type-of($-selectors) != "map" and type-of($-selectors) != "string" {
+              $-selectors: ("#{$key}", ".#{$key}");
+            }
 
-        .base-font-header--#{$key} {
-          #{$-selectors} {
-            font-family: $header-font-family;
-          }
-        }
-
-        .base-font-title--#{$key} {
-          #{$-selectors} {
-            font-family: $title-font-family;
-          }
-        }
-
-        @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
-          .base-#{$prop_val}--#{$key} {
             #{$-selectors} {
-              text-transform: #{$prop_val};
+              &.base-font-body {
+                font-family: $body-font-family;
+              }
+
+              &.base-font-header {
+                font-family: $header-font-family;
+              }
+
+              &.base-font-title {
+                font-family: $title-font-family;
+              }
+
+              @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
+                &.base-#{$prop_val} {
+                  text-transform: #{$prop_val};
+                }
+              }
+            }
+
+            .base-font-body--#{$key} {
+              #{$-selectors} {
+                font-family: $body-font-family;
+              }
+            }
+
+            .base-font-header--#{$key} {
+              #{$-selectors} {
+                font-family: $header-font-family;
+              }
+            }
+
+            .base-font-title--#{$key} {
+              #{$-selectors} {
+                font-family: $title-font-family;
+              }
+            }
+
+            @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
+              .base-#{$prop_val}--#{$key} {
+                #{$-selectors} {
+                  text-transform: #{$prop_val};
+                }
+              }
             }
           }
         }
