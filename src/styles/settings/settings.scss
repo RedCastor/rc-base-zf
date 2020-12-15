@@ -100,12 +100,12 @@ $base-font-stack: (
 ) !default;
 
 //== FONT
-$base-font:                   map-get($base-font-stack, helvetica_neue);
-$base-font-family:            map-get($base-font, font-family);
-$body-font-base:              $base-font;
-$body-font-family-base:       $base-font-family;
-$base-font-title:             map-get($base-font-stack, helvetica_neue);
-$base-font-title-family:      map-get($base-font-title, font-family);
+$base-font:                   map-get($base-font-stack, helvetica_neue) !default;
+$base-font-family:            map-get($base-font, font-family) !default;
+$body-font-base:              $base-font !default;
+$body-font-family-base:       $base-font-family !default;
+$base-font-title:             map-get($base-font-stack, helvetica_neue) !default;
+$base-font-title-family:      map-get($base-font-title, font-family) !default;
 $title-font-family:           $base-font-title-family !default;
 
 //== Font Icons
