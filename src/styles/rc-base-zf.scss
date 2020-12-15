@@ -41,6 +41,15 @@
   @include rc-base-elementor-button;
 }
 
-@mixin rc-base-style-classes {
-  @include style_classes;
+@mixin rc-base-style($classes: true, $keys: null) {
+
+  @if $classes == true {
+    @include base-style-classes;
+  }
+
+  @if type-of($keys) == "list" {
+    @each $key in $keys {
+      @include style-classes($key);
+    }
+  }
 }

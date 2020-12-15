@@ -8,7 +8,12 @@ $base-styles: () !default;
 @function build_base-styles_with_header-styles($base-styles, $header-styles) {
 
   @each $size, $headers in $header-styles {
-    $-base-styles: map-get($base-styles, $size);
+
+    $-base-styles: ();
+
+    @if map-has-key($base-styles, $size) {
+      $-base-styles: map-get($base-styles, $size);
+    }
 
     @each $header, $header_style in $headers {
       $base-style: map-get($-base-styles, $header);
@@ -42,7 +47,7 @@ $base-styles: () !default;
 $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles);
 
 // Get base style by key and property
-@function get-style-prop($key: "p", $prop: "font-size", $default: false, $size: medium) {
+@function get-style-prop($key: "p", $prop: "font-size", $default: false, $size: small) {
 
   $-base-styles: -zf-get-bp-val($base-styles, $size);
 
@@ -95,14 +100,44 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 }
 
 /** Mixin style property */
-@mixin style-prop($key: "p", $prop: "font-size", $default: false) {
+@mixin style-prop($key: "p", $prop: "font-size", $default: false, $size: null) {
 
-  @include -zf-each-breakpoint() {
-
-    $-val: get-style-prop($key, $prop, $default, $-zf-size);
+  @if map-has-key($breakpoints, $size) {
+    $-val: get-style-prop($key, $prop, $default, $size);
 
     @if $-val {
       #{$prop}: $-val;
+    }
+  }
+  @else {
+    @include -zf-each-breakpoint() {
+
+      $-val: get-style-prop($key, $prop, $default, $-zf-size);
+
+      @if $-val {
+        #{$prop}: $-val;
+      }
+    }
+  }
+}
+
+/** Mixin style properties */
+@mixin style-props($key: "p", $size: small) {
+
+  @if map-has-key($breakpoints, $size) {
+
+    $-base-styles: map-get($base-styles, $size);
+    $-base-style: map-get($-base-styles, $key);
+    $-style-props: map-get($-base-style, "style");
+
+    @if type-of($-style-props) == "map" {
+      @each $-prop, $-prop-val in $-style-props {
+        $-val: get-style-prop($key, $-prop, false, $size);
+
+        @if $-val {
+          #{$-prop}: $-val;
+        }
+      }
     }
   }
 }
@@ -117,24 +152,54 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
   }
 }
 
-/** Mixin style classes */
-@mixin style_classes() {
+@mixin style-classes($selector: "h3", $prefix-selector: ".text", $style-keys: null) {
+
+  @if type-of($style-keys) != "map" {
+    $style-keys: ("h1", "h2", "h3", "h4", "h5", "h6");
+  }
 
   @include -zf-each-breakpoint() {
     $-base-styles: -zf-get-bp-val($base-styles, $-zf-size);
 
     @include breakpoint($-zf-size) {
-      @each $key, $base-style in $-base-styles {
+      @each $key, $-base-style in $-base-styles {
 
-        @if map-has-key($base-style, "proto") {
-          $-proto: map-get($base-style, "proto");
+        @if index($style-keys, $key)!= null {
+          $-style-props: map-get($-base-style, "style");
+
+          @if type-of($-style-props) == "map" {
+            #{$prefix-selector}-#{$key}--#{$selector} {
+              #{$selector} {
+                @each $-prop, $-prop-val in $-style-props {
+                  @include style-prop($key, $-prop);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/** Mixin style classes */
+@mixin base-style-classes() {
+
+  @include -zf-each-breakpoint() {
+    $-base-styles: -zf-get-bp-val($base-styles, $-zf-size);
+
+    @include breakpoint($-zf-size) {
+      @each $key, $-base-style in $-base-styles {
+
+        @if map-has-key($-base-style, "proto") {
+          $-proto: map-get($-base-style, "proto");
 
           @if $-proto == true {
 
             $-selectors: null;
 
-            @if map-has-key($base-style, "selectors") {
-              $-selectors: map-get($base-style, "selectors");
+            @if map-has-key($-base-style, "selectors") {
+              $-selectors: map-get($-base-style, "selectors");
             }
 
             @if type-of($-selectors) != "map" and type-of($-selectors) != "string" {
@@ -142,45 +207,45 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
             }
 
             #{$-selectors} {
-              &.base-font-body {
+              &.text-body {
                 font-family: $body-font-family;
               }
 
-              &.base-font-header {
+              &.text-header {
                 font-family: $header-font-family;
               }
 
-              &.base-font-title {
+              &.text-title {
                 font-family: $title-font-family;
               }
 
               @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
-                &.base-#{$prop_val} {
+                &.text-#{$prop_val} {
                   text-transform: #{$prop_val};
                 }
               }
             }
 
-            .base-font-body--#{$key} {
+            .text-body--#{$key} {
               #{$-selectors} {
                 font-family: $body-font-family;
               }
             }
 
-            .base-font-header--#{$key} {
+            .text-header--#{$key} {
               #{$-selectors} {
                 font-family: $header-font-family;
               }
             }
 
-            .base-font-title--#{$key} {
+            .text-title--#{$key} {
               #{$-selectors} {
                 font-family: $title-font-family;
               }
             }
 
             @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
-              .base-#{$prop_val}--#{$key} {
+              .text-#{$prop_val}--#{$key} {
                 #{$-selectors} {
                   text-transform: #{$prop_val};
                 }
