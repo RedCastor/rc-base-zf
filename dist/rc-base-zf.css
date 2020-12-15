@@ -29030,6 +29030,7 @@ main,
 
 /* line 133, src/styles/components/_grid.scss */
 
+.main-grid-single,
 .main-grid-archive {
   margin-top: 1.25rem auto;
 }
