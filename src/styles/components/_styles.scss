@@ -152,9 +152,9 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
   }
 }
 
-@mixin style-classes($selector: "h3", $prefix-selector: ".text", $style-keys: null) {
+@mixin style-classes($selector: "h3", $prefix-selector: ".text", $style-keys: null, $select-class: false) {
 
-  @if type-of($style-keys) != "map" {
+  @if type-of($style-keys) != "list" {
     $style-keys: ("h1", "h2", "h3", "h4", "h5", "h6");
   }
 
@@ -168,7 +168,13 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
           $-style-props: map-get($-base-style, "style");
 
           @if type-of($-style-props) == "map" {
-            #{$prefix-selector}-#{$key}--#{$selector} {
+            $-master-selector: "&#{$prefix-selector}-#{$key}";
+
+            @if $select-class == true {
+              $-master-selector: #{$prefix-selector}-#{$key}--#{$selector};
+            }
+
+            #{$-master-selector} {
               #{$selector} {
                 @each $-prop, $-prop-val in $-style-props {
                   @include style-prop($key, $-prop);
@@ -183,7 +189,7 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 }
 
 /** Mixin style classes */
-@mixin base-style-classes() {
+@mixin base-style-classes($select-class: false) {
 
   @include -zf-each-breakpoint() {
     $-base-styles: -zf-get-bp-val($base-styles, $-zf-size);
@@ -194,18 +200,17 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
         @if map-has-key($-base-style, "proto") {
           $-proto: map-get($-base-style, "proto");
 
-          @if $-proto == true {
+          $-selectors: null;
 
-            $-selectors: null;
+          @if map-has-key($-base-style, "selectors") {
+            $-selectors: map-get($-base-style, "selectors");
+          }
 
-            @if map-has-key($-base-style, "selectors") {
-              $-selectors: map-get($-base-style, "selectors");
-            }
+          @if type-of($-selectors) != "map" and type-of($-selectors) != "string" {
+            $-selectors: ("#{$key}", ".#{$key}");
+          }
 
-            @if type-of($-selectors) != "map" and type-of($-selectors) != "string" {
-              $-selectors: ("#{$key}", ".#{$key}");
-            }
-
+          @if $-proto == true and $select-class == true {
             #{$-selectors} {
               &.text-body {
                 font-family: $body-font-family;
@@ -225,29 +230,81 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
                 }
               }
             }
+          }
 
-            .text-body--#{$key} {
+          @if $select-class == false or ($-proto == true and $select-class == true) {
+
+            $-body-selector: "&.text-body";
+
+            @if $select-class == true {
+              $-body-selector: ".text-body--#{$key}";
+            }
+
+            #{$-body-selector} {
               #{$-selectors} {
                 font-family: $body-font-family;
               }
             }
 
-            .text-header--#{$key} {
-              #{$-selectors} {
-                font-family: $header-font-family;
-              }
+            $-title-selector: "&.text-title";
+
+            @if $select-class == true {
+              $-title-selector: ".text-title--#{$key}";
             }
 
-            .text-title--#{$key} {
+            #{$-title-selector} {
               #{$-selectors} {
                 font-family: $title-font-family;
               }
             }
 
             @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
-              .text-#{$prop_val}--#{$key} {
+              $-master-selector: "&.text-#{$prop_val}";
+
+              @if $select-class == true {
+                $-master-selector: ".text-#{$prop_val}--#{$key}";
+              }
+
+              #{$-master-selector} {
                 #{$-selectors} {
                   text-transform: #{$prop_val};
+                }
+              }
+            }
+
+            $-fonts : ();
+
+            @if map-has-key($base-font, type) and map-has-key($base-font, family) {
+              $-fonts: map-merge($-fonts, ("body": $base-font));
+            }
+
+            @if map-has-key($base-font-title, type) and map-has-key($base-font-title, family) {
+              $-fonts: map-merge($-fonts, ("title": $base-font-title));
+            }
+
+            @each $key-base-font, $-base-font in $base-font-stack {
+
+              @if map-has-key($-base-font, type) and map-has-key($-base-font, family) {
+                $-family: map-get($-base-font, family);
+                $-type: map-get($-base-font, type);
+
+                @each $-key-font, $-font in $-fonts {
+                  @if $-family == map-get($-font, family) {
+                    $-for: map-get($-font, for);
+
+                    $-master-selector: "&.text-#{$-key-font}-#{$-type}";
+
+                    @if $select-class == true {
+                      $-master-selector: ".text-#{$-key-font}-#{$-type}--#{$key}";
+                    }
+
+                    #{$-master-selector} {
+                      #{$-selectors} {
+                        font-family: map-get($-font, font-family);
+                        @include style-font-weight($-type, $-family);
+                      }
+                    }
+                  }
                 }
               }
             }

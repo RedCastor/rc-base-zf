@@ -44,12 +44,12 @@
 @mixin rc-base-style($classes: true, $keys: null) {
 
   @if $classes == true {
-    @include base-style-classes;
+    @include base-style-classes(true);
   }
 
   @if type-of($keys) == "list" {
     @each $key in $keys {
-      @include style-classes($key);
+      @include style-classes($selector: $key, $select-class: true);
     }
   }
 }

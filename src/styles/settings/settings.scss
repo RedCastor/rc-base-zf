@@ -81,6 +81,8 @@ $hamburger-types: (
 $base-font-stack: (
   /**
   courier_new: (
+    family: "Courier New",
+    type: "regular",
     path: "../fonts/courier_new",
     ext: woff2 woff ttf,
     font-family: ("Courier New", Courier, "Nimbus Sans L", monospace),
@@ -88,12 +90,23 @@ $base-font-stack: (
     font-style: normal,
   ),
   */
+  helvetica_neue: (
+    family: "Helvetica Neue",
+    type: "regular",
+    font-family: ("Helvetica Neue", Helvetica, Roboto, Arial, sans-serif),
+    font-weight: normal,
+    font-style: normal,
+  )
 ) !default;
 
 //== FONT
-$body-font-family-base: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
-$title-font-family-base: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
-$title-font-family:      $title-font-family-base !default;
+$base-font:                   map-get($base-font-stack, helvetica_neue);
+$base-font-family:            map-get($base-font, font-family);
+$body-font-base:              $base-font;
+$body-font-family-base:       $base-font-family;
+$base-font-title:             map-get($base-font-stack, helvetica_neue);
+$base-font-title-family:      map-get($base-font-title, font-family);
+$title-font-family:           $base-font-title-family !default;
 
 //== Font Icons
 $fi-font-path: "fonts" !default;
