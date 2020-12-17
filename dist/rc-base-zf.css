@@ -29086,16 +29086,18 @@ main,
   margin-top: 1.25rem;
 }
 
-/* line 140, src/styles/components/_grid.scss */
+/* line 143, src/styles/components/_grid.scss */
 
-.collapse-self-margin {
+.grid-margin-y > .cell.collapse-self-margin,
+.grid-margin-x > .cell.collapse-self-margin {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 145, src/styles/components/_grid.scss */
+/* line 153, src/styles/components/_grid.scss */
 
-.collapse-self-padding {
+.grid-padding-y > .cell.collapse-self-padding,
+.grid-padding-x > .cell.collapse-self-padding {
   padding-left: 0;
   padding-right: 0;
 }
