@@ -136,13 +136,23 @@
   margin-top: get-side($hr-margin, top);
 }
 
-//Collapse Self
-.collapse-self-margin {
-  margin-left: 0;
-  margin-right: 0;
+//Cell Collapse Self
+.grid-margin-y,
+.grid-margin-x {
+  > .cell {
+    &.collapse-self-margin {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
-.collapse-self-padding {
-  padding-left: 0;
-  padding-right: 0;
+.grid-padding-y,
+.grid-padding-x {
+  > .cell {
+    &.collapse-self-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
