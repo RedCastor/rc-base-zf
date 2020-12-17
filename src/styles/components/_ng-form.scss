@@ -73,5 +73,24 @@ ng-form,
       }
     }
   }
+
+  //Input-group
+  .input-group-field.ng-touched.ng-valid ~ .input-group-button {
+    .button {
+      border-color: $success-color;
+    }
+  }
+
+  .input-group-field.ng-touched.ng-invalid ~ .input-group-button {
+    .button {
+      border-color: $alert-color;
+    }
+  }
+
+  .input-group-field.ng-touched.ng-empty ~ .input-group-button {
+    .button {
+      border-color: inherit;
+    }
+  }
 }
 /* stylelint-enable */

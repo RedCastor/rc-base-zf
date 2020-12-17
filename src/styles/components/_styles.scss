@@ -100,17 +100,24 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 }
 
 /** Mixin style property */
-@mixin style-prop($key: "p", $prop: "font-size", $default: false, $size: null) {
+@mixin style-prop($key: "p", $prop: "font-size", $default: false, $size: null, $auto-insert-breakpoints: true) {
 
   @if map-has-key($breakpoints, $size) {
     $-val: get-style-prop($key, $prop, $default, $size);
 
     @if $-val {
-      #{$prop}: $-val;
+      @if $auto-insert-breakpoints {
+        @include breakpoint($size) {
+          #{$prop}: $-val;
+        }
+      }
+      @else {
+        #{$prop}: $-val;
+      }
     }
   }
   @else {
-    @include -zf-each-breakpoint() {
+    @include -zf-each-breakpoint(true, $auto-insert-breakpoints) {
 
       $-val: get-style-prop($key, $prop, $default, $-zf-size);
 
@@ -122,20 +129,29 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 }
 
 /** Mixin style properties */
-@mixin style-props($key: "p", $size: small) {
+@mixin style-props($key: "p", $size: null, $auto-insert-breakpoints: true) {
+
+  $sizes: ();
 
   @if map-has-key($breakpoints, $size) {
+    $sizes: ($size);
+  }
+  @else {
+    $sizes: map-merge($sizes, $breakpoints);
+  }
 
-    $-base-styles: map-get($base-styles, $size);
-    $-base-style: map-get($-base-styles, $key);
-    $-style-props: map-get($-base-style, "style");
+  @each $-size, $-size-val in $sizes {
+    @if map-has-key($base-styles, $-size) {
+      $-base-styles: map-get($base-styles, $-size);
+      $-base-style: map-get($-base-styles, $key);
 
-    @if type-of($-style-props) == "map" {
-      @each $-prop, $-prop-val in $-style-props {
-        $-val: get-style-prop($key, $-prop, false, $size);
+      @if type-of($-base-style) == "map" {
+        $-style-props: map-get($-base-style, "style");
 
-        @if $-val {
-          #{$-prop}: $-val;
+        @if type-of($-style-props) == "map" {
+          @each $-prop, $-prop-val in $-style-props {
+            @include style-prop($key, $-prop, false, $-size, $auto-insert-breakpoints);
+          }
         }
       }
     }
@@ -177,7 +193,7 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
             #{$-master-selector} {
               #{$selector} {
                 @each $-prop, $-prop-val in $-style-props {
-                  @include style-prop($key, $-prop);
+                  @include style-prop($key, $-prop, false, $-zf-size, false);
                 }
               }
             }

@@ -1,0 +1,37 @@
+//
+// hr
+// -------------------------------------------
+$hr-border-class:     $hr-border !default;
+$hr-margin-class:     $hr-margin !default;
+$hr-vertical-height:  auto !default;
+$hr-vertical-margin:  $hr-margin !default;
+$hr-vertical-border:  $hr-border !default;
+
+.hr {
+  clear: both;
+  margin-bottom: $hr-margin-class;
+
+  border-top: 0;
+  border-right: 0;
+  border-bottom: $hr-border-class;
+  border-left: 0;
+
+  .cell & {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.hr-vertical {
+  width: 1px;
+  height: $hr-vertical-height;
+  margin: auto;
+  margin-top: $hr-vertical-margin;
+  margin-bottom: $hr-vertical-margin;
+  border: 0;
+  border-left: $hr-vertical-border;
+
+  .cell & {
+    height: calc(100% - #{$hr-vertical-margin});
+  }
+}
