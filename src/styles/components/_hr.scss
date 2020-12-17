@@ -1,11 +1,12 @@
 //
 // hr
 // -------------------------------------------
-$hr-border-class:     $hr-border !default;
-$hr-margin-class:     $hr-margin !default;
-$hr-vertical-height:  auto !default;
-$hr-vertical-margin:  $hr-margin !default;
-$hr-vertical-border:  $hr-border !default;
+$hr-border-class:             $hr-border !default;
+$hr-margin-class:             get-side($hr-margin, bottom) !default;
+$hr-vertical-height:          auto !default;
+$hr-vertical-margin-top:      get-side($hr-margin, top) !default;
+$hr-vertical-margin-bottom:   get-side($hr-margin, bottom) !default;
+$hr-vertical-border:          $hr-border !default;
 
 .hr {
   clear: both;
@@ -26,12 +27,12 @@ $hr-vertical-border:  $hr-border !default;
   width: 1px;
   height: $hr-vertical-height;
   margin: auto;
-  margin-top: $hr-vertical-margin;
-  margin-bottom: $hr-vertical-margin;
+  margin-top: $hr-vertical-margin-top;
+  margin-bottom: $hr-vertical-margin-bottom;
   border: 0;
   border-left: $hr-vertical-border;
 
   .cell & {
-    height: calc(100% - #{$hr-vertical-margin});
+    height: calc(100% - #{($hr-vertical-margin-top + $hr-vertical-margin-bottom) / 2});
   }
 }

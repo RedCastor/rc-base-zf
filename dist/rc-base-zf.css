@@ -29083,7 +29083,21 @@ main,
 
 .main-grid-single,
 .main-grid-archive {
-  margin-top: 1.25rem auto;
+  margin-top: 1.25rem;
+}
+
+/* line 140, src/styles/components/_grid.scss */
+
+.collapse-self-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 145, src/styles/components/_grid.scss */
+
+.collapse-self-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* line 4, src/styles/components/_social.scss */
@@ -29268,40 +29282,40 @@ main,
           flex: 0 0 auto;
 }
 
-/* line 10, src/styles/components/_hr.scss */
+/* line 11, src/styles/components/_hr.scss */
 
 .hr {
   clear: both;
-  margin-bottom: 1.25rem auto;
+  margin-bottom: 1.25rem;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid #777777;
   border-left: 0;
 }
 
-/* line 19, src/styles/components/_hr.scss */
+/* line 20, src/styles/components/_hr.scss */
 
 .cell .hr {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 25, src/styles/components/_hr.scss */
+/* line 26, src/styles/components/_hr.scss */
 
 .hr-vertical {
   width: 1px;
   height: auto;
   margin: auto;
-  margin-top: 1.25rem auto;
-  margin-bottom: 1.25rem auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   border: 0;
   border-left: 1px solid #777777;
 }
 
-/* line 34, src/styles/components/_hr.scss */
+/* line 35, src/styles/components/_hr.scss */
 
 .cell .hr-vertical {
-  height: calc(100% - 1.25rem auto);
+  height: calc(100% - 1.25rem);
 }
 
 /** Import wordpress components */

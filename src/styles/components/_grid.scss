@@ -133,5 +133,16 @@
 .main-grid-single,
 .main-grid-archive {
 
-  margin-top: $hr-margin;
+  margin-top: get-side($hr-margin, top);
+}
+
+//Collapse Self
+.collapse-self-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.collapse-self-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
