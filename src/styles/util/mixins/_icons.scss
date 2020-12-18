@@ -1,0 +1,25 @@
+//
+// Icon Mixin
+// --------------------------------------------------
+@mixin icon-image(
+  $image,
+  $color,
+  $size: $fi-font-size-base
+) {
+  &::before {
+    content: "";
+  }
+  mask-image: $image;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: $size auto;
+  background-color: $color;
+  height: $size;
+  width: $size;
+
+  &.fi-2x {
+    mask-size: (2 * $size) auto;
+    height: (2 * $size);
+    width: (2 * $size);
+  }
+}
