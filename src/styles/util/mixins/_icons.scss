@@ -16,6 +16,7 @@
   background-color: $color;
   height: $size;
   width: $size;
+  vertical-align: middle;
 
   &.fi-2x {
     mask-size: (2 * $size) auto;

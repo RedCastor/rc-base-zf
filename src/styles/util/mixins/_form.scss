@@ -1,0 +1,42 @@
+//
+// Form Mixin
+// --------------------------------------------------
+@mixin input-group-style-hollow(
+  $border: $input-border,
+) {
+  .input-group-button {
+    .button {
+      @include button-style($input-background, $input-background);
+      @include button-hollow-style($button-background, $button-hollow-hover-lightness, $button-hollow-border-width);
+      border: $border;
+
+      &:focus,
+      &:hover {
+        border: $border;
+      }
+    }
+  }
+
+  .input-group-field {
+    border: $border;
+  }
+}
+
+@mixin input-group-style-border(
+  $border: $input-border,
+) {
+  .input-group-button {
+    .button {
+      border: $border;
+
+      &:focus,
+      &:hover {
+        border: $border;
+      }
+    }
+  }
+
+  .input-group-field {
+    border: $border;
+  }
+}
