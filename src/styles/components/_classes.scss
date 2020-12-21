@@ -41,3 +41,12 @@
     @include horizontal-center;
   }
 }
+
+//-- Fixed
+.fixed-top {
+  @include position-fixed-top;
+}
+
+.fixed-bottom {
+  @include position-fixed-bottom;
+}
