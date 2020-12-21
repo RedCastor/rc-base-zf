@@ -26713,6 +26713,48 @@ Usage:
   }
 }
 
+/* line 46, src/styles/components/_classes.scss */
+
+.fixed-top {
+  position: fixed !important;
+  top: 0rem !important;
+  right: 0rem !important;
+  left: 0rem !important;
+  z-index: 975;
+}
+
+/* line 50, src/styles/components/_classes.scss */
+
+.fixed-bottom {
+  position: fixed !important;
+  right: 0rem !important;
+  bottom: 0rem !important;
+  left: 0rem !important;
+  z-index: 975;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 55, src/styles/components/_classes.scss */
+
+  .fixed-top-medium {
+    position: fixed !important;
+    top: 0rem !important;
+    right: 0rem !important;
+    left: 0rem !important;
+    z-index: 975;
+  }
+
+  /* line 59, src/styles/components/_classes.scss */
+
+  .fixed-bottom-medium {
+    position: fixed !important;
+    right: 0rem !important;
+    bottom: 0rem !important;
+    left: 0rem !important;
+    z-index: 975;
+  }
+}
+
 @font-face {
   font-family: "rc-base-icons";
   src: url(../dist/fonts/rc-base-icons.ttf) format("truetype"), url(../dist/fonts/rc-base-icons.woff) format("woff"), url(../dist/fonts/rc-base-icons.svg) format("svg");
