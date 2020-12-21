@@ -44,19 +44,23 @@
 
 //-- Fixed
 .fixed-top {
-  @include position-fixed-top;
+  @include position(fixed, 0, null, null, null);
+  z-index: $prototype-position-z-index;
 }
 
 .fixed-bottom {
-  @include position-fixed-bottom;
+  @include position(fixed, null, null, 0, null);
+  z-index: $prototype-position-z-index;
 }
 
 @include breakpoint(medium) {
   .fixed-top-medium {
-    @include position-fixed-top;
+    @include position(fixed, 0, null, null, null);
+    z-index: $prototype-position-z-index;
   }
 
   .fixed-bottom-medium {
-    @include position-fixed-bottom;
+    @include position(fixed, null, null, 0, null);
+    z-index: $prototype-position-z-index;
   }
 }

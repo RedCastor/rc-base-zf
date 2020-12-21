@@ -26718,39 +26718,31 @@ Usage:
 .fixed-top {
   position: fixed !important;
   top: 0rem !important;
-  right: 0rem !important;
-  left: 0rem !important;
   z-index: 975;
 }
 
-/* line 50, src/styles/components/_classes.scss */
+/* line 51, src/styles/components/_classes.scss */
 
 .fixed-bottom {
   position: fixed !important;
-  right: 0rem !important;
   bottom: 0rem !important;
-  left: 0rem !important;
   z-index: 975;
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 55, src/styles/components/_classes.scss */
+  /* line 57, src/styles/components/_classes.scss */
 
   .fixed-top-medium {
     position: fixed !important;
     top: 0rem !important;
-    right: 0rem !important;
-    left: 0rem !important;
     z-index: 975;
   }
 
-  /* line 59, src/styles/components/_classes.scss */
+  /* line 62, src/styles/components/_classes.scss */
 
   .fixed-bottom-medium {
     position: fixed !important;
-    right: 0rem !important;
     bottom: 0rem !important;
-    left: 0rem !important;
     z-index: 975;
   }
 }
