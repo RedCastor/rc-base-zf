@@ -50,3 +50,13 @@
 .fixed-bottom {
   @include position-fixed-bottom;
 }
+
+@include breakpoint(medium) {
+  .fixed-top-medium {
+    @include position-fixed-top;
+  }
+
+  .fixed-bottom-medium {
+    @include position-fixed-bottom;
+  }
+}
