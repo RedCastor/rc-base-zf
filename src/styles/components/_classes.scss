@@ -64,3 +64,8 @@
     z-index: $prototype-position-z-index;
   }
 }
+
+//Fit Align
+.fit-center {
+  @include style-fit-center;
+}

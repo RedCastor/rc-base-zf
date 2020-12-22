@@ -5,11 +5,11 @@ $underline-width:   5rem !default;
 $underline-size:    3px !default;
 $underline-bottom:  0 !default;
 $underline-left:    0 !default;
-$underline-color: $primary-color !default;
+$underline-color:   $primary-color !default;
 
 $underline-palette: $foundation-palette !default;
 
-@mixin style-underline($color: $primary-color) {
+@mixin style-underline($color: $underline-color) {
   position: relative;
 
   &::after {
