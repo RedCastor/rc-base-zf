@@ -1,8 +1,10 @@
 //
 // Underline
 // -------------------------------------------
-$underline-width: 5rem !default;
-$underline-size:  3px !default;
+$underline-width:   5rem !default;
+$underline-size:    3px !default;
+$underline-bottom:  0 !default;
+$underline-left:    0 !default;
 $underline-color: $primary-color !default;
 
 $underline-palette: $foundation-palette !default;
@@ -16,8 +18,8 @@ $underline-palette: $foundation-palette !default;
     width: $underline-width;
     height: $underline-size;
     background-color: $color;
-    bottom: 0;
-    left: 0;
+    bottom: $underline-bottom;
+    left: $underline-left;
   }
 }
 
