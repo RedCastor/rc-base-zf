@@ -159,12 +159,17 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 }
 
 /** Mixin style font weight */
-@mixin style-font-weight($type: "regular", $family: null) {
+@mixin style-font-weight($type: "regular", $family: null, $important: false) {
 
   $-weight: get-style-font-weight($type, $family);
 
   @if $-weight {
-    font-weight: $-weight;
+    @if $important == true {
+      font-weight: $-weight !important;
+    }
+    @else {
+      font-weight: $-weight;
+    }
   }
 }
 
@@ -248,7 +253,7 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
             }
           }
 
-          @if $select-class == false or ($-proto == true and $select-class == true) {
+          @if $-proto == true {
 
             $-body-selector: "&.text-body";
 
@@ -258,7 +263,12 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 
             #{$-body-selector} {
               #{$-selectors} {
-                font-family: $body-font-family;
+                @if $select-class == true {
+                  font-family: $body-font-family !important;
+                }
+                @else {
+                  font-family: $body-font-family;
+                }
               }
             }
 
@@ -270,7 +280,36 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 
             #{$-title-selector} {
               #{$-selectors} {
-                font-family: $title-font-family;
+                @if $select-class == true {
+                  font-family: $title-font-family !important;
+                }
+                @else {
+                  font-family: $title-font-family;
+                }
+              }
+            }
+
+            $-underline-selector: "&.text-underline";
+
+            @if $select-class == true {
+              $-underline-selector: ".text-underline--#{$key}";
+            }
+
+            #{$-underline-selector} {
+              #{$-selectors} {
+                @include style-underline;
+              }
+            }
+
+            $-fit-center-selector: "&.text-fit-center";
+
+            @if $select-class == true {
+              $-fit-center-selector: ".text-fit-center--#{$key}";
+            }
+
+            #{$-fit-center-selector} {
+              #{$-selectors} {
+                @include style-fit-center;
               }
             }
 
@@ -283,7 +322,12 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 
               #{$-master-selector} {
                 #{$-selectors} {
-                  text-transform: #{$prop_val};
+                  @if $select-class == true {
+                    text-transform: #{$prop_val} !important;
+                  }
+                  @else {
+                    text-transform: #{$prop_val};
+                  }
                 }
               }
             }
@@ -316,8 +360,14 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
 
                     #{$-master-selector} {
                       #{$-selectors} {
-                        font-family: map-get($-font, font-family);
-                        @include style-font-weight($-type, $-family);
+                        @if $select-class == true {
+                          font-family: map-get($-font, font-family) !important;
+                          @include style-font-weight($-type, $-family, true);
+                        }
+                        @else {
+                          font-family: map-get($-font, font-family);
+                          @include style-font-weight($-type, $-family);
+                        }
                       }
                     }
                   }
