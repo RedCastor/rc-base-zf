@@ -1,0 +1,33 @@
+//
+// Underline
+// -------------------------------------------
+$underline-width: 5rem !default;
+$underline-size:  3px !default;
+$underline-color: $primary-color !default;
+
+$underline-palette: $foundation-palette !default;
+
+@mixin style-underline($color: $primary-color) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: $underline-width;
+    height: $underline-size;
+    background-color: $color;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.underline {
+  @include style-underline;
+
+  // Colors
+  @each $name, $color in $underline-palette {
+    &.#{$name}::after {
+      background-color: $color;
+    }
+  }
+}

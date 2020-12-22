@@ -29355,6 +29355,54 @@ main,
   height: calc(100% - 1.25rem);
 }
 
+/* line 24, src/styles/components/_underline.scss */
+
+.underline {
+  position: relative;
+}
+
+/* line 13, src/styles/components/_underline.scss */
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 3px;
+  background-color: #1779ba;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 29, src/styles/components/_underline.scss */
+
+.underline.primary::after {
+  background-color: #1779ba;
+}
+
+/* line 29, src/styles/components/_underline.scss */
+
+.underline.secondary::after {
+  background-color: #767676;
+}
+
+/* line 29, src/styles/components/_underline.scss */
+
+.underline.success::after {
+  background-color: #18a733;
+}
+
+/* line 29, src/styles/components/_underline.scss */
+
+.underline.warning::after {
+  background-color: #ffae00;
+}
+
+/* line 29, src/styles/components/_underline.scss */
+
+.underline.alert::after {
+  background-color: #cc4b37;
+}
+
 /** Import wordpress components */
 
 /**
