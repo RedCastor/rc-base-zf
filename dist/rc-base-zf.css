@@ -29329,7 +29329,7 @@ main,
           flex: 0 0 auto;
 }
 
-/* line 11, src/styles/components/_hr.scss */
+/* line 40, src/styles/components/_hr.scss */
 
 .hr {
   clear: both;
@@ -29347,7 +29347,7 @@ main,
   margin-right: 0;
 }
 
-/* line 26, src/styles/components/_hr.scss */
+/* line 44, src/styles/components/_hr.scss */
 
 .hr-vertical {
   width: 1px;
@@ -29379,7 +29379,7 @@ main,
   width: 5rem;
   height: 3px;
   background-color: #1779ba;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
 }
 
@@ -29787,7 +29787,7 @@ h3.text-lowercase,
   width: 5rem;
   height: 3px;
   background-color: #1779ba;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
 }
 
@@ -29802,42 +29802,62 @@ h3.text-lowercase,
   margin-right: auto;
 }
 
-/* line 324, src/styles/components/_styles.scss */
+/* line 323, src/styles/components/_styles.scss */
+
+.text-hr--h3 h3,
+.text-hr--h3 .h3 {
+  clear: both;
+  margin-bottom: 1.25rem;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #777777;
+  border-left: 0;
+}
+
+/* line 20, src/styles/components/_hr.scss */
+
+.cell .text-hr--h3 h3,
+.cell .text-hr--h3 .h3 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 336, src/styles/components/_styles.scss */
 
 .text-uppercase--h3 h3,
 .text-uppercase--h3 .h3 {
   text-transform: uppercase !important;
 }
 
-/* line 324, src/styles/components/_styles.scss */
+/* line 336, src/styles/components/_styles.scss */
 
 .text-inherit--h3 h3,
 .text-inherit--h3 .h3 {
   text-transform: inherit !important;
 }
 
-/* line 324, src/styles/components/_styles.scss */
+/* line 336, src/styles/components/_styles.scss */
 
 .text-none--h3 h3,
 .text-none--h3 .h3 {
   text-transform: none !important;
 }
 
-/* line 324, src/styles/components/_styles.scss */
+/* line 336, src/styles/components/_styles.scss */
 
 .text-capitalize--h3 h3,
 .text-capitalize--h3 .h3 {
   text-transform: capitalize !important;
 }
 
-/* line 324, src/styles/components/_styles.scss */
+/* line 336, src/styles/components/_styles.scss */
 
 .text-lowercase--h3 h3,
 .text-lowercase--h3 .h3 {
   text-transform: lowercase !important;
 }
 
-/* line 362, src/styles/components/_styles.scss */
+/* line 374, src/styles/components/_styles.scss */
 
 .text-body-regular--h3 h3,
 .text-body-regular--h3 .h3 {
@@ -29845,7 +29865,7 @@ h3.text-lowercase,
   font-weight: normal !important;
 }
 
-/* line 362, src/styles/components/_styles.scss */
+/* line 374, src/styles/components/_styles.scss */
 
 .text-title-regular--h3 h3,
 .text-title-regular--h3 .h3 {
@@ -29940,7 +29960,7 @@ h3.text-lowercase,
     width: 5rem;
     height: 3px;
     background-color: #1779ba;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
   }
 
@@ -29955,42 +29975,62 @@ h3.text-lowercase,
     margin-right: auto;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 323, src/styles/components/_styles.scss */
+
+  .text-hr--h3 h3,
+  .text-hr--h3 .h3 {
+    clear: both;
+    margin-bottom: 1.25rem;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #777777;
+    border-left: 0;
+  }
+
+  /* line 20, src/styles/components/_hr.scss */
+
+  .cell .text-hr--h3 h3,
+  .cell .text-hr--h3 .h3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-uppercase--h3 h3,
   .text-uppercase--h3 .h3 {
     text-transform: uppercase !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-inherit--h3 h3,
   .text-inherit--h3 .h3 {
     text-transform: inherit !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-none--h3 h3,
   .text-none--h3 .h3 {
     text-transform: none !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-capitalize--h3 h3,
   .text-capitalize--h3 .h3 {
     text-transform: capitalize !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-lowercase--h3 h3,
   .text-lowercase--h3 .h3 {
     text-transform: lowercase !important;
   }
 
-  /* line 362, src/styles/components/_styles.scss */
+  /* line 374, src/styles/components/_styles.scss */
 
   .text-body-regular--h3 h3,
   .text-body-regular--h3 .h3 {
@@ -29998,7 +30038,7 @@ h3.text-lowercase,
     font-weight: normal !important;
   }
 
-  /* line 362, src/styles/components/_styles.scss */
+  /* line 374, src/styles/components/_styles.scss */
 
   .text-title-regular--h3 h3,
   .text-title-regular--h3 .h3 {
@@ -30094,7 +30134,7 @@ h3.text-lowercase,
     width: 5rem;
     height: 3px;
     background-color: #1779ba;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
   }
 
@@ -30109,42 +30149,62 @@ h3.text-lowercase,
     margin-right: auto;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 323, src/styles/components/_styles.scss */
+
+  .text-hr--h3 h3,
+  .text-hr--h3 .h3 {
+    clear: both;
+    margin-bottom: 1.25rem;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #777777;
+    border-left: 0;
+  }
+
+  /* line 20, src/styles/components/_hr.scss */
+
+  .cell .text-hr--h3 h3,
+  .cell .text-hr--h3 .h3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-uppercase--h3 h3,
   .text-uppercase--h3 .h3 {
     text-transform: uppercase !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-inherit--h3 h3,
   .text-inherit--h3 .h3 {
     text-transform: inherit !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-none--h3 h3,
   .text-none--h3 .h3 {
     text-transform: none !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-capitalize--h3 h3,
   .text-capitalize--h3 .h3 {
     text-transform: capitalize !important;
   }
 
-  /* line 324, src/styles/components/_styles.scss */
+  /* line 336, src/styles/components/_styles.scss */
 
   .text-lowercase--h3 h3,
   .text-lowercase--h3 .h3 {
     text-transform: lowercase !important;
   }
 
-  /* line 362, src/styles/components/_styles.scss */
+  /* line 374, src/styles/components/_styles.scss */
 
   .text-body-regular--h3 h3,
   .text-body-regular--h3 .h3 {
@@ -30152,7 +30212,7 @@ h3.text-lowercase,
     font-weight: normal !important;
   }
 
-  /* line 362, src/styles/components/_styles.scss */
+  /* line 374, src/styles/components/_styles.scss */
 
   .text-title-regular--h3 h3,
   .text-title-regular--h3 .h3 {

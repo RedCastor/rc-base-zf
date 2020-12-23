@@ -8,7 +8,7 @@ $hr-vertical-margin-top:      get-side($hr-margin, top) !default;
 $hr-vertical-margin-bottom:   get-side($hr-margin, bottom) !default;
 $hr-vertical-border:          $hr-border !default;
 
-.hr {
+@mixin style-hr() {
   clear: both;
   margin-bottom: $hr-margin-class;
 
@@ -23,7 +23,7 @@ $hr-vertical-border:          $hr-border !default;
   }
 }
 
-.hr-vertical {
+@mixin style-hr-vertical() {
   width: 1px;
   height: $hr-vertical-height;
   margin: auto;
@@ -35,4 +35,12 @@ $hr-vertical-border:          $hr-border !default;
   .cell & {
     height: calc(100% - #{($hr-vertical-margin-top + $hr-vertical-margin-bottom) / 2});
   }
+}
+
+.hr {
+  @include style-hr;
+}
+
+.hr-vertical {
+  @include style-hr-vertical;
 }

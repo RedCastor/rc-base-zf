@@ -313,6 +313,18 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
               }
             }
 
+            $-hr-selector: "&.text-hr";
+
+            @if $select-class == true {
+              $-hr-selector: ".text-hr--#{$key}";
+            }
+
+            #{$-hr-selector} {
+              #{$-selectors} {
+                @include style-hr;
+              }
+            }
+
             @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {
               $-master-selector: "&.text-#{$prop_val}";
 
