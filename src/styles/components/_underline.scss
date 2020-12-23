@@ -23,13 +23,19 @@ $underline-palette: $foundation-palette !default;
   }
 }
 
+@mixin style-underline-color($color: $underline-color) {
+  &::after {
+    background-color: $color;
+  }
+}
+
 .underline {
   @include style-underline;
 
   // Colors
   @each $name, $color in $underline-palette {
-    &.#{$name}::after {
-      background-color: $color;
+    &.#{$name} {
+      @include style-underline-color($color);
     }
   }
 }

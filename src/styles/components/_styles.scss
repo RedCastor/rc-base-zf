@@ -299,6 +299,20 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
               #{$-selectors} {
                 @include style-underline;
               }
+
+              @each $-color-name, $-color in $foundation-palette {
+                $-color-selector: "&.text-#{$-color-name}";
+
+                @if $select-class == true {
+                  $-color-selector: "&.text-#{$-color-name}--#{$key}";
+                }
+
+                #{$-color-selector} {
+                  #{$-selectors} {
+                    @include style-underline-color($-color);
+                  }
+                }
+              }
             }
 
             $-fit-center-selector: "&.text-fit-center";
