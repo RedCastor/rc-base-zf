@@ -29365,7 +29365,7 @@ main,
   height: calc(100% - 1.25rem);
 }
 
-/* line 32, src/styles/components/_underline.scss */
+/* line 39, src/styles/components/_underline.scss */
 
 .underline {
   position: relative;
@@ -29411,6 +29411,15 @@ main,
 
 .underline.alert::after {
   background-color: #cc4b37;
+}
+
+/* line 33, src/styles/components/_underline.scss */
+
+.underline.underline-center::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /** Import wordpress components */
@@ -29771,7 +29780,7 @@ h3.text-lowercase,
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 
-/* line 299, src/styles/components/_styles.scss */
+/* line 301, src/styles/components/_styles.scss */
 
 .text-underline--h3 h3,
 .text-underline--h3 .h3 {
@@ -29789,6 +29798,16 @@ h3.text-lowercase,
   background-color: #1779ba;
   bottom: -2px;
   left: 0;
+}
+
+/* line 33, src/styles/components/_underline.scss */
+
+.text-underline--h3.text-underline-center--h3 h3::after,
+.text-underline--h3.text-underline-center--h3 .h3::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 27, src/styles/components/_underline.scss */
@@ -29826,7 +29845,7 @@ h3.text-lowercase,
   background-color: #cc4b37;
 }
 
-/* line 325, src/styles/components/_styles.scss */
+/* line 333, src/styles/components/_styles.scss */
 
 .text-fit-center--h3 h3,
 .text-fit-center--h3 .h3 {
@@ -29837,7 +29856,7 @@ h3.text-lowercase,
   margin-right: auto;
 }
 
-/* line 337, src/styles/components/_styles.scss */
+/* line 345, src/styles/components/_styles.scss */
 
 .text-hr--h3 h3,
 .text-hr--h3 .h3 {
@@ -29857,42 +29876,42 @@ h3.text-lowercase,
   margin-right: 0;
 }
 
-/* line 350, src/styles/components/_styles.scss */
+/* line 358, src/styles/components/_styles.scss */
 
 .text-uppercase--h3 h3,
 .text-uppercase--h3 .h3 {
   text-transform: uppercase !important;
 }
 
-/* line 350, src/styles/components/_styles.scss */
+/* line 358, src/styles/components/_styles.scss */
 
 .text-inherit--h3 h3,
 .text-inherit--h3 .h3 {
   text-transform: inherit !important;
 }
 
-/* line 350, src/styles/components/_styles.scss */
+/* line 358, src/styles/components/_styles.scss */
 
 .text-none--h3 h3,
 .text-none--h3 .h3 {
   text-transform: none !important;
 }
 
-/* line 350, src/styles/components/_styles.scss */
+/* line 358, src/styles/components/_styles.scss */
 
 .text-capitalize--h3 h3,
 .text-capitalize--h3 .h3 {
   text-transform: capitalize !important;
 }
 
-/* line 350, src/styles/components/_styles.scss */
+/* line 358, src/styles/components/_styles.scss */
 
 .text-lowercase--h3 h3,
 .text-lowercase--h3 .h3 {
   text-transform: lowercase !important;
 }
 
-/* line 388, src/styles/components/_styles.scss */
+/* line 396, src/styles/components/_styles.scss */
 
 .text-body-regular--h3 h3,
 .text-body-regular--h3 .h3 {
@@ -29900,7 +29919,7 @@ h3.text-lowercase,
   font-weight: normal !important;
 }
 
-/* line 388, src/styles/components/_styles.scss */
+/* line 396, src/styles/components/_styles.scss */
 
 .text-title-regular--h3 h3,
 .text-title-regular--h3 .h3 {
@@ -29979,7 +29998,7 @@ h3.text-lowercase,
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
-  /* line 299, src/styles/components/_styles.scss */
+  /* line 301, src/styles/components/_styles.scss */
 
   .text-underline--h3 h3,
   .text-underline--h3 .h3 {
@@ -29997,6 +30016,16 @@ h3.text-lowercase,
     background-color: #1779ba;
     bottom: -2px;
     left: 0;
+  }
+
+  /* line 33, src/styles/components/_underline.scss */
+
+  .text-underline--h3.text-underline-center--h3 h3::after,
+  .text-underline--h3.text-underline-center--h3 .h3::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   /* line 27, src/styles/components/_underline.scss */
@@ -30034,7 +30063,7 @@ h3.text-lowercase,
     background-color: #cc4b37;
   }
 
-  /* line 325, src/styles/components/_styles.scss */
+  /* line 333, src/styles/components/_styles.scss */
 
   .text-fit-center--h3 h3,
   .text-fit-center--h3 .h3 {
@@ -30045,7 +30074,7 @@ h3.text-lowercase,
     margin-right: auto;
   }
 
-  /* line 337, src/styles/components/_styles.scss */
+  /* line 345, src/styles/components/_styles.scss */
 
   .text-hr--h3 h3,
   .text-hr--h3 .h3 {
@@ -30065,42 +30094,42 @@ h3.text-lowercase,
     margin-right: 0;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-uppercase--h3 h3,
   .text-uppercase--h3 .h3 {
     text-transform: uppercase !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-inherit--h3 h3,
   .text-inherit--h3 .h3 {
     text-transform: inherit !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-none--h3 h3,
   .text-none--h3 .h3 {
     text-transform: none !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-capitalize--h3 h3,
   .text-capitalize--h3 .h3 {
     text-transform: capitalize !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-lowercase--h3 h3,
   .text-lowercase--h3 .h3 {
     text-transform: lowercase !important;
   }
 
-  /* line 388, src/styles/components/_styles.scss */
+  /* line 396, src/styles/components/_styles.scss */
 
   .text-body-regular--h3 h3,
   .text-body-regular--h3 .h3 {
@@ -30108,7 +30137,7 @@ h3.text-lowercase,
     font-weight: normal !important;
   }
 
-  /* line 388, src/styles/components/_styles.scss */
+  /* line 396, src/styles/components/_styles.scss */
 
   .text-title-regular--h3 h3,
   .text-title-regular--h3 .h3 {
@@ -30188,7 +30217,7 @@ h3.text-lowercase,
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
-  /* line 299, src/styles/components/_styles.scss */
+  /* line 301, src/styles/components/_styles.scss */
 
   .text-underline--h3 h3,
   .text-underline--h3 .h3 {
@@ -30206,6 +30235,16 @@ h3.text-lowercase,
     background-color: #1779ba;
     bottom: -2px;
     left: 0;
+  }
+
+  /* line 33, src/styles/components/_underline.scss */
+
+  .text-underline--h3.text-underline-center--h3 h3::after,
+  .text-underline--h3.text-underline-center--h3 .h3::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   /* line 27, src/styles/components/_underline.scss */
@@ -30243,7 +30282,7 @@ h3.text-lowercase,
     background-color: #cc4b37;
   }
 
-  /* line 325, src/styles/components/_styles.scss */
+  /* line 333, src/styles/components/_styles.scss */
 
   .text-fit-center--h3 h3,
   .text-fit-center--h3 .h3 {
@@ -30254,7 +30293,7 @@ h3.text-lowercase,
     margin-right: auto;
   }
 
-  /* line 337, src/styles/components/_styles.scss */
+  /* line 345, src/styles/components/_styles.scss */
 
   .text-hr--h3 h3,
   .text-hr--h3 .h3 {
@@ -30274,42 +30313,42 @@ h3.text-lowercase,
     margin-right: 0;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-uppercase--h3 h3,
   .text-uppercase--h3 .h3 {
     text-transform: uppercase !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-inherit--h3 h3,
   .text-inherit--h3 .h3 {
     text-transform: inherit !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-none--h3 h3,
   .text-none--h3 .h3 {
     text-transform: none !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-capitalize--h3 h3,
   .text-capitalize--h3 .h3 {
     text-transform: capitalize !important;
   }
 
-  /* line 350, src/styles/components/_styles.scss */
+  /* line 358, src/styles/components/_styles.scss */
 
   .text-lowercase--h3 h3,
   .text-lowercase--h3 .h3 {
     text-transform: lowercase !important;
   }
 
-  /* line 388, src/styles/components/_styles.scss */
+  /* line 396, src/styles/components/_styles.scss */
 
   .text-body-regular--h3 h3,
   .text-body-regular--h3 .h3 {
@@ -30317,7 +30356,7 @@ h3.text-lowercase,
     font-weight: normal !important;
   }
 
-  /* line 388, src/styles/components/_styles.scss */
+  /* line 396, src/styles/components/_styles.scss */
 
   .text-title-regular--h3 h3,
   .text-title-regular--h3 .h3 {

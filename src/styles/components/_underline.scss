@@ -29,6 +29,13 @@ $underline-palette: $foundation-palette !default;
   }
 }
 
+@mixin style-underline-center() {
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .underline {
   @include style-underline;
 
@@ -37,5 +44,9 @@ $underline-palette: $foundation-palette !default;
     &.#{$name} {
       @include style-underline-color($color);
     }
+  }
+
+  &.underline-center {
+    @include style-underline-center;
   }
 }

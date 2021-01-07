@@ -290,14 +290,22 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
             }
 
             $-underline-selector: "&.text-underline";
+            $-underline-center-selector: "&.text-underline-center";
 
             @if $select-class == true {
               $-underline-selector: ".text-underline--#{$key}";
+              $-underline-center-selector: "&.text-underline-center--#{$key}";
             }
 
             #{$-underline-selector} {
               #{$-selectors} {
                 @include style-underline;
+              }
+
+              #{$-underline-center-selector} {
+                #{$-selectors} {
+                  @include style-underline-center;
+                }
               }
 
               @each $-color-name, $-color in $foundation-palette {
