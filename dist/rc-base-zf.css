@@ -28552,6 +28552,18 @@ Usage:
   content: "\E9FB";
 }
 
+/* line 1265, src/styles/components/icons/_icons.scss */
+
+.fi-credit-card:before {
+  content: "\E939";
+}
+
+/* line 1270, src/styles/components/icons/_icons.scss */
+
+.fi-eye:before {
+  content: "\E983";
+}
+
 /* stylelint-enable */
 
 /* line 6, src/styles/components/_buttons.scss */

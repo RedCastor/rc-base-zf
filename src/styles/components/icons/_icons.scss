@@ -1260,5 +1260,15 @@
   }
 }
 
-
+//-- Additionnal class
+.fi-credit-card {
+  &:before {
+    content: $fi-var-credit;
+  }
+}
+.fi-eye {
+  &:before {
+    content: $fi-var-look;
+  }
+}
 /* stylelint-enable */
