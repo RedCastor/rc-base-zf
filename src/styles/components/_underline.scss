@@ -6,6 +6,11 @@ $underline-size:    3px !default;
 $underline-bottom:  -2px !default;
 $underline-left:    0 !default;
 $underline-color:   $primary-color !default;
+$underline-sizes: (
+  tiny: 1px,
+  small: 2px,
+  default: $underline-size,
+) !default;
 
 $underline-palette: $foundation-palette !default;
 
@@ -36,13 +41,26 @@ $underline-palette: $foundation-palette !default;
   }
 }
 
+@mixin style-underline-size($size: $underline-size) {
+  &::after {
+    height: $size;
+  }
+}
+
 .underline {
   @include style-underline;
 
   // Colors
   @each $name, $color in $underline-palette {
-    &.#{$name} {
+    &.underline-#{$name} {
       @include style-underline-color($color);
+    }
+  }
+
+  // Sizes
+  @each $size, $value in map-remove($underline-sizes, default) {
+    &.underline-#{$size} {
+      @include style-underline-size($value);
     }
   }
 

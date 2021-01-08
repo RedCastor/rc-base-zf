@@ -10,7 +10,7 @@ $hr-vertical-border:          $hr-border !default;
 
 @mixin style-hr() {
   clear: both;
-  margin-bottom: $hr-margin-class !important;
+  margin-bottom: $hr-margin-class;
 
   border-top: 0;
   border-right: 0;
@@ -37,6 +37,11 @@ $hr-vertical-border:          $hr-border !default;
   }
 }
 
+@mixin style-hr-margin($factor: 1) {
+
+  margin-bottom: ($factor * $hr-margin-class);
+}
+
 .hr {
   @include style-hr;
 }
@@ -46,6 +51,11 @@ $hr-vertical-border:          $hr-border !default;
 }
 
 .hr-margin {
-  margin-bottom: $hr-margin !important;
-}
+  @include style-hr-margin;
 
+  @for $i from 2 through 4 {
+    &.hr-#{$i}x {
+      @include style-hr-margin($i);
+    }
+  }
+}

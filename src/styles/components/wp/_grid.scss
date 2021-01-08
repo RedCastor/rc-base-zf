@@ -8,7 +8,8 @@
   @if ($type == null) {
     max-width: $grid-container;
     width: auto;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 
     @include -zf-breakpoint-value(auto, $grid-margin-gutters) {
       $wp_block_gutters_small : rem-calc($-zf-bp-value);

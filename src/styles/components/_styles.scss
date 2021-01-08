@@ -309,15 +309,29 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
               }
 
               @each $-color-name, $-color in $foundation-palette {
-                $-color-selector: "&.text-#{$-color-name}";
+                $-color-selector: "&.text-underline-#{$-color-name}";
 
                 @if $select-class == true {
-                  $-color-selector: "&.text-#{$-color-name}--#{$key}";
+                  $-color-selector: "&.text-underline-#{$-color-name}--#{$key}";
                 }
 
                 #{$-color-selector} {
                   #{$-selectors} {
                     @include style-underline-color($-color);
+                  }
+                }
+              }
+
+              @each $-size-name, $-size-value in map-remove($underline-sizes, default) {
+                $-size-selector: "&.text-underline-#{$-size-name}";
+
+                @if $select-class == true {
+                  $-size-selector: "&.text-underline-#{$-size-name}--#{$key}";
+                }
+
+                #{$-size-selector} {
+                  #{$-selectors} {
+                    @include style-underline-size($-size-value);
                   }
                 }
               }
@@ -344,6 +358,18 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
             #{$-hr-selector} {
               #{$-selectors} {
                 @include style-hr;
+              }
+            }
+
+            $-hr-margin-selector: "&.text-hr-margin";
+
+            @if $select-class == true {
+              $-hr-margin-selector: ".text-hr-margin--#{$key}";
+            }
+
+            #{$-hr-margin-selector} {
+              #{$-selectors} {
+                @include style-hr-margin;
               }
             }
 

@@ -24,6 +24,11 @@
     content: $fi-var-albums;
   }
 }
+.fi-amazon {
+  &:before {
+    content: $fi-var-amazon;
+  }
+}
 .fi-anchor {
   &:before {
     content: $fi-var-anchor;
@@ -174,6 +179,31 @@
     content: $fi-var-cart;
   }
 }
+.fi-cart-add {
+  &:before {
+    content: $fi-var-cart-add;
+  }
+}
+.fi-cart-empty {
+  &:before {
+    content: $fi-var-cart-empty;
+  }
+}
+.fi-cart-fast {
+  &:before {
+    content: $fi-var-cart-fast;
+  }
+}
+.fi-cart-hand {
+  &:before {
+    content: $fi-var-cart-hand;
+  }
+}
+.fi-cart-new {
+  &:before {
+    content: $fi-var-cart-new;
+  }
+}
 .fi-cash {
   &:before {
     content: $fi-var-cash;
@@ -192,6 +222,11 @@
 .fi-check-2 {
   &:before {
     content: $fi-var-check-2;
+  }
+}
+.fi-checkout {
+  &:before {
+    content: $fi-var-checkout;
   }
 }
 .fi-clock {
@@ -339,6 +374,11 @@
     content: $fi-var-edit;
   }
 }
+.fi-email {
+  &:before {
+    content: $fi-var-email;
+  }
+}
 .fi-envelope {
   &:before {
     content: $fi-var-envelope;
@@ -367,6 +407,21 @@
 .fi-facebook-2 {
   &:before {
     content: $fi-var-facebook-2;
+  }
+}
+.fi-favorites {
+  &:before {
+    content: $fi-var-favorites;
+  }
+}
+.fi-favorites-added {
+  &:before {
+    content: $fi-var-favorites-added;
+  }
+}
+.fi-favorites-list {
+  &:before {
+    content: $fi-var-favorites-list;
   }
 }
 .fi-female {
@@ -472,6 +527,11 @@
 .fi-home {
   &:before {
     content: $fi-var-home;
+  }
+}
+.fi-home-new {
+  &:before {
+    content: $fi-var-home-new;
   }
 }
 .fi-hourglass {
@@ -774,6 +834,11 @@
     content: $fi-var-phone;
   }
 }
+.fi-phone-new {
+  &:before {
+    content: $fi-var-phone-new;
+  }
+}
 .fi-photo {
   &:before {
     content: $fi-var-photo;
@@ -844,6 +909,11 @@
     content: $fi-var-portfolio;
   }
 }
+.fi-post {
+  &:before {
+    content: $fi-var-post;
+  }
+}
 .fi-power {
   &:before {
     content: $fi-var-power;
@@ -857,6 +927,11 @@
 .fi-print {
   &:before {
     content: $fi-var-print;
+  }
+}
+.fi-product-empty {
+  &:before {
+    content: $fi-var-product-empty;
   }
 }
 .fi-radio {
@@ -929,6 +1004,16 @@
     content: $fi-var-search;
   }
 }
+.fi-search-new {
+  &:before {
+    content: $fi-var-search-new;
+  }
+}
+.fi-send {
+  &:before {
+    content: $fi-var-send;
+  }
+}
 .fi-server {
   &:before {
     content: $fi-var-server;
@@ -949,6 +1034,16 @@
     content: $fi-var-shield;
   }
 }
+.fi-shipping {
+  &:before {
+    content: $fi-var-shipping;
+  }
+}
+.fi-shipping-free {
+  &:before {
+    content: $fi-var-shipping-free;
+  }
+}
 .fi-shopbag {
   &:before {
     content: $fi-var-shopbag;
@@ -962,6 +1057,11 @@
 .fi-signal {
   &:before {
     content: $fi-var-signal;
+  }
+}
+.fi-signout {
+  &:before {
+    content: $fi-var-signout;
   }
 }
 .fi-smile {
@@ -1019,9 +1119,19 @@
     content: $fi-var-tools;
   }
 }
+.fi-track-order {
+  &:before {
+    content: $fi-var-track-order;
+  }
+}
 .fi-trash {
   &:before {
     content: $fi-var-trash;
+  }
+}
+.fi-trolley {
+  &:before {
+    content: $fi-var-trolley;
   }
 }
 .fi-twitter {
@@ -1069,9 +1179,19 @@
     content: $fi-var-user;
   }
 }
+.fi-user-edit-new {
+  &:before {
+    content: $fi-var-user-edit-new;
+  }
+}
 .fi-user-female {
   &:before {
     content: $fi-var-user-female;
+  }
+}
+.fi-user-new {
+  &:before {
+    content: $fi-var-user-new;
   }
 }
 .fi-users {
@@ -1140,15 +1260,5 @@
   }
 }
 
-//-- Additionnal class
-.fi-credit-card {
-  &:before {
-    content: $fi-var-credit;
-  }
-}
-.fi-eye {
-  &:before {
-    content: $fi-var-look;
-  }
-}
+
 /* stylelint-enable */
