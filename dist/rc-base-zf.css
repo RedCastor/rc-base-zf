@@ -26750,11 +26750,11 @@ Usage:
 /* line 69, src/styles/components/_classes.scss */
 
 .fit-center {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 @font-face {
@@ -29333,7 +29333,7 @@ main,
 
 .hr {
   clear: both;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem !important;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid #777777;
@@ -29363,6 +29363,12 @@ main,
 
 .cell .hr-vertical {
   height: calc(100% - 1.25rem);
+}
+
+/* line 48, src/styles/components/_hr.scss */
+
+.hr-margin {
+  margin-bottom: 1.25rem auto !important;
 }
 
 /* line 39, src/styles/components/_underline.scss */
@@ -29849,11 +29855,11 @@ h3.text-lowercase,
 
 .text-fit-center--h3 h3,
 .text-fit-center--h3 .h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* line 345, src/styles/components/_styles.scss */
@@ -29861,7 +29867,7 @@ h3.text-lowercase,
 .text-hr--h3 h3,
 .text-hr--h3 .h3 {
   clear: both;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem !important;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid #777777;
@@ -30067,11 +30073,11 @@ h3.text-lowercase,
 
   .text-fit-center--h3 h3,
   .text-fit-center--h3 .h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* line 345, src/styles/components/_styles.scss */
@@ -30079,7 +30085,7 @@ h3.text-lowercase,
   .text-hr--h3 h3,
   .text-hr--h3 .h3 {
     clear: both;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem !important;
     border-top: 0;
     border-right: 0;
     border-bottom: 1px solid #777777;
@@ -30286,11 +30292,11 @@ h3.text-lowercase,
 
   .text-fit-center--h3 h3,
   .text-fit-center--h3 .h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* line 345, src/styles/components/_styles.scss */
@@ -30298,7 +30304,7 @@ h3.text-lowercase,
   .text-hr--h3 h3,
   .text-hr--h3 .h3 {
     clear: both;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem !important;
     border-top: 0;
     border-right: 0;
     border-bottom: 1px solid #777777;

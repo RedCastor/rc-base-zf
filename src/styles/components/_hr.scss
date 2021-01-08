@@ -10,7 +10,7 @@ $hr-vertical-border:          $hr-border !default;
 
 @mixin style-hr() {
   clear: both;
-  margin-bottom: $hr-margin-class;
+  margin-bottom: $hr-margin-class !important;
 
   border-top: 0;
   border-right: 0;
@@ -44,3 +44,8 @@ $hr-vertical-border:          $hr-border !default;
 .hr-vertical {
   @include style-hr-vertical;
 }
+
+.hr-margin {
+  margin-bottom: $hr-margin !important;
+}
+
