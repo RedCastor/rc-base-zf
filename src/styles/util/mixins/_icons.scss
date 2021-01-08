@@ -24,3 +24,9 @@
     width: (2 * $size);
   }
 }
+
+@mixin icon-replace($content) {
+  &:before {
+    content: $content;
+  }
+}
