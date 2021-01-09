@@ -1264,6 +1264,21 @@
     content: $fi-var-loading;
   }
 }
+.fi-loading2 {
+  &:before {
+    content: $fi-var-loading2;
+  }
+}
+.fi-loading3 {
+  &:before {
+    content: $fi-var-loading3;
+  }
+}
+.fi-loading4 {
+  &:before {
+    content: $fi-var-loading4;
+  }
+}
 
 //-- Additionnal class
 .fi-credit-card {
