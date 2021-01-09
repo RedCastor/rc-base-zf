@@ -28564,13 +28564,31 @@ Usage:
   content: "\E9FC";
 }
 
-/* line 1270, src/styles/components/icons/_icons.scss */
+/* line 1268, src/styles/components/icons/_icons.scss */
+
+.fi-loading2:before {
+  content: "\E9FD";
+}
+
+/* line 1273, src/styles/components/icons/_icons.scss */
+
+.fi-loading3:before {
+  content: "\E9FE";
+}
+
+/* line 1278, src/styles/components/icons/_icons.scss */
+
+.fi-loading4:before {
+  content: "\E9FF";
+}
+
+/* line 1285, src/styles/components/icons/_icons.scss */
 
 .fi-credit-card:before {
   content: "\E92B";
 }
 
-/* line 1275, src/styles/components/icons/_icons.scss */
+/* line 1290, src/styles/components/icons/_icons.scss */
 
 .fi-eye:before {
   content: "\E964";
