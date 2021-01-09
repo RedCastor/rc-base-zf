@@ -69,3 +69,8 @@
 .fit-center {
   @include style-fit-center;
 }
+
+//No Margin bottom
+.no-margin {
+  margin-bottom: 0;
+}
