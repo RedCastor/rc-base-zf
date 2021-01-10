@@ -3,6 +3,7 @@
 // -------------------------------------------
 $hr-border-class:             $hr-border !default;
 $hr-margin-class:             get-side($hr-margin, bottom) !default;
+$hr-padding-class:            $hr-margin-class;
 $hr-vertical-height:          auto !default;
 $hr-vertical-margin-top:      get-side($hr-margin, top) !default;
 $hr-vertical-margin-bottom:   get-side($hr-margin, bottom) !default;
@@ -37,9 +38,24 @@ $hr-vertical-border:          $hr-border !default;
   }
 }
 
-@mixin style-hr-margin($factor: 1) {
+@mixin style-hr-margin($factor: 1, $important: false) {
 
-  margin-bottom: ($factor * $hr-margin-class);
+  @if ($important == true) {
+    margin-bottom: ($factor * $hr-margin-class) !important;
+  }
+  @else {
+    margin-bottom: ($factor * $hr-margin-class);
+  }
+}
+
+@mixin style-hr-padding($factor: 1, $important: false) {
+
+  @if ($important == true) {
+    padding-top: ($factor * $hr-padding-class) !important;
+  }
+  @else {
+    padding-top: ($factor * $hr-padding-class);
+  }
 }
 
 .hr {
@@ -51,11 +67,21 @@ $hr-vertical-border:          $hr-border !default;
 }
 
 .hr-margin {
-  @include style-hr-margin;
+  @include style-hr-margin(1, true);
 
-  @for $i from 2 through 4 {
+  @for $i from 2 through 5 {
     &.hr-#{$i}x {
       @include style-hr-margin($i);
+    }
+  }
+}
+
+.hr-padding {
+  @include style-hr-padding(1, true);
+
+  @for $i from 2 through 5 {
+    &.hr-#{$i}x {
+      @include style-hr-padding($i);
     }
   }
 }
