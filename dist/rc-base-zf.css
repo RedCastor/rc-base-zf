@@ -29548,25 +29548,25 @@ main,
 /* line 73, src/styles/components/_hr.scss */
 
 .hr-margin.hr-2x {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem !important;
 }
 
 /* line 73, src/styles/components/_hr.scss */
 
 .hr-margin.hr-3x {
-  margin-bottom: 3.75rem;
+  margin-bottom: 3.75rem !important;
 }
 
 /* line 73, src/styles/components/_hr.scss */
 
 .hr-margin.hr-4x {
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 
 /* line 73, src/styles/components/_hr.scss */
 
 .hr-margin.hr-5x {
-  margin-bottom: 6.25rem;
+  margin-bottom: 6.25rem !important;
 }
 
 /* line 79, src/styles/components/_hr.scss */
@@ -29578,25 +29578,25 @@ main,
 /* line 83, src/styles/components/_hr.scss */
 
 .hr-padding.hr-2x {
-  padding-top: 2.5rem;
+  padding-top: 2.5rem !important;
 }
 
 /* line 83, src/styles/components/_hr.scss */
 
 .hr-padding.hr-3x {
-  padding-top: 3.75rem;
+  padding-top: 3.75rem !important;
 }
 
 /* line 83, src/styles/components/_hr.scss */
 
 .hr-padding.hr-4x {
-  padding-top: 5rem;
+  padding-top: 5rem !important;
 }
 
 /* line 83, src/styles/components/_hr.scss */
 
 .hr-padding.hr-5x {
-  padding-top: 6.25rem;
+  padding-top: 6.25rem !important;
 }
 
 /* line 50, src/styles/components/_underline.scss */

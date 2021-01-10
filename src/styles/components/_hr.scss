@@ -71,7 +71,7 @@ $hr-vertical-border:          $hr-border !default;
 
   @for $i from 2 through 5 {
     &.hr-#{$i}x {
-      @include style-hr-margin($i);
+      @include style-hr-margin($i, true);
     }
   }
 }
@@ -81,7 +81,7 @@ $hr-vertical-border:          $hr-border !default;
 
   @for $i from 2 through 5 {
     &.hr-#{$i}x {
-      @include style-hr-padding($i);
+      @include style-hr-padding($i, true);
     }
   }
 }
