@@ -29732,6 +29732,26 @@ main,
           transform: translateX(-50%);
 }
 
+/* line 4, src/styles/components/_vars.scss */
+
+:root {
+  --primary-color: #1779ba;
+  --secondary-color: #767676;
+  --success-color: #18a733;
+  --warning-color: #ffae00;
+  --alert-color: #cc4b37;
+  --white-color: #fefefe;
+  --black-color: #000;
+  --medium-gray-color: #777777;
+  --light-gray-color: #eeeeee;
+  --gray-color: #4d4d4d;
+  --dark-gray-color: #333333;
+  --body-font: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  --title-font: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  --hr-margin: 1.25rem auto;
+  --hr-padding: 1.25rem;
+}
+
 /** Import wordpress components */
 
 /**

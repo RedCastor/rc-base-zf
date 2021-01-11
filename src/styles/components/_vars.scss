@@ -1,0 +1,19 @@
+//
+// CSS Variables
+// --------------------------------------------------
+:root {
+  @each $name, $color in $base-palette {
+    --#{$name}-color: #{$color};
+  }
+
+  --white-color: #{$white-base};
+  --black-color: #{$black-base};
+  --medium-gray-color: #{$medium-gray-base};
+  --light-gray-color: #{$light-gray-base};
+  --gray-color: #{$gray-base};
+  --dark-gray-color: #{$dark-gray-base};
+  --body-font: #{$base-font-family};
+  --title-font: #{$title-font-family};
+  --hr-margin: #{$hr-margin};
+  --hr-padding: #{$hr-padding-class};
+}
