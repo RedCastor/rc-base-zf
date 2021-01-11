@@ -12,6 +12,35 @@
   @include absolute-center;
 }
 
+//-- Absolute Bottom
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+//-- Absolute Top
+.absolute-top {
+  position: absolute;
+  top: 0;
+}
+
+//-- Absolute Bottom
+.absolute-left {
+  position: absolute;
+  left: 0;
+}
+
+//-- Absolute Top
+.absolute-right {
+  position: absolute;
+  right: 0;
+}
+
+//-- Relative Container
+.relative-container {
+  position: relative;
+}
+
 //-- Horizontal Center
 .horizontal-center {
   @include horizontal-center;

@@ -371,6 +371,34 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
               #{$-selectors} {
                 @include style-hr-margin;
               }
+
+              @for $i from 2 through 4 {
+                &.text-hr-margin-#{$i}x--#{$key} {
+                  #{$-selectors} {
+                    @include style-hr-margin($i);
+                  }
+                }
+              }
+            }
+
+            $-hr-padding-selector: "&.text-hr-padding";
+
+            @if $select-class == true {
+              $-hr-padding-selector: ".text-hr-padding--#{$key}";
+            }
+
+            #{$-hr-padding-selector} {
+              #{$-selectors} {
+                @include style-hr-padding;
+              }
+
+              @for $i from 2 through 4 {
+                &.text-hr-padding-#{$i}x--#{$key} {
+                  #{$-selectors} {
+                    @include style-hr-padding($i);
+                  }
+                }
+              }
             }
 
             @each $prop_val in (uppercase, inherit, none, capitalize, lowercase) {

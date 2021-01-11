@@ -62,6 +62,10 @@ $hr-vertical-border:          $hr-border !default;
   @include style-hr;
 }
 
+.no-hr {
+  border-bottom: 0 !important;
+}
+
 .hr-vertical {
   @include style-hr-vertical;
 }
@@ -69,13 +73,13 @@ $hr-vertical-border:          $hr-border !default;
 .hr-margin {
   @include style-hr-margin(1, true);
 
-  @for $i from 2 through 5 {
+  @for $i from 2 through 4 {
     &.hr-#{$i}x {
       @include style-hr-margin($i, true);
     }
   }
 
-  @for $i from 2 through 5 {
+  @for $i from 2 through 4 {
     &.hr-margin-#{$i}x {
       @include style-hr-margin($i, true);
     }
@@ -85,13 +89,13 @@ $hr-vertical-border:          $hr-border !default;
 .hr-padding {
   @include style-hr-padding(1, true);
 
-  @for $i from 2 through 5 {
+  @for $i from 2 through 4 {
     &.hr-#{$i}x {
       @include style-hr-padding($i, true);
     }
   }
 
-  @for $i from 2 through 5 {
+  @for $i from 2 through 4 {
     &.hr-padding-#{$i}x {
       @include style-hr-padding($i, true);
     }
