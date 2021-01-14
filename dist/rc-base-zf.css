@@ -29732,6 +29732,57 @@ main,
           transform: translateX(-50%);
 }
 
+/* line 16, src/styles/components/_webicon.scss */
+
+.webicon.tiny {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
+/* line 16, src/styles/components/_webicon.scss */
+
+.webicon.small {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+/* line 16, src/styles/components/_webicon.scss */
+
+.webicon.large {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* line 24, src/styles/components/_webicon.scss */
+
+.webicon.primary {
+  color: #1779ba;
+}
+
+/* line 24, src/styles/components/_webicon.scss */
+
+.webicon.secondary {
+  color: #767676;
+}
+
+/* line 24, src/styles/components/_webicon.scss */
+
+.webicon.success {
+  color: #18a733;
+}
+
+/* line 24, src/styles/components/_webicon.scss */
+
+.webicon.warning {
+  color: #ffae00;
+}
+
+/* line 24, src/styles/components/_webicon.scss */
+
+.webicon.alert {
+  color: #cc4b37;
+}
+
 /* line 4, src/styles/components/_vars.scss */
 
 :root {
