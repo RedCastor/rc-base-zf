@@ -1,0 +1,9 @@
+//
+// Fix Workaround
+// --------------------------------------------------
+
+//== image lazyload src empty or src not present apply opacity 0 to not display border.
+img[src=""],
+img:not([src]) {
+  opacity: 0 !important;
+}

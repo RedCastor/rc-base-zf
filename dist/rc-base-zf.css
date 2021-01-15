@@ -29783,6 +29783,13 @@ main,
   color: #cc4b37;
 }
 
+/* line 6, src/styles/components/_fix.scss */
+
+img[src=""],
+img:not([src]) {
+  opacity: 0 !important;
+}
+
 /* line 4, src/styles/components/_vars.scss */
 
 :root {
