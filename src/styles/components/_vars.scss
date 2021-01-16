@@ -2,6 +2,7 @@
 // CSS Variables
 // --------------------------------------------------
 :root {
+  //Colors
   @each $name, $color in $base-palette {
     --#{$name}-color: #{$color};
   }
@@ -12,8 +13,17 @@
   --light-gray-color: #{$light-gray-base};
   --gray-color: #{$gray-base};
   --dark-gray-color: #{$dark-gray-base};
+
+  //Font
   --body-font: #{$base-font-family};
   --title-font: #{$title-font-family};
+
+  //HR
   --hr-margin: #{$hr-margin};
   --hr-padding: #{$hr-padding-class};
+
+  //Breakpoint size
+  @each $-size, $-val in $breakpoints {
+    --breakpoint-#{$-size}: #{$-val};
+  }
 }

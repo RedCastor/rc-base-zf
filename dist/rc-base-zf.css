@@ -29808,6 +29808,11 @@ img:not([src]) {
   --title-font: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   --hr-margin: 1.25rem auto;
   --hr-padding: 1.25rem;
+  --breakpoint-small: 0;
+  --breakpoint-medium: 640px;
+  --breakpoint-large: 1024px;
+  --breakpoint-xlarge: 1200px;
+  --breakpoint-xxlarge: 1440px;
 }
 
 /** Import wordpress components */
