@@ -26797,6 +26797,12 @@ Usage:
   margin-bottom: 0 !important;
 }
 
+/* line 108, src/styles/components/_classes.scss */
+
+.no-padding {
+  padding-bottom: 0 !important;
+}
+
 @font-face {
   font-family: "rc-base-icons";
   src: url(../dist/fonts/rc-base-icons.ttf) format("truetype"), url(../dist/fonts/rc-base-icons.woff) format("woff"), url(../dist/fonts/rc-base-icons.svg) format("svg");
