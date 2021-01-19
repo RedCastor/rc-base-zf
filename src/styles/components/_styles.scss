@@ -289,26 +289,6 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
               }
             }
 
-            $-size-selector: "&.text-size";
-
-            @if $select-class == true {
-              $-size-selector: ".text-size--#{$key}";
-            }
-
-            #{$-size-selector} {
-              #{$-selectors} {
-                $-val-font-size: get-style-prop($key, "font-size", false, $-zf-size);
-                @if ($-val-font-size) {
-                  @if $select-class == true {
-                    font-size: $-val-font-size !important;
-                  }
-                  @else {
-                    font-size: $-val-font-size;
-                  }
-                }
-              }
-            }
-
             $-underline-selector: "&.text-underline";
             $-underline-center-selector: "&.text-underline-center";
 
