@@ -1279,6 +1279,11 @@
     content: $fi-var-loading4;
   }
 }
+.fi-cart-move {
+  &:before {
+    content: $fi-var-cart-move;
+  }
+}
 
 //-- Additionnal class
 .fi-credit-card {

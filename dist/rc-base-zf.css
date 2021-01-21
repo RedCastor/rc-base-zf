@@ -28622,13 +28622,19 @@ Usage:
   content: "\E9FF";
 }
 
-/* line 1285, src/styles/components/icons/_icons.scss */
+/* line 1283, src/styles/components/icons/_icons.scss */
+
+.fi-cart-move:before {
+  content: "\EA00";
+}
+
+/* line 1290, src/styles/components/icons/_icons.scss */
 
 .fi-credit-card:before {
   content: "\E92B";
 }
 
-/* line 1290, src/styles/components/icons/_icons.scss */
+/* line 1295, src/styles/components/icons/_icons.scss */
 
 .fi-eye:before {
   content: "\E964";
