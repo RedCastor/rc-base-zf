@@ -26805,7 +26805,7 @@ Usage:
 
 @font-face {
   font-family: "rc-base-icons";
-  src: url(../dist/fonts/rc-base-icons.ttf) format("truetype"), url(../dist/fonts/rc-base-icons.woff) format("woff"), url(../dist/fonts/rc-base-icons.svg) format("svg");
+  src: url(../dist/fonts/rc-base-icons.woff) format("woff"), url(../dist/fonts/rc-base-icons.ttf) format("truetype"), url(../dist/fonts/rc-base-icons.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
