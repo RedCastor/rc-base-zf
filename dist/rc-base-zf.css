@@ -29346,12 +29346,18 @@ main,
 
 /* line 133, src/styles/components/_grid.scss */
 
+.grid-full-height {
+  height: 100%;
+}
+
+/* line 138, src/styles/components/_grid.scss */
+
 .main-grid-single,
 .main-grid-archive {
   margin-top: 1.25rem;
 }
 
-/* line 143, src/styles/components/_grid.scss */
+/* line 148, src/styles/components/_grid.scss */
 
 .grid-margin-y > .cell.collapse-self-margin,
 .grid-margin-x > .cell.collapse-self-margin {
@@ -29359,7 +29365,7 @@ main,
   margin-right: 0;
 }
 
-/* line 153, src/styles/components/_grid.scss */
+/* line 158, src/styles/components/_grid.scss */
 
 .grid-padding-y > .cell.collapse-self-padding,
 .grid-padding-x > .cell.collapse-self-padding {

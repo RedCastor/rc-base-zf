@@ -128,6 +128,11 @@
 
     @include xy-collapse-grid-container-classes();
   }
+
+  //Class for full height
+  .grid-full-height {
+    height: 100%;
+  }
 }
 
 .main-grid-single,
