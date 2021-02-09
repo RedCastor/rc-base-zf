@@ -71,6 +71,16 @@
   }
 }
 
+@include breakpoint(large) {
+  &.vertical-center-large {
+    @include vertical-center;
+  }
+
+  &.horizontal-center-large {
+    @include horizontal-center;
+  }
+}
+
 //-- Fixed
 .fixed-top {
   @include position(fixed, 0, null, null, null);

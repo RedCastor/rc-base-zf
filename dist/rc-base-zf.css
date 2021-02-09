@@ -26747,7 +26747,29 @@ Usage:
   }
 }
 
-/* line 75, src/styles/components/_classes.scss */
+@media print, screen and (min-width: 64em) {
+  /* line 75, src/styles/components/_classes.scss */
+
+  .vertical-center-large {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  /* line 79, src/styles/components/_classes.scss */
+
+  .horizontal-center-large {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+/* line 85, src/styles/components/_classes.scss */
 
 .fixed-top {
   position: fixed !important;
@@ -26755,7 +26777,7 @@ Usage:
   z-index: 975;
 }
 
-/* line 80, src/styles/components/_classes.scss */
+/* line 90, src/styles/components/_classes.scss */
 
 .fixed-bottom {
   position: fixed !important;
@@ -26764,7 +26786,7 @@ Usage:
 }
 
 @media print, screen and (min-width: 40em) {
-  /* line 86, src/styles/components/_classes.scss */
+  /* line 96, src/styles/components/_classes.scss */
 
   .fixed-top-medium {
     position: fixed !important;
@@ -26772,7 +26794,7 @@ Usage:
     z-index: 975;
   }
 
-  /* line 91, src/styles/components/_classes.scss */
+  /* line 101, src/styles/components/_classes.scss */
 
   .fixed-bottom-medium {
     position: fixed !important;
@@ -26781,7 +26803,7 @@ Usage:
   }
 }
 
-/* line 98, src/styles/components/_classes.scss */
+/* line 108, src/styles/components/_classes.scss */
 
 .fit-center {
   width: -webkit-fit-content !important;
@@ -26791,13 +26813,13 @@ Usage:
   margin-right: auto !important;
 }
 
-/* line 103, src/styles/components/_classes.scss */
+/* line 113, src/styles/components/_classes.scss */
 
 .no-margin {
   margin-bottom: 0 !important;
 }
 
-/* line 108, src/styles/components/_classes.scss */
+/* line 118, src/styles/components/_classes.scss */
 
 .no-padding {
   padding-bottom: 0 !important;
