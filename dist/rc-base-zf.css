@@ -29109,7 +29109,7 @@ ng-form .search-form .ng-touched.ng-empty.search-field ~ .input-group-button .bu
 .ng-form .input-group-field.ng-touched.ng-empty ~ .input-group-button .button,
 .ng-form .search-form .ng-touched.ng-empty.search-field ~ .input-group-button .button,
 .search-form .ng-form .ng-touched.ng-empty.search-field ~ .input-group-button .button {
-  border-color: inherit;
+  border-color: transparent;
 }
 
 /* stylelint-enable */

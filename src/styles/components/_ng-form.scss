@@ -77,19 +77,19 @@ ng-form,
   //Input-group
   .input-group-field.ng-touched.ng-valid ~ .input-group-button {
     .button {
-      border-color: $success-color;
+      border-color: $ng-form-validation-success;
     }
   }
 
   .input-group-field.ng-touched.ng-invalid ~ .input-group-button {
     .button {
-      border-color: $alert-color;
+      border-color: $ng-form-validation-error;
     }
   }
 
   .input-group-field.ng-touched.ng-empty ~ .input-group-button {
     .button {
-      border-color: inherit;
+      border-color: transparent;
     }
   }
 }
