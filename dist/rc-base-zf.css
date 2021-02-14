@@ -30243,56 +30243,56 @@ hr.wp-block-separator:not(.is-style-dots) {
 
 h3.text-body,
 .h3.text-body {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 
 /* line 240, src/styles/components/_styles.scss */
 
 h3.text-header,
 .h3.text-header {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 
 /* line 244, src/styles/components/_styles.scss */
 
 h3.text-title,
 .h3.text-title {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 
 /* line 249, src/styles/components/_styles.scss */
 
 h3.text-uppercase,
 .h3.text-uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 /* line 249, src/styles/components/_styles.scss */
 
 h3.text-inherit,
 .h3.text-inherit {
-  text-transform: inherit;
+  text-transform: inherit !important;
 }
 
 /* line 249, src/styles/components/_styles.scss */
 
 h3.text-none,
 .h3.text-none {
-  text-transform: none;
+  text-transform: none !important;
 }
 
 /* line 249, src/styles/components/_styles.scss */
 
 h3.text-capitalize,
 .h3.text-capitalize {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 /* line 249, src/styles/components/_styles.scss */
 
 h3.text-lowercase,
 .h3.text-lowercase {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 /* line 265, src/styles/components/_styles.scss */
@@ -30531,56 +30531,56 @@ h3.text-lowercase,
 
   h3.text-body,
   .h3.text-body {
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
   /* line 240, src/styles/components/_styles.scss */
 
   h3.text-header,
   .h3.text-header {
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
   /* line 244, src/styles/components/_styles.scss */
 
   h3.text-title,
   .h3.text-title {
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-uppercase,
   .h3.text-uppercase {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-inherit,
   .h3.text-inherit {
-    text-transform: inherit;
+    text-transform: inherit !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-none,
   .h3.text-none {
-    text-transform: none;
+    text-transform: none !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-capitalize,
   .h3.text-capitalize {
-    text-transform: capitalize;
+    text-transform: capitalize !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-lowercase,
   .h3.text-lowercase {
-    text-transform: lowercase;
+    text-transform: lowercase !important;
   }
 
   /* line 265, src/styles/components/_styles.scss */
@@ -30820,56 +30820,56 @@ h3.text-lowercase,
 
   h3.text-body,
   .h3.text-body {
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
   /* line 240, src/styles/components/_styles.scss */
 
   h3.text-header,
   .h3.text-header {
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
   /* line 244, src/styles/components/_styles.scss */
 
   h3.text-title,
   .h3.text-title {
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-uppercase,
   .h3.text-uppercase {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-inherit,
   .h3.text-inherit {
-    text-transform: inherit;
+    text-transform: inherit !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-none,
   .h3.text-none {
-    text-transform: none;
+    text-transform: none !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-capitalize,
   .h3.text-capitalize {
-    text-transform: capitalize;
+    text-transform: capitalize !important;
   }
 
   /* line 249, src/styles/components/_styles.scss */
 
   h3.text-lowercase,
   .h3.text-lowercase {
-    text-transform: lowercase;
+    text-transform: lowercase !important;
   }
 
   /* line 265, src/styles/components/_styles.scss */
