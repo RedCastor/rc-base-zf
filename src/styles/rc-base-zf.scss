@@ -58,3 +58,8 @@
     }
   }
 }
+
+@mixin rc-base-style-font() {
+
+  @include base-style-font-class();
+}

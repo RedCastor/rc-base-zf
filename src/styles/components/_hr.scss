@@ -70,6 +70,24 @@ $hr-vertical-border:          $hr-border !default;
   @include style-hr-vertical;
 }
 
+.hr-vertical-left {
+  border: 0;
+  border-left: $hr-vertical-border;
+
+  &:not(.cell) {
+    padding-left: $hr-padding-class / 2;
+  }
+}
+
+.hr-vertical-right {
+  border: 0;
+  border-right: $hr-vertical-border;
+
+  &:not(.cell) {
+    padding-right: $hr-padding-class / 2;
+  }
+}
+
 .hr-margin {
   @include style-hr-margin(1, true);
 

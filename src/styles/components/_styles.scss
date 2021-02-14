@@ -420,7 +420,7 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
               }
             }
 
-            $-fonts : ();
+            $-fonts: ();
 
             @if map-has-key($base-font, type) and map-has-key($base-font, family) {
               $-fonts: map-merge($-fonts, ("body": $base-font));
@@ -462,6 +462,55 @@ $base-styles: build_base-styles_with_header-styles($base-styles, $header-styles)
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin base-style-font-class() {
+  @each $key-base-font, $-base-font in $base-font-stack {
+
+    @if map-has-key($-base-font, type) and map-has-key($-base-font, family) {
+      $-family: map-get($-base-font, family);
+      $-type: map-get($-base-font, type);
+
+      $-fonts: ();
+
+      @if map-has-key($base-font, type) and map-has-key($base-font, family) {
+        $-fonts: map-merge($-fonts, ("body": $base-font));
+      }
+
+      @if map-has-key($base-font-title, type) and map-has-key($base-font-title, family) {
+        $-fonts: map-merge($-fonts, ("title": $base-font-title));
+      }
+
+      @each $-key-font, $-font in $-fonts {
+        @if $-family == map-get($-font, family) {
+          $-for: map-get($-font, for);
+
+          .text-#{$-key-font}-#{$-type} {
+            font-family: map-get($-font, font-family);
+            @include style-font-weight($-type, $-family, false);
+          }
+        }
+      }
+    }
+  }
+
+  @if (map-has-key($base-font, family)) {
+    $-base-font-familly: map-get($base-font, family);
+
+    @each $key-base-font, $-base-font in $base-font-stack {
+
+      @if map-has-key($-base-font, type) and map-has-key($-base-font, family) {
+        $-family: map-get($-base-font, family);
+        $-type: map-get($-base-font, type);
+
+        @if ($-family == $-base-font-familly) {
+          .text-weight-#{$-type} {
+            @include style-font-weight($-type, $-family, true);
           }
         }
       }

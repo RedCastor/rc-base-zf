@@ -26825,6 +26825,76 @@ Usage:
   padding-bottom: 0 !important;
 }
 
+/* line 125, src/styles/components/_classes.scss */
+
+ul.list-circle,
+ol.list-circle {
+  list-style-type: circle;
+}
+
+/* line 129, src/styles/components/_classes.scss */
+
+ul.list-disc,
+ol.list-disc {
+  list-style-type: disc;
+}
+
+/* line 133, src/styles/components/_classes.scss */
+
+ul.list-square,
+ol.list-square {
+  list-style-type: square;
+}
+
+/* line 137, src/styles/components/_classes.scss */
+
+ul.list-decimal,
+ol.list-decimal {
+  list-style-type: decimal;
+}
+
+/* line 141, src/styles/components/_classes.scss */
+
+ul.list-roman,
+ol.list-roman {
+  list-style-type: upper-roman;
+}
+
+/* line 145, src/styles/components/_classes.scss */
+
+ul.list-alpha,
+ol.list-alpha {
+  list-style-type: upper-alpha;
+}
+
+/* line 150, src/styles/components/_classes.scss */
+
+ul.list-inside,
+ol.list-inside {
+  list-style-position: inside;
+}
+
+/* line 154, src/styles/components/_classes.scss */
+
+ul.list-outside,
+ol.list-outside {
+  list-style-position: outside;
+}
+
+/* line 159, src/styles/components/_classes.scss */
+
+ul.list-default,
+ol.list-default {
+  list-style: initial;
+}
+
+/* line 164, src/styles/components/_classes.scss */
+
+ul.list-none,
+ol.list-none {
+  list-style: none;
+}
+
 @font-face {
   font-family: "rc-base-icons";
   src: url(../dist/fonts/rc-base-icons.woff) format("woff"), url(../dist/fonts/rc-base-icons.ttf) format("truetype"), url(../dist/fonts/rc-base-icons.svg) format("svg");
@@ -29621,83 +29691,109 @@ main,
 
 /* line 73, src/styles/components/_hr.scss */
 
+.hr-vertical-left {
+  border: 0;
+  border-left: 1px solid #777777;
+}
+
+/* line 77, src/styles/components/_hr.scss */
+
+.hr-vertical-left:not(.cell) {
+  padding-left: 0.625rem;
+}
+
+/* line 82, src/styles/components/_hr.scss */
+
+.hr-vertical-right {
+  border: 0;
+  border-right: 1px solid #777777;
+}
+
+/* line 86, src/styles/components/_hr.scss */
+
+.hr-vertical-right:not(.cell) {
+  padding-right: 0.625rem;
+}
+
+/* line 91, src/styles/components/_hr.scss */
+
 .hr-margin {
   margin-bottom: 1.25rem !important;
 }
 
-/* line 77, src/styles/components/_hr.scss */
+/* line 95, src/styles/components/_hr.scss */
 
 .hr-margin.hr-2x {
   margin-bottom: 2.5rem !important;
 }
 
-/* line 77, src/styles/components/_hr.scss */
+/* line 95, src/styles/components/_hr.scss */
 
 .hr-margin.hr-3x {
   margin-bottom: 3.75rem !important;
 }
 
-/* line 77, src/styles/components/_hr.scss */
+/* line 95, src/styles/components/_hr.scss */
 
 .hr-margin.hr-4x {
   margin-bottom: 5rem !important;
 }
 
-/* line 83, src/styles/components/_hr.scss */
+/* line 101, src/styles/components/_hr.scss */
 
 .hr-margin.hr-margin-2x {
   margin-bottom: 2.5rem !important;
 }
 
-/* line 83, src/styles/components/_hr.scss */
+/* line 101, src/styles/components/_hr.scss */
 
 .hr-margin.hr-margin-3x {
   margin-bottom: 3.75rem !important;
 }
 
-/* line 83, src/styles/components/_hr.scss */
+/* line 101, src/styles/components/_hr.scss */
 
 .hr-margin.hr-margin-4x {
   margin-bottom: 5rem !important;
 }
 
-/* line 89, src/styles/components/_hr.scss */
+/* line 107, src/styles/components/_hr.scss */
 
 .hr-padding {
   padding-top: 1.25rem !important;
 }
 
-/* line 93, src/styles/components/_hr.scss */
+/* line 111, src/styles/components/_hr.scss */
 
 .hr-padding.hr-2x {
   padding-top: 2.5rem !important;
 }
 
-/* line 93, src/styles/components/_hr.scss */
+/* line 111, src/styles/components/_hr.scss */
 
 .hr-padding.hr-3x {
   padding-top: 3.75rem !important;
 }
 
-/* line 93, src/styles/components/_hr.scss */
+/* line 111, src/styles/components/_hr.scss */
 
 .hr-padding.hr-4x {
   padding-top: 5rem !important;
 }
 
-/* line 99, src/styles/components/_hr.scss */
+/* line 117, src/styles/components/_hr.scss */
 
 .hr-padding.hr-padding-2x {
   padding-top: 2.5rem !important;
 }
 
-/* line 99, src/styles/components/_hr.scss */
+/* line 117, src/styles/components/_hr.scss */
 
 .hr-padding.hr-padding-3x {
   padding-top: 3.75rem !important;
 }
 
-/* line 99, src/styles/components/_hr.scss */
+/* line 117, src/styles/components/_hr.scss */
 
 .hr-padding.hr-padding-4x {
   padding-top: 5rem !important;
@@ -31006,6 +31102,26 @@ h3.text-lowercase,
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
     font-weight: normal !important;
   }
+}
+
+/* line 493, src/styles/components/_styles.scss */
+
+.text-body-regular {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* line 493, src/styles/components/_styles.scss */
+
+.text-title-regular {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* line 512, src/styles/components/_styles.scss */
+
+.text-weight-regular {
+  font-weight: normal !important;
 }
 
 
