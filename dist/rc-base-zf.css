@@ -29649,7 +29649,8 @@ main,
 
 /* line 66, src/styles/components/_hr.scss */
 
-.hr {
+.hr,
+.hr-bottom {
   clear: both;
   border: 0;
   margin-bottom: 1.25rem;
@@ -29658,17 +29659,19 @@ main,
 
 /* line 26, src/styles/components/_hr.scss */
 
-.cell .hr {
+.cell .hr,
+.cell
+  .hr-bottom {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 70, src/styles/components/_hr.scss */
+/* line 71, src/styles/components/_hr.scss */
 
 .hr-top {
   clear: both;
   border: 0;
-  margin-top: 1.25rem;
+  padding-top: 1.25rem;
   border-top: 1px solid #777777;
 }
 
@@ -29679,14 +29682,14 @@ main,
   margin-right: 0;
 }
 
-/* line 74, src/styles/components/_hr.scss */
+/* line 75, src/styles/components/_hr.scss */
 
 .no-hr {
   border-top: 0 !important;
   border-bottom: 0 !important;
 }
 
-/* line 79, src/styles/components/_hr.scss */
+/* line 80, src/styles/components/_hr.scss */
 
 .hr-vertical {
   width: 1px;
@@ -29704,111 +29707,111 @@ main,
   height: calc(100% - 1.25rem);
 }
 
-/* line 83, src/styles/components/_hr.scss */
+/* line 84, src/styles/components/_hr.scss */
 
 .hr-vertical-left {
   border: 0;
   border-left: 1px solid #777777;
 }
 
-/* line 87, src/styles/components/_hr.scss */
+/* line 88, src/styles/components/_hr.scss */
 
 .hr-vertical-left:not(.cell) {
   padding-left: 0.625rem;
 }
 
-/* line 92, src/styles/components/_hr.scss */
+/* line 93, src/styles/components/_hr.scss */
 
 .hr-vertical-right {
   border: 0;
   border-right: 1px solid #777777;
 }
 
-/* line 96, src/styles/components/_hr.scss */
+/* line 97, src/styles/components/_hr.scss */
 
 .hr-vertical-right:not(.cell) {
   padding-right: 0.625rem;
 }
 
-/* line 101, src/styles/components/_hr.scss */
+/* line 102, src/styles/components/_hr.scss */
 
 .hr-margin {
   margin-bottom: 1.25rem !important;
 }
 
-/* line 105, src/styles/components/_hr.scss */
+/* line 106, src/styles/components/_hr.scss */
 
 .hr-margin.hr-2x {
   margin-bottom: 2.5rem !important;
 }
 
-/* line 105, src/styles/components/_hr.scss */
+/* line 106, src/styles/components/_hr.scss */
 
 .hr-margin.hr-3x {
   margin-bottom: 3.75rem !important;
 }
 
-/* line 105, src/styles/components/_hr.scss */
+/* line 106, src/styles/components/_hr.scss */
 
 .hr-margin.hr-4x {
   margin-bottom: 5rem !important;
 }
 
-/* line 111, src/styles/components/_hr.scss */
+/* line 112, src/styles/components/_hr.scss */
 
 .hr-margin.hr-margin-2x {
   margin-bottom: 2.5rem !important;
 }
 
-/* line 111, src/styles/components/_hr.scss */
+/* line 112, src/styles/components/_hr.scss */
 
 .hr-margin.hr-margin-3x {
   margin-bottom: 3.75rem !important;
 }
 
-/* line 111, src/styles/components/_hr.scss */
+/* line 112, src/styles/components/_hr.scss */
 
 .hr-margin.hr-margin-4x {
   margin-bottom: 5rem !important;
 }
 
-/* line 117, src/styles/components/_hr.scss */
+/* line 118, src/styles/components/_hr.scss */
 
 .hr-padding {
   padding-top: 1.25rem !important;
 }
 
-/* line 121, src/styles/components/_hr.scss */
+/* line 122, src/styles/components/_hr.scss */
 
 .hr-padding.hr-2x {
   padding-top: 2.5rem !important;
 }
 
-/* line 121, src/styles/components/_hr.scss */
+/* line 122, src/styles/components/_hr.scss */
 
 .hr-padding.hr-3x {
   padding-top: 3.75rem !important;
 }
 
-/* line 121, src/styles/components/_hr.scss */
+/* line 122, src/styles/components/_hr.scss */
 
 .hr-padding.hr-4x {
   padding-top: 5rem !important;
 }
 
-/* line 127, src/styles/components/_hr.scss */
+/* line 128, src/styles/components/_hr.scss */
 
 .hr-padding.hr-padding-2x {
   padding-top: 2.5rem !important;
 }
 
-/* line 127, src/styles/components/_hr.scss */
+/* line 128, src/styles/components/_hr.scss */
 
 .hr-padding.hr-padding-3x {
   padding-top: 3.75rem !important;
 }
 
-/* line 127, src/styles/components/_hr.scss */
+/* line 128, src/styles/components/_hr.scss */
 
 .hr-padding.hr-padding-4x {
   padding-top: 5rem !important;

@@ -19,7 +19,7 @@ $hr-vertical-border:          $hr-border !default;
   }
 
   @if ($position == top) {
-    margin-top: $hr-margin-class;
+    padding-top: $hr-padding-class;
     border-top: $hr-border-class;
   }
 
@@ -63,7 +63,8 @@ $hr-vertical-border:          $hr-border !default;
   }
 }
 
-.hr {
+.hr,
+.hr-bottom {
   @include style-hr(bottom);
 }
 
