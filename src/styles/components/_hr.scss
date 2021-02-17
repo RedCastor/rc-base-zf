@@ -9,14 +9,19 @@ $hr-vertical-margin-top:      get-side($hr-margin, top) !default;
 $hr-vertical-margin-bottom:   get-side($hr-margin, bottom) !default;
 $hr-vertical-border:          $hr-border !default;
 
-@mixin style-hr() {
+@mixin style-hr($position: bottom) {
   clear: both;
-  margin-bottom: $hr-margin-class;
+  border: 0;
 
-  border-top: 0;
-  border-right: 0;
-  border-bottom: $hr-border-class;
-  border-left: 0;
+  @if ($position == bottom) {
+    margin-bottom: $hr-margin-class;
+    border-bottom: $hr-border-class;
+  }
+
+  @if ($position == top) {
+    margin-top: $hr-margin-class;
+    border-top: $hr-border-class;
+  }
 
   .cell & {
     margin-left: 0;
@@ -59,10 +64,15 @@ $hr-vertical-border:          $hr-border !default;
 }
 
 .hr {
-  @include style-hr;
+  @include style-hr(bottom);
+}
+
+.hr-top {
+  @include style-hr(top);
 }
 
 .no-hr {
+  border-top: 0 !important;
   border-bottom: 0 !important;
 }
 
