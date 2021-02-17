@@ -149,6 +149,13 @@
       margin-left: 0;
       margin-right: 0;
     }
+
+    @include -zf-each-breakpoint {
+      &.#{$-zf-size}-collapse-self-margin {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -158,6 +165,13 @@
     &.collapse-self-padding {
       padding-left: 0;
       padding-right: 0;
+    }
+
+    @include -zf-each-breakpoint {
+      &.#{$-zf-size}-collapse-self-padding {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
 }

@@ -29457,12 +29457,68 @@ main,
   margin-right: 0;
 }
 
-/* line 158, src/styles/components/_grid.scss */
+/* line 154, src/styles/components/_grid.scss */
+
+.grid-margin-y > .cell.small-collapse-self-margin,
+.grid-margin-x > .cell.small-collapse-self-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 154, src/styles/components/_grid.scss */
+
+  .grid-margin-y > .cell.medium-collapse-self-margin,
+  .grid-margin-x > .cell.medium-collapse-self-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  /* line 154, src/styles/components/_grid.scss */
+
+  .grid-margin-y > .cell.large-collapse-self-margin,
+  .grid-margin-x > .cell.large-collapse-self-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* line 165, src/styles/components/_grid.scss */
 
 .grid-padding-y > .cell.collapse-self-padding,
 .grid-padding-x > .cell.collapse-self-padding {
   padding-left: 0;
   padding-right: 0;
+}
+
+/* line 171, src/styles/components/_grid.scss */
+
+.grid-padding-y > .cell.small-collapse-self-padding,
+.grid-padding-x > .cell.small-collapse-self-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 171, src/styles/components/_grid.scss */
+
+  .grid-padding-y > .cell.medium-collapse-self-padding,
+  .grid-padding-x > .cell.medium-collapse-self-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  /* line 171, src/styles/components/_grid.scss */
+
+  .grid-padding-y > .cell.large-collapse-self-padding,
+  .grid-padding-x > .cell.large-collapse-self-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* line 4, src/styles/components/_social.scss */
