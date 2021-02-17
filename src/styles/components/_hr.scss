@@ -11,7 +11,8 @@ $hr-vertical-border:          $hr-border !default;
 
 @mixin style-hr($position: bottom) {
   clear: both;
-  border: 0;
+  border-left: 0;
+  border-right: 0;
 
   @if ($position == bottom) {
     margin-bottom: $hr-margin-class;
