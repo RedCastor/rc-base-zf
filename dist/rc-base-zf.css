@@ -26803,7 +26803,119 @@ Usage:
   }
 }
 
-/* line 108, src/styles/components/_classes.scss */
+/* line 111, src/styles/components/_classes.scss */
+
+.small-min-height-25 {
+  min-height: 25vh;
+}
+
+/* line 111, src/styles/components/_classes.scss */
+
+.small-min-height-50 {
+  min-height: 50vh;
+}
+
+/* line 111, src/styles/components/_classes.scss */
+
+.small-min-height-65 {
+  min-height: 65vh;
+}
+
+/* line 111, src/styles/components/_classes.scss */
+
+.small-min-height-75 {
+  min-height: 75vh;
+}
+
+/* line 111, src/styles/components/_classes.scss */
+
+.small-min-height-85 {
+  min-height: 85vh;
+}
+
+/* line 111, src/styles/components/_classes.scss */
+
+.small-min-height-100 {
+  min-height: 100vh;
+}
+
+@media print, screen and (min-width: 40em) {
+  /* line 111, src/styles/components/_classes.scss */
+
+  .medium-min-height-25 {
+    min-height: 25vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .medium-min-height-50 {
+    min-height: 50vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .medium-min-height-65 {
+    min-height: 65vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .medium-min-height-75 {
+    min-height: 75vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .medium-min-height-85 {
+    min-height: 85vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .medium-min-height-100 {
+    min-height: 100vh;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  /* line 111, src/styles/components/_classes.scss */
+
+  .large-min-height-25 {
+    min-height: 25vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .large-min-height-50 {
+    min-height: 50vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .large-min-height-65 {
+    min-height: 65vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .large-min-height-75 {
+    min-height: 75vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .large-min-height-85 {
+    min-height: 85vh;
+  }
+
+  /* line 111, src/styles/components/_classes.scss */
+
+  .large-min-height-100 {
+    min-height: 100vh;
+  }
+}
+
+/* line 118, src/styles/components/_classes.scss */
 
 .fit-center {
   width: -webkit-fit-content !important;
@@ -26813,86 +26925,104 @@ Usage:
   margin-right: auto !important;
 }
 
-/* line 113, src/styles/components/_classes.scss */
+/* line 123, src/styles/components/_classes.scss */
 
 .no-margin {
   margin-bottom: 0 !important;
 }
 
-/* line 118, src/styles/components/_classes.scss */
+/* line 128, src/styles/components/_classes.scss */
 
 .no-padding {
   padding-bottom: 0 !important;
 }
 
-/* line 125, src/styles/components/_classes.scss */
+/* line 135, src/styles/components/_classes.scss */
 
 ul.list-circle,
 ol.list-circle {
   list-style-type: circle;
 }
 
-/* line 129, src/styles/components/_classes.scss */
+/* line 139, src/styles/components/_classes.scss */
 
 ul.list-disc,
 ol.list-disc {
   list-style-type: disc;
 }
 
-/* line 133, src/styles/components/_classes.scss */
+/* line 143, src/styles/components/_classes.scss */
 
 ul.list-square,
 ol.list-square {
   list-style-type: square;
 }
 
-/* line 137, src/styles/components/_classes.scss */
+/* line 147, src/styles/components/_classes.scss */
 
 ul.list-decimal,
 ol.list-decimal {
   list-style-type: decimal;
 }
 
-/* line 141, src/styles/components/_classes.scss */
+/* line 151, src/styles/components/_classes.scss */
 
 ul.list-roman,
 ol.list-roman {
   list-style-type: upper-roman;
 }
 
-/* line 145, src/styles/components/_classes.scss */
+/* line 155, src/styles/components/_classes.scss */
 
 ul.list-alpha,
 ol.list-alpha {
   list-style-type: upper-alpha;
 }
 
-/* line 150, src/styles/components/_classes.scss */
+/* line 160, src/styles/components/_classes.scss */
 
 ul.list-inside,
 ol.list-inside {
   list-style-position: inside;
 }
 
-/* line 154, src/styles/components/_classes.scss */
+/* line 164, src/styles/components/_classes.scss */
 
 ul.list-outside,
 ol.list-outside {
   list-style-position: outside;
 }
 
-/* line 159, src/styles/components/_classes.scss */
+/* line 169, src/styles/components/_classes.scss */
 
 ul.list-default,
 ol.list-default {
   list-style: initial;
 }
 
-/* line 164, src/styles/components/_classes.scss */
+/* line 174, src/styles/components/_classes.scss */
 
 ul.list-none,
 ol.list-none {
   list-style: none;
+}
+
+/* line 179, src/styles/components/_classes.scss */
+
+.text-align-middle {
+  vertical-align: middle;
+}
+
+/* line 183, src/styles/components/_classes.scss */
+
+.text-align-bottom {
+  vertical-align: bottom;
+}
+
+/* line 187, src/styles/components/_classes.scss */
+
+.text-align-top {
+  vertical-align: top;
 }
 
 @font-face {

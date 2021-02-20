@@ -104,6 +104,16 @@
   }
 }
 
+//-- Min height 50, 65, 75, 85, 100 viewport.
+@include -zf-each-breakpoint {
+
+  @each $-height in (25, 50, 65, 75, 85, 100) {
+    .#{$-zf-size}-min-height-#{$-height} {
+      min-height: #{$-height}vh;
+    }
+  }
+}
+
 //Fit Align
 .fit-center {
   @include style-fit-center;
@@ -164,4 +174,16 @@ ol {
   &.list-none {
     list-style: none;
   }
+}
+
+.text-align-middle {
+  vertical-align: middle;
+}
+
+.text-align-bottom {
+  vertical-align: bottom;
+}
+
+.text-align-top {
+  vertical-align: top;
 }
