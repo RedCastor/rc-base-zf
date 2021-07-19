@@ -28850,13 +28850,31 @@ ol.list-none {
   content: "\EA00";
 }
 
-/* line 1290, src/styles/components/icons/_icons.scss */
+/* line 1288, src/styles/components/icons/_icons.scss */
+
+.fi-tag:before {
+  content: "\EA01";
+}
+
+/* line 1293, src/styles/components/icons/_icons.scss */
+
+.fi-tags:before {
+  content: "\EA02";
+}
+
+/* line 1298, src/styles/components/icons/_icons.scss */
+
+.fi-custom-product:before {
+  content: "\EA03";
+}
+
+/* line 1305, src/styles/components/icons/_icons.scss */
 
 .fi-credit-card:before {
   content: "\E92B";
 }
 
-/* line 1295, src/styles/components/icons/_icons.scss */
+/* line 1310, src/styles/components/icons/_icons.scss */
 
 .fi-eye:before {
   content: "\E964";

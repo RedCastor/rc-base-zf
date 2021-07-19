@@ -1284,6 +1284,21 @@
     content: $fi-var-cart-move;
   }
 }
+.fi-tag {
+  &:before {
+    content: $fi-var-tag;
+  }
+}
+.fi-tags {
+  &:before {
+    content: $fi-var-tags;
+  }
+}
+.fi-custom-product {
+  &:before {
+    content: $fi-var-custom-product;
+  }
+}
 
 //-- Additionnal class
 .fi-credit-card {
