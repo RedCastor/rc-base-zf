@@ -1,3 +1,5 @@
+$icon-palette: $foundation-palette !default;
+
 [class^="#{$fi-font-prefix}-"],
 [class*=" #{$fi-font-prefix}-"] {
 
@@ -18,4 +20,15 @@
   width: $fi-font-size-base;
   height: auto;
   vertical-align: inherit;
+
+  // Colors
+  @each $name, $color in $icon-palette {
+    &.#{$name} {
+      color: $color;
+    }
+  }
+
+  &.strong {
+    font-weight: bold;
+  }
 }

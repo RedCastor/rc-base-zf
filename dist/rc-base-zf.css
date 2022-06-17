@@ -27032,7 +27032,7 @@ ol.list-none {
   font-style: normal;
 }
 
-/* line 1, src/styles/components/icons/_core.scss */
+/* line 3, src/styles/components/icons/_core.scss */
 
 [class^="fi-"],
 [class*=" fi-"] {
@@ -27051,6 +27051,48 @@ ol.list-none {
   width: 1em;
   height: auto;
   vertical-align: inherit;
+}
+
+/* line 26, src/styles/components/icons/_core.scss */
+
+[class^="fi-"].primary,
+[class*=" fi-"].primary {
+  color: #1779ba;
+}
+
+/* line 26, src/styles/components/icons/_core.scss */
+
+[class^="fi-"].secondary,
+[class*=" fi-"].secondary {
+  color: #767676;
+}
+
+/* line 26, src/styles/components/icons/_core.scss */
+
+[class^="fi-"].success,
+[class*=" fi-"].success {
+  color: #18a733;
+}
+
+/* line 26, src/styles/components/icons/_core.scss */
+
+[class^="fi-"].warning,
+[class*=" fi-"].warning {
+  color: #ffae00;
+}
+
+/* line 26, src/styles/components/icons/_core.scss */
+
+[class^="fi-"].alert,
+[class*=" fi-"].alert {
+  color: #cc4b37;
+}
+
+/* line 31, src/styles/components/icons/_core.scss */
+
+[class^="fi-"].strong,
+[class*=" fi-"].strong {
+  font-weight: bold;
 }
 
 /* HELPER CLASS
