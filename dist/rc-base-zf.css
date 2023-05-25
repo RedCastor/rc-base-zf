@@ -1713,7 +1713,7 @@
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
   font-family: "rc-base-icons";
-  content: "\E9DA";
+  content: "\E92C";
 }
 
 /* line 93, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -2104,7 +2104,7 @@
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
   font-family: "rc-base-icons";
-  content: "\E9DA";
+  content: "\E92C";
 }
 
 /* line 248, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -14971,7 +14971,7 @@ html.is-reveal-open body {
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
   font-family: "rc-base-icons";
-  content: "\E9DA";
+  content: "\E92C";
 }
 
 /* line 93, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -15362,7 +15362,7 @@ html.is-reveal-open body {
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
   font-family: "rc-base-icons";
-  content: "\E9DA";
+  content: "\E92C";
 }
 
 /* line 248, node_modules/awesome-foundation6-checkbox/src/awesome-foundation6-checkbox.scss */
@@ -26537,7 +26537,7 @@ html.is-reveal-open body {
 
 /**
  * Rc Base Foundation by RedCastor
- * Version 1.2.5
+ * Version 1.5.11
  *
  * Licensed under MIT Open Source
  */
@@ -27088,13 +27088,6 @@ ol.list-none {
   color: #cc4b37;
 }
 
-/* line 31, src/styles/components/icons/_core.scss */
-
-[class^="fi-"].strong,
-[class*=" fi-"].strong {
-  font-weight: bold;
-}
-
 /* HELPER CLASS
  * -------------------------- */
 
@@ -27213,6 +27206,12 @@ ol.list-none {
           animation: spin 2s infinite linear;
 }
 
+/* line 103, src/styles/components/icons/_helper.scss */
+
+.fi-strong {
+  font-weight: bold;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -27251,7 +27250,7 @@ ol.list-none {
   }
 }
 
-/* line 115, src/styles/components/icons/_helper.scss */
+/* line 119, src/styles/components/icons/_helper.scss */
 
 .fi-rotate-90 {
   /* stylelint-disable-next-line */
@@ -27261,7 +27260,7 @@ ol.list-none {
           transform: rotate(90deg);
 }
 
-/* line 121, src/styles/components/icons/_helper.scss */
+/* line 125, src/styles/components/icons/_helper.scss */
 
 .fi-rotate-180 {
   /* stylelint-disable-next-line */
@@ -27271,7 +27270,7 @@ ol.list-none {
           transform: rotate(180deg);
 }
 
-/* line 127, src/styles/components/icons/_helper.scss */
+/* line 131, src/styles/components/icons/_helper.scss */
 
 .fi-rotate-270 {
   /* stylelint-disable-next-line */
@@ -27281,7 +27280,7 @@ ol.list-none {
           transform: rotate(270deg);
 }
 
-/* line 133, src/styles/components/icons/_helper.scss */
+/* line 137, src/styles/components/icons/_helper.scss */
 
 .fi-flip-horizontal {
   /* stylelint-disable-next-line */
@@ -27291,7 +27290,7 @@ ol.list-none {
           transform: scale(-1, 1);
 }
 
-/* line 139, src/styles/components/icons/_helper.scss */
+/* line 143, src/styles/components/icons/_helper.scss */
 
 .fi-flip-vertical {
   /* stylelint-disable-next-line */
@@ -27301,7 +27300,7 @@ ol.list-none {
           transform: scale(1, -1);
 }
 
-/* line 145, src/styles/components/icons/_helper.scss */
+/* line 149, src/styles/components/icons/_helper.scss */
 
 .fi-stack {
   position: relative;
@@ -27312,7 +27311,7 @@ ol.list-none {
   vertical-align: middle;
 }
 
-/* line 155, src/styles/components/icons/_helper.scss */
+/* line 159, src/styles/components/icons/_helper.scss */
 
 .fi-stack-1x,
 .fi-stack-2x {
@@ -27322,19 +27321,19 @@ ol.list-none {
   text-align: center;
 }
 
-/* line 164, src/styles/components/icons/_helper.scss */
+/* line 168, src/styles/components/icons/_helper.scss */
 
 .fi-stack-1x {
   line-height: inherit;
 }
 
-/* line 169, src/styles/components/icons/_helper.scss */
+/* line 173, src/styles/components/icons/_helper.scss */
 
 .fi-stack-2x {
   font-size: 2em;
 }
 
-/* line 174, src/styles/components/icons/_helper.scss */
+/* line 178, src/styles/components/icons/_helper.scss */
 
 .fi-inverse {
   color: #fff;
@@ -27342,7 +27341,7 @@ ol.list-none {
 
 /* Custom classes / mods - PIXEDEN */
 
-/* line 180, src/styles/components/icons/_helper.scss */
+/* line 184, src/styles/components/icons/_helper.scss */
 
 .fi-va {
   vertical-align: middle;
@@ -27382,1544 +27381,1550 @@ ol.list-none {
 
 /* line 28, src/styles/components/icons/_icons.scss */
 
-.fi-anchor:before {
+.fi-amazon:before {
   content: "\E905";
 }
 
 /* line 33, src/styles/components/icons/_icons.scss */
 
-.fi-angle-down-circle:before {
+.fi-anchor:before {
   content: "\E906";
 }
 
 /* line 38, src/styles/components/icons/_icons.scss */
 
-.fi-angle-left-circle:before {
+.fi-angle-down:before {
   content: "\E907";
 }
 
 /* line 43, src/styles/components/icons/_icons.scss */
 
-.fi-angle-right-circle:before {
+.fi-angle-down-circle:before {
   content: "\E908";
 }
 
 /* line 48, src/styles/components/icons/_icons.scss */
 
-.fi-angle-up-circle:before {
+.fi-angle-left:before {
   content: "\E909";
 }
 
 /* line 53, src/styles/components/icons/_icons.scss */
 
-.fi-arc:before {
+.fi-angle-left-circle:before {
   content: "\E90A";
 }
 
 /* line 58, src/styles/components/icons/_icons.scss */
 
-.fi-attention:before {
+.fi-angle-right:before {
   content: "\E90B";
 }
 
 /* line 63, src/styles/components/icons/_icons.scss */
 
-.fi-back:before {
+.fi-angle-right-circle:before {
   content: "\E90C";
 }
 
 /* line 68, src/styles/components/icons/_icons.scss */
 
-.fi-back-2:before {
+.fi-angle-up:before {
   content: "\E90D";
 }
 
 /* line 73, src/styles/components/icons/_icons.scss */
 
-.fi-ball:before {
+.fi-angle-up-circle:before {
   content: "\E90E";
 }
 
 /* line 78, src/styles/components/icons/_icons.scss */
 
-.fi-bandaid:before {
+.fi-arc:before {
   content: "\E90F";
 }
 
 /* line 83, src/styles/components/icons/_icons.scss */
 
-.fi-battery:before {
+.fi-attention:before {
   content: "\E910";
 }
 
 /* line 88, src/styles/components/icons/_icons.scss */
 
-.fi-bell:before {
+.fi-back:before {
   content: "\E911";
 }
 
 /* line 93, src/styles/components/icons/_icons.scss */
 
-.fi-bicycle:before {
+.fi-back-2:before {
   content: "\E912";
 }
 
 /* line 98, src/styles/components/icons/_icons.scss */
 
-.fi-bluetooth:before {
+.fi-ball:before {
   content: "\E913";
 }
 
 /* line 103, src/styles/components/icons/_icons.scss */
 
-.fi-bookmarks:before {
+.fi-ban:before {
   content: "\E914";
 }
 
 /* line 108, src/styles/components/icons/_icons.scss */
 
-.fi-bottom-arrow:before {
+.fi-bandaid:before {
   content: "\E915";
 }
 
 /* line 113, src/styles/components/icons/_icons.scss */
 
-.fi-box1:before {
+.fi-battery:before {
   content: "\E916";
 }
 
 /* line 118, src/styles/components/icons/_icons.scss */
 
-.fi-box2:before {
+.fi-bell:before {
   content: "\E917";
 }
 
 /* line 123, src/styles/components/icons/_icons.scss */
 
-.fi-browser:before {
+.fi-bicycle:before {
   content: "\E918";
 }
 
 /* line 128, src/styles/components/icons/_icons.scss */
 
-.fi-calculator:before {
+.fi-bluetooth:before {
   content: "\E919";
 }
 
 /* line 133, src/styles/components/icons/_icons.scss */
 
-.fi-call:before {
+.fi-bookmarks:before {
   content: "\E91A";
 }
 
 /* line 138, src/styles/components/icons/_icons.scss */
 
-.fi-camera:before {
+.fi-bottom-arrow:before {
   content: "\E91B";
 }
 
 /* line 143, src/styles/components/icons/_icons.scss */
 
-.fi-car:before {
+.fi-box1:before {
   content: "\E91C";
 }
 
 /* line 148, src/styles/components/icons/_icons.scss */
 
-.fi-cart:before {
+.fi-box2:before {
   content: "\E91D";
 }
 
 /* line 153, src/styles/components/icons/_icons.scss */
 
-.fi-cash:before {
+.fi-browser:before {
   content: "\E91E";
 }
 
 /* line 158, src/styles/components/icons/_icons.scss */
 
-.fi-chat:before {
+.fi-calculator:before {
   content: "\E91F";
 }
 
 /* line 163, src/styles/components/icons/_icons.scss */
 
-.fi-clock:before {
+.fi-call:before {
   content: "\E920";
 }
 
 /* line 168, src/styles/components/icons/_icons.scss */
 
-.fi-close:before {
+.fi-camera:before {
   content: "\E921";
 }
 
 /* line 173, src/styles/components/icons/_icons.scss */
 
-.fi-close-circle:before {
+.fi-car:before {
   content: "\E922";
 }
 
 /* line 178, src/styles/components/icons/_icons.scss */
 
-.fi-cloud:before {
+.fi-cart:before {
   content: "\E923";
 }
 
 /* line 183, src/styles/components/icons/_icons.scss */
 
-.fi-cloud-download:before {
+.fi-cart-add:before {
   content: "\E924";
 }
 
 /* line 188, src/styles/components/icons/_icons.scss */
 
-.fi-cloud-upload:before {
+.fi-cart-empty:before {
   content: "\E925";
 }
 
 /* line 193, src/styles/components/icons/_icons.scss */
 
-.fi-coffee:before {
+.fi-cart-fast:before {
   content: "\E926";
 }
 
 /* line 198, src/styles/components/icons/_icons.scss */
 
-.fi-comment:before {
+.fi-cart-hand:before {
   content: "\E927";
 }
 
 /* line 203, src/styles/components/icons/_icons.scss */
 
-.fi-compass:before {
+.fi-cart-move:before {
   content: "\E928";
 }
 
 /* line 208, src/styles/components/icons/_icons.scss */
 
-.fi-config:before {
+.fi-cart-new:before {
   content: "\E929";
 }
 
 /* line 213, src/styles/components/icons/_icons.scss */
 
-.fi-copy-file:before {
+.fi-cash:before {
   content: "\E92A";
 }
 
 /* line 218, src/styles/components/icons/_icons.scss */
 
-.fi-credit:before {
+.fi-chat:before {
   content: "\E92B";
 }
 
 /* line 223, src/styles/components/icons/_icons.scss */
 
-.fi-crop:before {
+.fi-check:before {
   content: "\E92C";
 }
 
 /* line 228, src/styles/components/icons/_icons.scss */
 
-.fi-culture:before {
+.fi-check-2:before {
   content: "\E92D";
 }
 
 /* line 233, src/styles/components/icons/_icons.scss */
 
-.fi-cup:before {
+.fi-checkout:before {
   content: "\E92E";
 }
 
 /* line 238, src/styles/components/icons/_icons.scss */
 
-.fi-date:before {
+.fi-check-strong:before {
   content: "\E92F";
 }
 
 /* line 243, src/styles/components/icons/_icons.scss */
 
-.fi-delete-user:before {
+.fi-clock:before {
   content: "\E930";
 }
 
 /* line 248, src/styles/components/icons/_icons.scss */
 
-.fi-diamond:before {
+.fi-close:before {
   content: "\E931";
 }
 
 /* line 253, src/styles/components/icons/_icons.scss */
 
-.fi-disk:before {
+.fi-close-circle:before {
   content: "\E932";
 }
 
 /* line 258, src/styles/components/icons/_icons.scss */
 
-.fi-diskette:before {
+.fi-cloud:before {
   content: "\E933";
 }
 
 /* line 263, src/styles/components/icons/_icons.scss */
 
-.fi-display1:before {
+.fi-cloud-download:before {
   content: "\E934";
 }
 
 /* line 268, src/styles/components/icons/_icons.scss */
 
-.fi-display2:before {
+.fi-cloud-upload:before {
   content: "\E935";
 }
 
 /* line 273, src/styles/components/icons/_icons.scss */
 
-.fi-door-lock:before {
+.fi-coffee:before {
   content: "\E936";
 }
 
 /* line 278, src/styles/components/icons/_icons.scss */
 
-.fi-download:before {
+.fi-comment:before {
   content: "\E937";
 }
 
 /* line 283, src/styles/components/icons/_icons.scss */
 
-.fi-drawer:before {
+.fi-compass:before {
   content: "\E938";
 }
 
 /* line 288, src/styles/components/icons/_icons.scss */
 
-.fi-drop:before {
+.fi-config:before {
   content: "\E939";
 }
 
 /* line 293, src/styles/components/icons/_icons.scss */
 
-.fi-edit:before {
+.fi-copy-file:before {
   content: "\E93A";
 }
 
 /* line 298, src/styles/components/icons/_icons.scss */
 
-.fi-envelope:before {
+.fi-credit:before {
   content: "\E93B";
 }
 
 /* line 303, src/styles/components/icons/_icons.scss */
 
-.fi-exapnd2:before {
+.fi-crop:before {
   content: "\E93C";
 }
 
 /* line 308, src/styles/components/icons/_icons.scss */
 
-.fi-expand1:before {
+.fi-culture:before {
   content: "\E93D";
 }
 
 /* line 313, src/styles/components/icons/_icons.scss */
 
-.fi-eyedropper:before {
+.fi-cup:before {
   content: "\E93E";
 }
 
 /* line 318, src/styles/components/icons/_icons.scss */
 
-.fi-female:before {
+.fi-custom-product:before {
   content: "\E93F";
 }
 
 /* line 323, src/styles/components/icons/_icons.scss */
 
-.fi-file:before {
+.fi-date:before {
   content: "\E940";
 }
 
 /* line 328, src/styles/components/icons/_icons.scss */
 
-.fi-film:before {
+.fi-delete-user:before {
   content: "\E941";
 }
 
 /* line 333, src/styles/components/icons/_icons.scss */
 
-.fi-filter:before {
+.fi-diamond:before {
   content: "\E942";
 }
 
 /* line 338, src/styles/components/icons/_icons.scss */
 
-.fi-flag:before {
+.fi-disk:before {
   content: "\E943";
 }
 
 /* line 343, src/styles/components/icons/_icons.scss */
 
-.fi-folder:before {
+.fi-diskette:before {
   content: "\E944";
 }
 
 /* line 348, src/styles/components/icons/_icons.scss */
 
-.fi-gift:before {
+.fi-display1:before {
   content: "\E945";
 }
 
 /* line 353, src/styles/components/icons/_icons.scss */
 
-.fi-glasses:before {
+.fi-display2:before {
   content: "\E946";
 }
 
 /* line 358, src/styles/components/icons/_icons.scss */
 
-.fi-gleam:before {
+.fi-door-lock:before {
   content: "\E947";
 }
 
 /* line 363, src/styles/components/icons/_icons.scss */
 
-.fi-global:before {
+.fi-down-arrow-2:before {
   content: "\E948";
 }
 
 /* line 368, src/styles/components/icons/_icons.scss */
 
-.fi-graph:before {
+.fi-down-arrow-3:before {
   content: "\E949";
 }
 
 /* line 373, src/styles/components/icons/_icons.scss */
 
-.fi-graph1:before {
+.fi-download:before {
   content: "\E94A";
 }
 
 /* line 378, src/styles/components/icons/_icons.scss */
 
-.fi-graph2:before {
+.fi-drawer:before {
   content: "\E94B";
 }
 
 /* line 383, src/styles/components/icons/_icons.scss */
 
-.fi-graph3:before {
+.fi-drop:before {
   content: "\E94C";
 }
 
 /* line 388, src/styles/components/icons/_icons.scss */
 
-.fi-gym:before {
+.fi-edit:before {
   content: "\E94D";
 }
 
 /* line 393, src/styles/components/icons/_icons.scss */
 
-.fi-hammer:before {
+.fi-email:before {
   content: "\E94E";
 }
 
 /* line 398, src/styles/components/icons/_icons.scss */
 
-.fi-headphones:before {
+.fi-envelope:before {
   content: "\E94F";
 }
 
 /* line 403, src/styles/components/icons/_icons.scss */
 
-.fi-helm:before {
+.fi-exapnd2:before {
   content: "\E950";
 }
 
 /* line 408, src/styles/components/icons/_icons.scss */
 
-.fi-help1:before {
+.fi-expand1:before {
   content: "\E951";
 }
 
 /* line 413, src/styles/components/icons/_icons.scss */
 
-.fi-help2:before {
+.fi-eyedropper:before {
   content: "\E952";
 }
 
 /* line 418, src/styles/components/icons/_icons.scss */
 
-.fi-home:before {
+.fi-facebook:before {
   content: "\E953";
 }
 
 /* line 423, src/styles/components/icons/_icons.scss */
 
-.fi-hourglass:before {
+.fi-facebook-2:before {
   content: "\E954";
 }
 
 /* line 428, src/styles/components/icons/_icons.scss */
 
-.fi-id:before {
+.fi-favorites:before {
   content: "\E955";
 }
 
 /* line 433, src/styles/components/icons/_icons.scss */
 
-.fi-info:before {
+.fi-favorites-added:before {
   content: "\E956";
 }
 
 /* line 438, src/styles/components/icons/_icons.scss */
 
-.fi-joy:before {
+.fi-favorites-list:before {
   content: "\E957";
 }
 
 /* line 443, src/styles/components/icons/_icons.scss */
 
-.fi-junk:before {
+.fi-female:before {
   content: "\E958";
 }
 
 /* line 448, src/styles/components/icons/_icons.scss */
 
-.fi-key:before {
+.fi-file:before {
   content: "\E959";
 }
 
 /* line 453, src/styles/components/icons/_icons.scss */
 
-.fi-keypad:before {
+.fi-film:before {
   content: "\E95A";
 }
 
 /* line 458, src/styles/components/icons/_icons.scss */
 
-.fi-leaf:before {
+.fi-filter:before {
   content: "\E95B";
 }
 
 /* line 463, src/styles/components/icons/_icons.scss */
 
-.fi-left-arrow:before {
+.fi-flag:before {
   content: "\E95C";
 }
 
 /* line 468, src/styles/components/icons/_icons.scss */
 
-.fi-less:before {
+.fi-folder:before {
   content: "\E95D";
 }
 
 /* line 473, src/styles/components/icons/_icons.scss */
 
-.fi-light:before {
+.fi-gift:before {
   content: "\E95E";
 }
 
 /* line 478, src/styles/components/icons/_icons.scss */
 
-.fi-like:before {
+.fi-glasses:before {
   content: "\E95F";
 }
 
 /* line 483, src/styles/components/icons/_icons.scss */
 
-.fi-like2:before {
+.fi-gleam:before {
   content: "\E960";
 }
 
 /* line 488, src/styles/components/icons/_icons.scss */
 
-.fi-link:before {
+.fi-global:before {
   content: "\E961";
 }
 
 /* line 493, src/styles/components/icons/_icons.scss */
 
-.fi-lintern:before {
+.fi-graph:before {
   content: "\E962";
 }
 
 /* line 498, src/styles/components/icons/_icons.scss */
 
-.fi-lock:before {
+.fi-graph1:before {
   content: "\E963";
 }
 
 /* line 503, src/styles/components/icons/_icons.scss */
 
-.fi-look:before {
+.fi-graph2:before {
   content: "\E964";
 }
 
 /* line 508, src/styles/components/icons/_icons.scss */
 
-.fi-loop:before {
+.fi-graph3:before {
   content: "\E965";
 }
 
 /* line 513, src/styles/components/icons/_icons.scss */
 
-.fi-magic-wand:before {
+.fi-gym:before {
   content: "\E966";
 }
 
 /* line 518, src/styles/components/icons/_icons.scss */
 
-.fi-magnet:before {
+.fi-hammer:before {
   content: "\E967";
 }
 
 /* line 523, src/styles/components/icons/_icons.scss */
 
-.fi-mail:before {
+.fi-headphones:before {
   content: "\E968";
 }
 
 /* line 528, src/styles/components/icons/_icons.scss */
 
-.fi-mail-open:before {
+.fi-helm:before {
   content: "\E969";
 }
 
 /* line 533, src/styles/components/icons/_icons.scss */
 
-.fi-mail-open-file:before {
+.fi-help1:before {
   content: "\E96A";
 }
 
 /* line 538, src/styles/components/icons/_icons.scss */
 
-.fi-male:before {
+.fi-help2:before {
   content: "\E96B";
 }
 
 /* line 543, src/styles/components/icons/_icons.scss */
 
-.fi-map:before {
+.fi-home:before {
   content: "\E96C";
 }
 
 /* line 548, src/styles/components/icons/_icons.scss */
 
-.fi-map-2:before {
+.fi-home-new:before {
   content: "\E96D";
 }
 
 /* line 553, src/styles/components/icons/_icons.scss */
 
-.fi-map-marker:before {
+.fi-hourglass:before {
   content: "\E96E";
 }
 
 /* line 558, src/styles/components/icons/_icons.scss */
 
-.fi-medal:before {
+.fi-id:before {
   content: "\E96F";
 }
 
 /* line 563, src/styles/components/icons/_icons.scss */
 
-.fi-menu:before {
+.fi-info:before {
   content: "\E970";
 }
 
 /* line 568, src/styles/components/icons/_icons.scss */
 
-.fi-micro:before {
+.fi-instagram:before {
   content: "\E971";
 }
 
 /* line 573, src/styles/components/icons/_icons.scss */
 
-.fi-monitor:before {
+.fi-joy:before {
   content: "\E972";
 }
 
 /* line 578, src/styles/components/icons/_icons.scss */
 
-.fi-moon:before {
+.fi-junk:before {
   content: "\E973";
 }
 
 /* line 583, src/styles/components/icons/_icons.scss */
 
-.fi-more:before {
+.fi-key:before {
   content: "\E974";
 }
 
 /* line 588, src/styles/components/icons/_icons.scss */
 
-.fi-mouse:before {
+.fi-keypad:before {
   content: "\E975";
 }
 
 /* line 593, src/styles/components/icons/_icons.scss */
 
-.fi-music:before {
+.fi-leaf:before {
   content: "\E976";
 }
 
 /* line 598, src/styles/components/icons/_icons.scss */
 
-.fi-musiclist:before {
+.fi-left-arrow:before {
   content: "\E977";
 }
 
 /* line 603, src/styles/components/icons/_icons.scss */
 
-.fi-mute:before {
+.fi-left-arrow-2:before {
   content: "\E978";
 }
 
 /* line 608, src/styles/components/icons/_icons.scss */
 
-.fi-network:before {
+.fi-left-arrow-3:before {
   content: "\E979";
 }
 
 /* line 613, src/styles/components/icons/_icons.scss */
 
-.fi-news-paper:before {
+.fi-less:before {
   content: "\E97A";
 }
 
 /* line 618, src/styles/components/icons/_icons.scss */
 
-.fi-next:before {
+.fi-less-2:before {
   content: "\E97B";
 }
 
 /* line 623, src/styles/components/icons/_icons.scss */
 
-.fi-next-2:before {
+.fi-light:before {
   content: "\E97C";
 }
 
 /* line 628, src/styles/components/icons/_icons.scss */
 
-.fi-note:before {
+.fi-like:before {
   content: "\E97D";
 }
 
 /* line 633, src/styles/components/icons/_icons.scss */
 
-.fi-note2:before {
+.fi-like2:before {
   content: "\E97E";
 }
 
 /* line 638, src/styles/components/icons/_icons.scss */
 
-.fi-notebook:before {
+.fi-like-solid:before {
   content: "\E97F";
 }
 
 /* line 643, src/styles/components/icons/_icons.scss */
 
-.fi-paint:before {
+.fi-link:before {
   content: "\E980";
 }
 
 /* line 648, src/styles/components/icons/_icons.scss */
 
-.fi-paint-bucket:before {
+.fi-linkedin:before {
   content: "\E981";
 }
 
 /* line 653, src/styles/components/icons/_icons.scss */
 
-.fi-paperclip:before {
+.fi-linkedin-2:before {
   content: "\E982";
 }
 
 /* line 658, src/styles/components/icons/_icons.scss */
 
-.fi-paper-plane:before {
+.fi-lintern:before {
   content: "\E983";
 }
 
 /* line 663, src/styles/components/icons/_icons.scss */
 
-.fi-pen:before {
+.fi-loading:before {
   content: "\E984";
 }
 
 /* line 668, src/styles/components/icons/_icons.scss */
 
-.fi-pendrive:before {
+.fi-loading2:before {
   content: "\E985";
 }
 
 /* line 673, src/styles/components/icons/_icons.scss */
 
-.fi-phone:before {
+.fi-loading3:before {
   content: "\E986";
 }
 
 /* line 678, src/styles/components/icons/_icons.scss */
 
-.fi-photo:before {
+.fi-loading4:before {
   content: "\E987";
 }
 
 /* line 683, src/styles/components/icons/_icons.scss */
 
-.fi-photo-gallery:before {
+.fi-lock:before {
   content: "\E988";
 }
 
 /* line 688, src/styles/components/icons/_icons.scss */
 
-.fi-piggy:before {
+.fi-log-out:before {
   content: "\E989";
 }
 
 /* line 693, src/styles/components/icons/_icons.scss */
 
-.fi-pin:before {
+.fi-look:before {
   content: "\E98A";
 }
 
 /* line 698, src/styles/components/icons/_icons.scss */
 
-.fi-plane:before {
+.fi-loop:before {
   content: "\E98B";
 }
 
 /* line 703, src/styles/components/icons/_icons.scss */
 
-.fi-play:before {
+.fi-magic-wand:before {
   content: "\E98C";
 }
 
 /* line 708, src/styles/components/icons/_icons.scss */
 
-.fi-plug:before {
+.fi-magnet:before {
   content: "\E98D";
 }
 
 /* line 713, src/styles/components/icons/_icons.scss */
 
-.fi-plugin:before {
+.fi-mail:before {
   content: "\E98E";
 }
 
 /* line 718, src/styles/components/icons/_icons.scss */
 
-.fi-plus:before {
+.fi-mail-open:before {
   content: "\E98F";
 }
 
 /* line 723, src/styles/components/icons/_icons.scss */
 
-.fi-portfolio:before {
+.fi-mail-open-file:before {
   content: "\E990";
 }
 
 /* line 728, src/styles/components/icons/_icons.scss */
 
-.fi-power:before {
+.fi-male:before {
   content: "\E991";
 }
 
 /* line 733, src/styles/components/icons/_icons.scss */
 
-.fi-prev:before {
+.fi-map:before {
   content: "\E992";
 }
 
 /* line 738, src/styles/components/icons/_icons.scss */
 
-.fi-print:before {
+.fi-map-2:before {
   content: "\E993";
 }
 
 /* line 743, src/styles/components/icons/_icons.scss */
 
-.fi-radio:before {
+.fi-map-marker:before {
   content: "\E994";
 }
 
 /* line 748, src/styles/components/icons/_icons.scss */
 
-.fi-refresh-cloud:before {
+.fi-map-marker-2:before {
   content: "\E995";
 }
 
 /* line 753, src/styles/components/icons/_icons.scss */
 
-.fi-repeat:before {
+.fi-medal:before {
   content: "\E996";
 }
 
 /* line 758, src/styles/components/icons/_icons.scss */
 
-.fi-ribbon:before {
+.fi-menu:before {
   content: "\E997";
 }
 
 /* line 763, src/styles/components/icons/_icons.scss */
 
-.fi-right-arrow:before {
+.fi-micro:before {
   content: "\E998";
 }
 
 /* line 768, src/styles/components/icons/_icons.scss */
 
-.fi-rocket:before {
+.fi-monitor:before {
   content: "\E999";
 }
 
 /* line 773, src/styles/components/icons/_icons.scss */
 
-.fi-safe:before {
+.fi-moon:before {
   content: "\E99A";
 }
 
 /* line 778, src/styles/components/icons/_icons.scss */
 
-.fi-science:before {
+.fi-more:before {
   content: "\E99B";
 }
 
 /* line 783, src/styles/components/icons/_icons.scss */
 
-.fi-scissors:before {
+.fi-mouse:before {
   content: "\E99C";
 }
 
 /* line 788, src/styles/components/icons/_icons.scss */
 
-.fi-search:before {
+.fi-music:before {
   content: "\E99D";
 }
 
 /* line 793, src/styles/components/icons/_icons.scss */
 
-.fi-server:before {
+.fi-musiclist:before {
   content: "\E99E";
 }
 
 /* line 798, src/styles/components/icons/_icons.scss */
 
-.fi-settings:before {
+.fi-mute:before {
   content: "\E99F";
 }
 
 /* line 803, src/styles/components/icons/_icons.scss */
 
-.fi-share:before {
+.fi-network:before {
   content: "\E9A0";
 }
 
 /* line 808, src/styles/components/icons/_icons.scss */
 
-.fi-shield:before {
+.fi-news-paper:before {
   content: "\E9A1";
 }
 
 /* line 813, src/styles/components/icons/_icons.scss */
 
-.fi-shopbag:before {
+.fi-next:before {
   content: "\E9A2";
 }
 
 /* line 818, src/styles/components/icons/_icons.scss */
 
-.fi-shuffle:before {
+.fi-next-2:before {
   content: "\E9A3";
 }
 
 /* line 823, src/styles/components/icons/_icons.scss */
 
-.fi-signal:before {
+.fi-note:before {
   content: "\E9A4";
 }
 
 /* line 828, src/styles/components/icons/_icons.scss */
 
-.fi-smile:before {
+.fi-note2:before {
   content: "\E9A5";
 }
 
 /* line 833, src/styles/components/icons/_icons.scss */
 
-.fi-speaker:before {
+.fi-notebook:before {
   content: "\E9A6";
 }
 
 /* line 838, src/styles/components/icons/_icons.scss */
 
-.fi-star:before {
+.fi-paint:before {
   content: "\E9A7";
 }
 
 /* line 843, src/styles/components/icons/_icons.scss */
 
-.fi-stopwatch:before {
+.fi-paint-bucket:before {
   content: "\E9A8";
 }
 
 /* line 848, src/styles/components/icons/_icons.scss */
 
-.fi-study:before {
+.fi-paperclip:before {
   content: "\E9A9";
 }
 
 /* line 853, src/styles/components/icons/_icons.scss */
 
-.fi-sun:before {
+.fi-paper-plane:before {
   content: "\E9AA";
 }
 
 /* line 858, src/styles/components/icons/_icons.scss */
 
-.fi-switch:before {
+.fi-pen:before {
   content: "\E9AB";
 }
 
 /* line 863, src/styles/components/icons/_icons.scss */
 
-.fi-target:before {
+.fi-pendrive:before {
   content: "\E9AC";
 }
 
 /* line 868, src/styles/components/icons/_icons.scss */
 
-.fi-ticket:before {
+.fi-phone:before {
   content: "\E9AD";
 }
 
 /* line 873, src/styles/components/icons/_icons.scss */
 
-.fi-timer:before {
+.fi-phone-new:before {
   content: "\E9AE";
 }
 
 /* line 878, src/styles/components/icons/_icons.scss */
 
-.fi-tools:before {
+.fi-photo:before {
   content: "\E9AF";
 }
 
 /* line 883, src/styles/components/icons/_icons.scss */
 
-.fi-trash:before {
+.fi-photo-gallery:before {
   content: "\E9B0";
 }
 
 /* line 888, src/styles/components/icons/_icons.scss */
 
-.fi-umbrella:before {
+.fi-piggy:before {
   content: "\E9B1";
 }
 
 /* line 893, src/styles/components/icons/_icons.scss */
 
-.fi-unlock:before {
+.fi-pin:before {
   content: "\E9B2";
 }
 
 /* line 898, src/styles/components/icons/_icons.scss */
 
-.fi-up-arrow:before {
+.fi-pinterest:before {
   content: "\E9B3";
 }
 
 /* line 903, src/styles/components/icons/_icons.scss */
 
-.fi-upload:before {
+.fi-pinterest-2:before {
   content: "\E9B4";
 }
 
 /* line 908, src/styles/components/icons/_icons.scss */
 
-.fi-usb:before {
+.fi-plane:before {
   content: "\E9B5";
 }
 
 /* line 913, src/styles/components/icons/_icons.scss */
 
-.fi-user:before {
+.fi-play:before {
   content: "\E9B6";
 }
 
 /* line 918, src/styles/components/icons/_icons.scss */
 
-.fi-user-female:before {
+.fi-play-2:before {
   content: "\E9B7";
 }
 
 /* line 923, src/styles/components/icons/_icons.scss */
 
-.fi-users:before {
+.fi-plug:before {
   content: "\E9B8";
 }
 
 /* line 928, src/styles/components/icons/_icons.scss */
 
-.fi-vector:before {
+.fi-plugin:before {
   content: "\E9B9";
 }
 
 /* line 933, src/styles/components/icons/_icons.scss */
 
-.fi-video:before {
+.fi-plus:before {
   content: "\E9BA";
 }
 
 /* line 938, src/styles/components/icons/_icons.scss */
 
-.fi-voicemail:before {
+.fi-plus-2:before {
   content: "\E9BB";
 }
 
 /* line 943, src/styles/components/icons/_icons.scss */
 
-.fi-volume:before {
+.fi-portfolio:before {
   content: "\E9BC";
 }
 
 /* line 948, src/styles/components/icons/_icons.scss */
 
-.fi-volume1:before {
+.fi-post:before {
   content: "\E9BD";
 }
 
 /* line 953, src/styles/components/icons/_icons.scss */
 
-.fi-volume2:before {
+.fi-power:before {
   content: "\E9BE";
 }
 
 /* line 958, src/styles/components/icons/_icons.scss */
 
-.fi-wallet:before {
+.fi-prev:before {
   content: "\E9BF";
 }
 
 /* line 963, src/styles/components/icons/_icons.scss */
 
-.fi-way:before {
+.fi-print:before {
   content: "\E9C0";
 }
 
 /* line 968, src/styles/components/icons/_icons.scss */
 
-.fi-wine:before {
+.fi-product-empty:before {
   content: "\E9C1";
 }
 
 /* line 973, src/styles/components/icons/_icons.scss */
 
-.fi-world:before {
+.fi-radio:before {
   content: "\E9C2";
 }
 
 /* line 978, src/styles/components/icons/_icons.scss */
 
-.fi-wristwatch:before {
+.fi-refresh:before {
   content: "\E9C3";
 }
 
 /* line 983, src/styles/components/icons/_icons.scss */
 
-.fi-facebook:before {
+.fi-refresh-2:before {
   content: "\E9C4";
 }
 
 /* line 988, src/styles/components/icons/_icons.scss */
 
-.fi-facebook-2:before {
+.fi-refresh-cloud:before {
   content: "\E9C5";
 }
 
 /* line 993, src/styles/components/icons/_icons.scss */
 
-.fi-instagram:before {
+.fi-repeat:before {
   content: "\E9C6";
 }
 
 /* line 998, src/styles/components/icons/_icons.scss */
 
-.fi-linkedin:before {
+.fi-ribbon:before {
   content: "\E9C7";
 }
 
 /* line 1003, src/styles/components/icons/_icons.scss */
 
-.fi-linkedin-2:before {
+.fi-right-arrow:before {
   content: "\E9C8";
 }
 
 /* line 1008, src/styles/components/icons/_icons.scss */
 
-.fi-pinterest:before {
+.fi-right-arrow-2:before {
   content: "\E9C9";
 }
 
 /* line 1013, src/styles/components/icons/_icons.scss */
 
-.fi-twitter:before {
+.fi-right-arrow-3:before {
   content: "\E9CA";
 }
 
 /* line 1018, src/styles/components/icons/_icons.scss */
 
-.fi-youtube:before {
+.fi-rocket:before {
   content: "\E9CB";
 }
 
 /* line 1023, src/styles/components/icons/_icons.scss */
 
-.fi-down-arrow-2:before {
+.fi-safe:before {
   content: "\E9CC";
 }
 
 /* line 1028, src/styles/components/icons/_icons.scss */
 
-.fi-down-arrow-3:before {
+.fi-science:before {
   content: "\E9CD";
 }
 
 /* line 1033, src/styles/components/icons/_icons.scss */
 
-.fi-left-arrow-2:before {
+.fi-scissors:before {
   content: "\E9CE";
 }
 
 /* line 1038, src/styles/components/icons/_icons.scss */
 
-.fi-left-arrow-3:before {
+.fi-search:before {
   content: "\E9CF";
 }
 
 /* line 1043, src/styles/components/icons/_icons.scss */
 
-.fi-less-2:before {
+.fi-search-new:before {
   content: "\E9D0";
 }
 
 /* line 1048, src/styles/components/icons/_icons.scss */
 
-.fi-map-marker-2:before {
+.fi-send:before {
   content: "\E9D1";
 }
 
 /* line 1053, src/styles/components/icons/_icons.scss */
 
-.fi-pinterest-2:before {
+.fi-server:before {
   content: "\E9D2";
 }
 
 /* line 1058, src/styles/components/icons/_icons.scss */
 
-.fi-play-2:before {
+.fi-settings:before {
   content: "\E9D3";
 }
 
 /* line 1063, src/styles/components/icons/_icons.scss */
 
-.fi-plus-2:before {
+.fi-share:before {
   content: "\E9D4";
 }
 
 /* line 1068, src/styles/components/icons/_icons.scss */
 
-.fi-right-arrow-2:before {
+.fi-shield:before {
   content: "\E9D5";
 }
 
 /* line 1073, src/styles/components/icons/_icons.scss */
 
-.fi-right-arrow-3:before {
+.fi-shipping:before {
   content: "\E9D6";
 }
 
 /* line 1078, src/styles/components/icons/_icons.scss */
 
-.fi-up-arrow-2:before {
+.fi-shipping-free:before {
   content: "\E9D7";
 }
 
 /* line 1083, src/styles/components/icons/_icons.scss */
 
-.fi-up-arrow-3:before {
+.fi-shopbag:before {
   content: "\E9D8";
 }
 
 /* line 1088, src/styles/components/icons/_icons.scss */
 
-.fi-ban:before {
+.fi-shuffle:before {
   content: "\E9D9";
 }
 
 /* line 1093, src/styles/components/icons/_icons.scss */
 
-.fi-check:before {
+.fi-signal:before {
   content: "\E9DA";
 }
 
 /* line 1098, src/styles/components/icons/_icons.scss */
 
-.fi-check-2:before {
+.fi-signout:before {
   content: "\E9DB";
 }
 
 /* line 1103, src/styles/components/icons/_icons.scss */
 
-.fi-refresh:before {
+.fi-smile:before {
   content: "\E9DC";
 }
 
 /* line 1108, src/styles/components/icons/_icons.scss */
 
-.fi-refresh-2:before {
+.fi-speaker:before {
   content: "\E9DD";
 }
 
 /* line 1113, src/styles/components/icons/_icons.scss */
 
-.fi-like-solid:before {
+.fi-star:before {
   content: "\E9DE";
 }
 
 /* line 1118, src/styles/components/icons/_icons.scss */
 
-.fi-angle-down:before {
+.fi-stopwatch:before {
   content: "\E9DF";
 }
 
 /* line 1123, src/styles/components/icons/_icons.scss */
 
-.fi-angle-left:before {
+.fi-study:before {
   content: "\E9E0";
 }
 
 /* line 1128, src/styles/components/icons/_icons.scss */
 
-.fi-angle-right:before {
+.fi-sun:before {
   content: "\E9E1";
 }
 
 /* line 1133, src/styles/components/icons/_icons.scss */
 
-.fi-angle-up:before {
+.fi-switch:before {
   content: "\E9E2";
 }
 
 /* line 1138, src/styles/components/icons/_icons.scss */
 
-.fi-log-out:before {
+.fi-tag:before {
   content: "\E9E3";
 }
 
 /* line 1143, src/styles/components/icons/_icons.scss */
 
-.fi-cart-add:before {
+.fi-tags:before {
   content: "\E9E4";
 }
 
 /* line 1148, src/styles/components/icons/_icons.scss */
 
-.fi-cart-empty:before {
+.fi-target:before {
   content: "\E9E5";
 }
 
 /* line 1153, src/styles/components/icons/_icons.scss */
 
-.fi-cart-fast:before {
+.fi-ticket:before {
   content: "\E9E6";
 }
 
 /* line 1158, src/styles/components/icons/_icons.scss */
 
-.fi-cart-new:before {
+.fi-timer:before {
   content: "\E9E7";
 }
 
 /* line 1163, src/styles/components/icons/_icons.scss */
 
-.fi-checkout:before {
+.fi-tools:before {
   content: "\E9E8";
 }
 
 /* line 1168, src/styles/components/icons/_icons.scss */
 
-.fi-email:before {
+.fi-track-order:before {
   content: "\E9E9";
 }
 
 /* line 1173, src/styles/components/icons/_icons.scss */
 
-.fi-favorites:before {
+.fi-trash:before {
   content: "\E9EA";
 }
 
 /* line 1178, src/styles/components/icons/_icons.scss */
 
-.fi-favorites-added:before {
+.fi-trolley:before {
   content: "\E9EB";
 }
 
 /* line 1183, src/styles/components/icons/_icons.scss */
 
-.fi-favorites-list:before {
+.fi-twitter:before {
   content: "\E9EC";
 }
 
 /* line 1188, src/styles/components/icons/_icons.scss */
 
-.fi-post:before {
+.fi-umbrella:before {
   content: "\E9ED";
 }
 
 /* line 1193, src/styles/components/icons/_icons.scss */
 
-.fi-search-new:before {
+.fi-unlock:before {
   content: "\E9EE";
 }
 
 /* line 1198, src/styles/components/icons/_icons.scss */
 
-.fi-send:before {
+.fi-up-arrow:before {
   content: "\E9EF";
 }
 
 /* line 1203, src/styles/components/icons/_icons.scss */
 
-.fi-signout:before {
+.fi-up-arrow-2:before {
   content: "\E9F0";
 }
 
 /* line 1208, src/styles/components/icons/_icons.scss */
 
-.fi-user-edit-new:before {
+.fi-up-arrow-3:before {
   content: "\E9F1";
 }
 
 /* line 1213, src/styles/components/icons/_icons.scss */
 
-.fi-user-new:before {
+.fi-upload:before {
   content: "\E9F2";
 }
 
 /* line 1218, src/styles/components/icons/_icons.scss */
 
-.fi-product-empty:before {
+.fi-usb:before {
   content: "\E9F3";
 }
 
 /* line 1223, src/styles/components/icons/_icons.scss */
 
-.fi-amazon:before {
+.fi-user:before {
   content: "\E9F4";
 }
 
 /* line 1228, src/styles/components/icons/_icons.scss */
 
-.fi-cart-hand:before {
+.fi-user-edit-new:before {
   content: "\E9F5";
 }
 
 /* line 1233, src/styles/components/icons/_icons.scss */
 
-.fi-home-new:before {
+.fi-user-female:before {
   content: "\E9F6";
 }
 
 /* line 1238, src/styles/components/icons/_icons.scss */
 
-.fi-phone-new:before {
+.fi-user-new:before {
   content: "\E9F7";
 }
 
 /* line 1243, src/styles/components/icons/_icons.scss */
 
-.fi-shipping:before {
+.fi-users:before {
   content: "\E9F8";
 }
 
 /* line 1248, src/styles/components/icons/_icons.scss */
 
-.fi-shipping-free:before {
+.fi-vector:before {
   content: "\E9F9";
 }
 
 /* line 1253, src/styles/components/icons/_icons.scss */
 
-.fi-track-order:before {
+.fi-video:before {
   content: "\E9FA";
 }
 
 /* line 1258, src/styles/components/icons/_icons.scss */
 
-.fi-trolley:before {
+.fi-voicemail:before {
   content: "\E9FB";
 }
 
 /* line 1263, src/styles/components/icons/_icons.scss */
 
-.fi-loading:before {
+.fi-volume:before {
   content: "\E9FC";
 }
 
 /* line 1268, src/styles/components/icons/_icons.scss */
 
-.fi-loading2:before {
+.fi-volume1:before {
   content: "\E9FD";
 }
 
 /* line 1273, src/styles/components/icons/_icons.scss */
 
-.fi-loading3:before {
+.fi-volume2:before {
   content: "\E9FE";
 }
 
 /* line 1278, src/styles/components/icons/_icons.scss */
 
-.fi-loading4:before {
+.fi-wallet:before {
   content: "\E9FF";
 }
 
 /* line 1283, src/styles/components/icons/_icons.scss */
 
-.fi-cart-move:before {
+.fi-way:before {
   content: "\EA00";
 }
 
 /* line 1288, src/styles/components/icons/_icons.scss */
 
-.fi-tag:before {
+.fi-wine:before {
   content: "\EA01";
 }
 
 /* line 1293, src/styles/components/icons/_icons.scss */
 
-.fi-tags:before {
+.fi-world:before {
   content: "\EA02";
 }
 
 /* line 1298, src/styles/components/icons/_icons.scss */
 
-.fi-custom-product:before {
+.fi-wristwatch:before {
   content: "\EA03";
 }
 
-/* line 1305, src/styles/components/icons/_icons.scss */
+/* line 1303, src/styles/components/icons/_icons.scss */
 
-.fi-credit-card:before {
-  content: "\E92B";
+.fi-youtube:before {
+  content: "\EA04";
 }
 
 /* line 1310, src/styles/components/icons/_icons.scss */
 
+.fi-credit-card:before {
+  content: "\E93B";
+}
+
+/* line 1315, src/styles/components/icons/_icons.scss */
+
 .fi-eye:before {
-  content: "\E964";
+  content: "\E98A";
 }
 
 /* stylelint-enable */
@@ -29419,7 +29424,7 @@ ng-form .search-form .ng-touched.ng-empty.search-field ~ .input-group-button .bu
 /* line 9, src/styles/components/_dropdown-menu.scss */
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  content: "\E9DF";
+  content: "\E907";
   font-family: "rc-base-icons";
   font-size: 1.5rem;
   border: none;
