@@ -399,6 +399,11 @@
     content: $fi-var-envelope;
   }
 }
+.fi-etsy {
+  &:before {
+    content: $fi-var-etsy;
+  }
+}
 .fi-exapnd2 {
   &:before {
     content: $fi-var-exapnd2;
